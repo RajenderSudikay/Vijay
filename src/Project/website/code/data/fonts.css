@@ -1,0 +1,20 @@
+@font-face {
+  font-family: G-Nunito-n6;
+  font-display: swap;
+  src: url('../data/fonts/nunito_v25_XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmRTM9jo7eTWk.ttf');
+}
+@font-face {
+  font-family: G-Nunito-n7;
+  font-display: swap;
+  src: url('../data/fonts/nunito_v25_XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmRTM9jo7eTWk.ttf');
+}
+@font-face {
+  font-family: G-Nunito-n4;
+  font-display: swap;
+  src: url('../data/fonts/nunito_v25_XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTM9jo7eTWk.ttf');
+}
+@font-face {
+  font-family: G-Nunito-n3;
+  font-display: swap;
+  src: url('../data/fonts/nunito_v25_XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhRTM9jo7eTWk.ttf');
+}

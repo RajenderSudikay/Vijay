@@ -1,0 +1,305 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A9157F8E-30E7-4B1B-AD7D-366D3CDF2869}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MedProSC.Project.Website</RootNamespace>
+    <AssemblyName>MedProSC.Project.Website</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44315</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\fonts\abel_v3_wnjbewildr-zmjjamsixsveszw2xoq-xsnqo47m55da.woff" />
+    <Content Include="data\fonts\allerta_v4_2_yrzhw-qosjz9_sxt7b3qluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\amaranth_v3_rvdvaxhtnybjdko8dli4znyhjbspvc47ee6xr_80hnw.woff" />
+    <Content Include="data\fonts\amaticsc_v3_dppfsfkxrtxvae2bkdzp5lo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\anton_v3_4ccchjovctzofjdbohby_6cwcynf_cdxxwclxiixg1c.woff" />
+    <Content Include="data\fonts\arimo_v5_zs0wkeozuckne3boylynt6cwcynf_cdxxwclxiixg1c.woff" />
+    <Content Include="data\fonts\arvo_v5_bm-nql-l5pgjkpdnalewb_eszw2xoq-xsnqo47m55da.woff" />
+    <Content Include="data\fonts\asap_v1_nvgvewsmavkia6w2u-pxffeszw2xoq-xsnqo47m55da.woff" />
+    <Content Include="data\fonts\bitter_v4_2pcbt6-vmyhqcus-o11s5-vvdin1pk8aktelpez5c0a.woff" />
+    <Content Include="data\fonts\blackopsone_v4_2xw-dmdsgbdle372krmw1ykaqb-uszvonjobs91yqtw.woff" />
+    <Content Include="data\fonts\breeserif_v2_lq7wltaitdg4osruozcps73hpw3pgy2gai-ip7wpmi0.woff" />
+    <Content Include="data\fonts\cabincondensed_v4_b0txb0blf2n29wdypjjmstl_ysxa0ggq46jetxtj0ts.woff" />
+    <Content Include="data\fonts\cabin_v4_kjxt72gt1lyfmzcekaavlkcwcynf_cdxxwclxiixg1c.woff" />
+    <Content Include="data\fonts\calligraffitti_v4_vlvn2y-z65rvu1r7lwdvycsproe6k2albzzcebhkl38.woff" />
+    <Content Include="data\fonts\cantarell_v3_v86vyqxbc09sss3bpsmj17o3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\cardo_v5_c6zi_ulq7hv-avk-g9yut6cwcynf_cdxxwclxiixg1c.woff" />
+    <Content Include="data\fonts\changaone_v6_qmtognnwm9ly3k3b2x29hl3hpw3pgy2gai-ip7wpmi0.woff" />
+    <Content Include="data\fonts\cherrycreamsoda_v3_ord-aunfczeeka6f_c0_w8qttmzmgtrysm7gi1bkazs.woff" />
+    <Content Include="data\fonts\chewy_v4_6xoxlbvfarpxzdh5bolaskcwcynf_cdxxwclxiixg1c.woff" />
+    <Content Include="data\fonts\comfortaa_v4_qlbu5cqmsmt1h43oiwj77bo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\comingsoon_v3_myblyoycmnpmgjfpg-dzp7ria-7acmaedbvuclsi6gc.woff" />
+    <Content Include="data\fonts\copse_v3_gtnblj58pwv6qydo1rgnxacwcynf_cdxxwclxiixg1c.woff" />
+    <Content Include="data\fonts\coveredbyyourgrace_v9_qgywz-azahwojji9kykww9md6opopoqxsoseeqgqiaxviw.woff" />
+    <Content Include="data\fonts\craftygirls_v2_0sv8uwffdhqmeshl32h8o6rdozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\crimsontext_v3_3ifmwfra07i-auyr-b-znardozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\crushed_v3_omv2ehy_anjpaua4svcaxwluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\cuprum_v4_ds-om09uc7agwfnfscugievvdin1pk8aktelpez5c0a.woff" />
+    <Content Include="data\fonts\dancingscript_v3_dk0etgxizjn6ya8zaeym2bdh3ri20ryh10b2w3wbveu.woff" />
+    <Content Include="data\fonts\dosis_v1_ewe0sexprakeimfzbogwb6cwcynf_cdxxwclxiixg1c.woff" />
+    <Content Include="data\fonts\droidsansmono_v4_ns-m2xqyezatqh7ai59hjah0x__w3s3mjl29bc5cwfs.woff" />
+    <Content Include="data\fonts\droidsans_v3_s-biyweupv0v-yrb-cjcil3hpw3pgy2gai-ip7wpmi0.woff" />
+    <Content Include="data\fonts\droidserif_v3_0aksp294htd-nvjgucytalria-7acmaedbvuclsi6gc.woff" />
+    <Content Include="data\fonts\economica_v1_jobgdqiputmacaaak3pmg7o3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\exo_v1_zcgd2dvmsgl3mhn3lkajnw.woff" />
+    <Content Include="data\fonts\fjallaone_v1_rxxxuyj4oz6q5odjfted6r3hpw3pgy2gai-ip7wpmi0.woff" />
+    <Content Include="data\fonts\francoisone_v6_bybkq2nu2tsx4swfbz5sckrdozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\fredokaone_v1_sl0afuffkfmmdariyq3_ybria-7acmaedbvuclsi6gc.woff" />
+    <Content Include="data\fonts\goudybookletter1911_v9_sykt-z54laciwfkv-kx8krex0jdid2hby6ijshzqryehaq.woff" />
+    <Content Include="data\fonts\homemadeapple_v3_yg3umesefgz8ihz_ryz86mfnxryfoyqqr-5vmyigaco.woff" />
+    <Content Include="data\fonts\inconsolata_v6_bjayblhtw3cjxdcjzrnzclria-7acmaedbvuclsi6gc.woff" />
+    <Content Include="data\fonts\indieflower_v4_10jvd_humad5zp2yrfqw6qrdozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\istokweb_v5_evpkapbawclz3hbihjhqabo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\josefinsans_v3_xgzbb53t8j-mo-vya23n5qrdozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\josefinslab_v3_46aywdgz-1ofx11flmyefardozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\justmeagaindownhere_v11_mwqmbgxtz-wc6ruegnmc0qprrfuh2hsdbbmoatwatkfscofh.woff" />
+    <Content Include="data\fonts\kiteone_v1_vnhod96lpz9rgztwjozaonyhjbspvc47ee6xr_80hnw.woff" />
+    <Content Include="data\fonts\kreon_v6_d9qk1gystfykk6prre7m_acwcynf_cdxxwclxiixg1c.woff" />
+    <Content Include="data\fonts\lato_v11_hkf_qi1x_noxlxhrhmqyelo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\lato_v11_qdgug4u09hnjwhyi-uk18wluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\lato_v11_ryyznoefgb0l7w3vu1aswovvdin1pk8aktelpez5c0a.woff" />
+    <Content Include="data\fonts\lato_v6_qiiyru-orokik8vfvxw6qveszw2xoq-xsnqo47m55da.woff" />
+    <Content Include="data\fonts\lobstertwo_v4_law3vvulbooxykpkrnsaalria-7acmaedbvuclsi6gc.woff" />
+    <Content Include="data\fonts\lobster_v5_niafdq6p6elpsvtv2dtndqluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\lora_v5_nakwuw6_dih5kwvpj3shnfeszw2xoq-xsnqo47m55da.woff" />
+    <Content Include="data\fonts\luckiestguy_v3_5718gh8ndy3hfvihopky5krdozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\marckscript_v4_o_d1nazvofooblbvtw3bcqrdozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\marvel_v3_hyek-o_5-zlx5kcuxtoev-vvdin1pk8aktelpez5c0a.woff" />
+    <Content Include="data\fonts\mavenpro_v4_mg9kbuzfchds94tbv9u-pbo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\merriweather_v5_rfda8w1v0edzheqfcyq4ekrdozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\metamorphous_v3_wgqukxriniyggz-btru9eqrdozjipcynfooougcosrk.woff" />
+    <Content Include="data\fonts\molengo_v4_2v3scq0ee96oprrr3d-fjgluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\montserrat_v7_iqhow_feyldc4gzy_m8fcnbfhgvwbfsbdvg11qabg8w.woff" />
+    <Content Include="data\fonts\montserrat_v7_zhcz-_wihjsqc0ohj9tcyl3hpw3pgy2gai-ip7wpmi0.woff" />
+    <Content Include="data\fonts\muli_v4_minrpkqdevxrrs8oabatwveszw2xoq-xsnqo47m55da.woff" />
+    <Content Include="data\fonts\newscycle_v9_9xe8dq6pqdspyvh2d3tmqr3hpw3pgy2gai-ip7wpmi0.woff" />
+    <Content Include="data\fonts\nobile_v4_bdg5wjmb9ccpn6im5y8a5ovvdin1pk8aktelpez5c0a.woff" />
+    <Content Include="data\fonts\nunito_v25_XRXI3I6Li01BKofiOc5wtlZ2di8HDFwmRTM9jo7eTWk.ttf" />
+    <Content Include="data\fonts\nunito_v25_XRXI3I6Li01BKofiOc5wtlZ2di8HDGUmRTM9jo7eTWk.ttf" />
+    <Content Include="data\fonts\nunito_v25_XRXI3I6Li01BKofiOc5wtlZ2di8HDLshRTM9jo7eTWk.ttf" />
+    <Content Include="data\fonts\nunito_v25_XRXI3I6Li01BKofiOc5wtlZ2di8HDOUhRTM9jo7eTWk.ttf" />
+    <Content Include="data\fonts\nunito_v4_1d_ai14t6x7h5aa5bxwwyuvvdin1pk8aktelpez5c0a.woff" />
+    <Content Include="data\fonts\oldstandardtt_v4_n6rtcdcipwse8unba4k-doekpinakss0boq9o5qarnc.woff" />
+    <Content Include="data\fonts\opensanscondensed_v14_z7nfdqdnbtkabzaiol9il_o6kjj73e7ff0gmpuhgqjwq.woff" />
+    <Content Include="data\fonts\opensans_v10_cjzkeoubrn4kerxqtauh3zbw1xu1rkptjj_0jans920.woff2" />
+    <Content Include="data\fonts\opensans_v10_u-wuoqret9fueobqw7jkrbo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\opensans_v10_u-wuoqret9fueobqw7jkrzbw1xu1rkptjj_0jans920.woff2" />
+    <Content Include="data\fonts\opensans_v13_k3k702zokiljc3wvjuplzoy5mlvxtdnkpsmpkkrdxp4.woff" />
+    <Content Include="data\fonts\opensans_v13_prmixeptr36kac0geaetxhle7eceszribkkq27egtqg.woff" />
+    <Content Include="data\fonts\opensans_v13_u-wuoqret9fueobqw7jkrbo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\opensans_v13_xjajxh38i15wypjxxugmbqftcpadk0klfdefftgwcyw.woff" />
+    <Content Include="data\fonts\oswald_v7_qpy-uilnkp-vfodbcs6r6-vvdin1pk8aktelpez5c0a.woff" />
+    <Content Include="data\fonts\oxygen_v2_eawt4yudg0otf3rlsjd6zovvdin1pk8aktelpez5c0a.woff" />
+    <Content Include="data\fonts\pacifico_v4_yunjt0r8tcvmyj_v4xsjaxyhjbspvc47ee6xr_80hnw.woff" />
+    <Content Include="data\fonts\paytoneone_v5_d_d4nj6jwg2cmuclyeqgkbria-7acmaedbvuclsi6gc.woff" />
+    <Content Include="data\fonts\permanentmarker_v2_9vysg5vgphkk8sxybf3smmvsxyvlcpm9firj_jmeqtq.woff" />
+    <Content Include="data\fonts\philosopher_v4_ottjxgcoesufogsinybglbria-7acmaedbvuclsi6gc.woff" />
+    <Content Include="data\fonts\play_v3_ikerdnkw9itvkleeur9ghfeszw2xoq-xsnqo47m55da.woff" />
+    <Content Include="data\fonts\ptsanscaption_v6_oxytdozbcxu8mtnbvbheszsuylnvnver3yfo1b3hwey.woff" />
+    <Content Include="data\fonts\ptsansnarrow_v4_uyyryy3lteffjv9quesi4z4t0mjkpalvqklzzuc32b4.woff" />
+    <Content Include="data\fonts\ptsans_v5_7ygme4ls5b94ct65u07hvqluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\ptserif_v5_sdri4fy9boijubgq53yzcxyhjbspvc47ee6xr_80hnw.woff" />
+    <Content Include="data\fonts\questrial_v3_mywj4lym5dbz1ubuyox79lo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\quicksand_v2_skd0emypah5pycrksryvw7o3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\raleway_v6_cifypx4yrwpdz3zoxk7hiqluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\reeniebeanie_v3_ljpkc6cdxusl1cngusamx4kaqb-uszvonjobs91yqtw.woff" />
+    <Content Include="data\fonts\righteous_v2_w5p-si7qjqsdqb3gzil8xbo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\robotocondensed_v12_zd2e9abxlfgsr9g3yk2msb43xjeme5heavxwqle69ro.ttf" />
+    <Content Include="data\fonts\robotocondensed_v12_zd2e9abxlfgsr9g3yk2msdxlurq_bge_q3c2bypk9dw.woff2" />
+    <Content Include="data\fonts\robotocondensed_v12_zd2e9abxlfgsr9g3yk2msnkdsu5npdobdru70fivyb0.woff2" />
+    <Content Include="data\fonts\roboto_v14_ks_cvxiciwuwvsfwfa3bjn-_kf6byyo6clydb4hqe-y.woff2" />
+    <Content Include="data\fonts\roboto_v14_ommgfzmqthoryqo9n22dcn-_kf6byyo6clydb4hqe-y.woff2" />
+    <Content Include="data\fonts\roboto_v14_ytqeb6udkqdqr-y7rtknruvvdin1pk8aktelpez5c0a.ttf" />
+    <Content Include="data\fonts\roboto_v15_d-6iyplofoccackzxwxsolo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\roboto_v15_t6nd4cfprhzp44q5qajcc7ria-7acmaedbvuclsi6gc.woff" />
+    <Content Include="data\fonts\rocksalt_v3_q94ahxfhgip10k5uxi1jolo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\rokkitt_v5_rcb7drnax_8je8zinu47yaluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\shadowsintolight_v3_clhlqov7mxn459pth0gxymdqsyiig2yb25hg13-ek1m.woff" />
+    <Content Include="data\fonts\signika_v3_t4xakllihaltm2q6-roodgluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\sourcesanspro_v6_odeli1ahbydbqgeiah2zlnhq-ffgodnv3gtkphwuvti.woff" />
+    <Content Include="data\fonts\specialelite_v3_9-ww4zu3wnod5fjka35jm4kaqb-uszvonjobs91yqtw.woff" />
+    <Content Include="data\fonts\squadaone_v2_dibfqh10zkwc_qd08y0sab3hpw3pgy2gai-ip7wpmi0.woff" />
+    <Content Include="data\fonts\syncopate_v3_pdm9cvwnx1ufbhceatja3lo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\tangerine_v3_hgfsycl5wasphofnoug-rlo3ldcazywl9si6vvxl-qu.woff" />
+    <Content Include="data\fonts\thegirlnextdoor_v4_cwra4jvgeechgcpl5hmx7p-yok3kl6e6rmvancm23y8.woff" />
+    <Content Include="data\fonts\titilliumweb_v1_7xufz5tgs-td6qaminjtcz_o9vabkgk36i-4snuaucm.woff" />
+    <Content Include="data\fonts\ubuntucondensed_v3_dbct-nxn57mtafjityxdrnxb8ob85xantjvvsb9yujq.woff" />
+    <Content Include="data\fonts\ubuntu_v4_vrvzyzluaogouhbbtt1snevvdin1pk8aktelpez5c0a.woff" />
+    <Content Include="data\fonts\unkempt_v4_lysa9hubaxei0wbvikdzjqluueptyoustqem5amljo4.woff" />
+    <Content Include="data\fonts\vollkorn_v3_bcfbp4rt5gxxfrx6f12dknyhjbspvc47ee6xr_80hnw.woff" />
+    <Content Include="data\fonts\walterturncoat_v3_sg9su5g4gxy1kp73cu3hvug5bzjjjqhkx_0ep7_wjf8.woff" />
+    <Content Include="data\fonts\yanonekaffeesatz_v4_ydaolskqq5moagvhuqcclqa6gm6bs00u2qn-iplo1go.woff" />
+    <None Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\0fe30d18dc288dffbce9ef5d91b23678.png" />
+    <Content Include="data\20e0e61069d01dbe83276f506ac4aa63.png" />
+    <Content Include="data\58a9ee3ae282d40b9715845ad598b4c1.png" />
+    <Content Include="data\8fc05dd2e7257a48dc386f39b348c417.png" />
+    <Content Include="data\90c4f5daa826208fda2659e3613d32b5.png" />
+    <Content Include="data\breakpoints.js" />
+    <Content Include="data\dmsDPSidebar\icon-annotate.png" />
+    <Content Include="data\dmsDPSidebar\icon-annotations.png" />
+    <Content Include="data\dmsDPSidebar\icon-comments.png" />
+    <Content Include="data\dmsDPSidebar\icon-components.png" />
+    <Content Include="data\dmsDPSidebar\icon-copy.png" />
+    <Content Include="data\dmsDPSidebar\icon-dashboard.png" />
+    <Content Include="data\dmsDPSidebar\icon-edit.png" />
+    <Content Include="data\dmsDPSidebar\icon-elements.png" />
+    <Content Include="data\dmsDPSidebar\icon-fullscreen.png" />
+    <Content Include="data\dmsDPSidebar\icon-help.png" />
+    <Content Include="data\dmsDPSidebar\icon-home.png" />
+    <Content Include="data\dmsDPSidebar\icon-news.png" />
+    <Content Include="data\dmsDPSidebar\icon-notes.png" />
+    <Content Include="data\dmsDPSidebar\icon-pins.png" />
+    <Content Include="data\dmsDPSidebar\icon-remove.png" />
+    <Content Include="data\dmsDPSidebar\icon-rename.png" />
+    <Content Include="data\dmsDPSidebar\icon-search.png" />
+    <Content Include="data\dmsDPSidebar\icon-sitemap.png" />
+    <Content Include="data\dmsDPSidebar\icon-team.png" />
+    <Content Include="data\files_1220317_1176649_first-5dab7058fa5acf35df23a49e0ce70d4f-bd10e8.png" />
+    <Content Include="data\files_1220317_1176649_last-403582df3c1b33cecd2719cb731c4ff9-76bca2.png" />
+    <Content Include="data\files_1220317_1176649_menu_edit-2a6f6661b8a58b0bac56b74ad6a80c5c-f874cb.png" />
+    <Content Include="data\files_1220317_1176649_menu_help-28dab63c3a0cf0261186634be82e6ca2-9c5b28.png" />
+    <Content Include="data\files_1220317_1176649_menu_review-8b3c296d894af4ffd0dd73b79bb06f0c-2aa77d.png" />
+    <Content Include="data\files_1220317_1176649_menu_text-eb7bb289bb9220ac7f38a33b688c6147-f559b4.png" />
+    <Content Include="data\files_1220317_1176649_menu_view-316ba740e81c1c9847432e56d2fa22ea-5fdbaf.png" />
+    <Content Include="data\files_1220317_1176649_next-60778bd3490db4e8a26960b7b087c5e1-e1cc78.png" />
+    <Content Include="data\files_1220317_1176649_previous-7385f753693fc6f02445646536e2de4e-bb9836.png" />
+    <Content Include="data\files_1220317_1176649_uploadfile-a41aa7946187bcf84e5444408c1abbc5-24f438.png" />
+    <Content Include="data\fonts.css" />
+    <Content Include="data\mootree.png" />
+    <Content Include="data\no_image.gif" />
+    <Content Include="data\pages.js" />
+    <Content Include="data\page_163515295.js" />
+    <Content Include="data\page_163515296.js" />
+    <Content Include="data\page_163515297.js" />
+    <Content Include="data\page_size_163515295.js" />
+    <Content Include="data\page_size_163515296.js" />
+    <Content Include="data\page_size_163515297.js" />
+    <Content Include="data\pics_cursors_editor-30_trash.png" />
+    <Content Include="data\picture.svg" />
+    <Content Include="data\preview.uxpincdn.com_img_favicon-2d194bee.ico" />
+    <Content Include="data\preview.uxpincdn.com_img_ios-logo-180x180-4f260175.png" />
+    <Content Include="data\preview.uxpincdn.com_scripts_app-f03cb271.js" />
+    <Content Include="data\preview.uxpincdn.com_scripts_engine-4ace9538.js" />
+    <Content Include="data\preview.uxpincdn.com_scripts_vendors-87ff12a1.js" />
+    <Content Include="data\preview.uxpincdn.com_styles_preview-efbefcb8.css" />
+    <Content Include="data\_img_cursors_tap-clicked-_1x.png" />
+    <Content Include="data\_img_cursors_tap-clicked-_2x.png" />
+    <Content Include="data\_img_cursors_tap-_1x.png" />
+    <Content Include="data\_img_cursors_tap-_2x.png" />
+    <Content Include="data\_img_record-info.png" />
+    <Content Include="data\_img_uxpin-logo-white.svg" />
+    <Content Include="Form.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51633</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44315/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
