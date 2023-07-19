@@ -226,3 +226,8 @@ C:\vijay\medpro\src\Project\website\code\obj\Debug\MedProSC.Project.Website.cspr
 C:\vijay\medpro\src\Project\website\code\obj\Debug\MedProSC.Project.Website.csproj.CopyComplete
 C:\vijay\medpro\src\Project\website\code\obj\Debug\MedProSC.Project.Website.dll
 C:\vijay\medpro\src\Project\website\code\obj\Debug\MedProSC.Project.Website.pdb
+C:\vijay\medpro\src\Project\website\code\bin\RazorGenerator.Mvc.dll
+C:\vijay\medpro\src\Project\website\code\bin\Sitecore.Mvc.dll
+C:\vijay\medpro\src\Project\website\code\bin\Sitecore.Web.dll
+C:\vijay\medpro\src\Project\website\code\bin\WebActivatorEx.dll
+C:\vijay\medpro\src\Project\website\code\bin\Sitecore.Web.xml

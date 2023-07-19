@@ -1,7 +1,13 @@
-﻿<div class="container-fluid">
-    <div id="navbar">
-        <a class="header-label">Manual Forms Portal</a>
-        <a class="header-builder">Form Builder</a>
-        <a class="header-history">Bundle History</a>
+﻿@model MedProSC.Project.Website.Models.HeaderModel
+
+@if (Model != null)
+{
+    <div class="container-fluid">
+        <div id="navbar">
+            <a class="header-label">@Model.HeaderTitle</a>
+            <a class="header-builder">@Model.FormBuilderTitle</a>
+            <a class="header-history">@Model.BundleHistoryTitle</a>
+        </div>
     </div>
-</div>
+
+}

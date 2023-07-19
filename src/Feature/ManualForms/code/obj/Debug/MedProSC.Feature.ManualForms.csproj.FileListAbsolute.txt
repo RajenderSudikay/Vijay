@@ -156,7 +156,6 @@ C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Security.AccessControl.d
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Security.Cryptography.Xml.dll
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Security.Permissions.dll
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Security.Principal.Windows.dll
-C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Text.Encodings.Web.dll
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Threading.Tasks.Extensions.dll
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.ValueTuple.dll
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Web.Helpers.dll
@@ -211,7 +210,6 @@ C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Memory.xml
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Net.Http.Formatting.xml
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Numerics.Vectors.xml
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Runtime.CompilerServices.Unsafe.xml
-C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Text.Encodings.Web.xml
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Threading.Tasks.Extensions.xml
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.ValueTuple.xml
 C:\vijay\medpro\src\Feature\ManualForms\code\bin\System.Web.Helpers.xml
