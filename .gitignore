@@ -9,6 +9,7 @@ _ReSharper.*
 *.sln.ide
 license.xml
 .vs
+*.vs*
 /node_modules
 .vscode
 *.log
