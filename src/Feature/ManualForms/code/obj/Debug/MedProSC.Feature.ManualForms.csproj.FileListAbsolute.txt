@@ -226,3 +226,8 @@ C:\vijay\medpro\src\Feature\ManualForms\code\obj\Debug\MedProSC.Feature.ManualFo
 C:\vijay\medpro\src\Feature\ManualForms\code\obj\Debug\MedProSC.Feature.ManualForms.csproj.CopyComplete
 C:\vijay\medpro\src\Feature\ManualForms\code\obj\Debug\MedProSC.Feature.ManualForms.dll
 C:\vijay\medpro\src\Feature\ManualForms\code\obj\Debug\MedProSC.Feature.ManualForms.pdb
+C:\vijay\medpro\src\Feature\ManualForms\code\bin\RazorGenerator.Mvc.dll
+C:\vijay\medpro\src\Feature\ManualForms\code\bin\Sitecore.Mvc.dll
+C:\vijay\medpro\src\Feature\ManualForms\code\bin\Sitecore.Web.dll
+C:\vijay\medpro\src\Feature\ManualForms\code\bin\WebActivatorEx.dll
+C:\vijay\medpro\src\Feature\ManualForms\code\bin\Sitecore.Web.xml

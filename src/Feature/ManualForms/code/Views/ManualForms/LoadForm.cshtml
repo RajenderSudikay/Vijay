@@ -1,0 +1,94 @@
+﻿@model MedProSC.Feature.ManualForms.Models.LoadForm
+
+@if (Model != null)
+{
+    <div class="loadform">
+        <p id="fill">@Model.LoadFormTitle</p>
+
+        <div class="formfill">
+            <div class="comp">
+                <label class="required">@Model.IssueLabel  </label>
+            </div>
+            <div class="issue">
+                <select class="value">
+                    <option value="id-1">The Medical Protective Company</option>
+                    <option value="id-2">Some Other Company</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label class="required">@Model.StateLabel </label>
+            </div>
+
+            <div class="list">
+                <select class="value">
+                    <option value="id8363220">AK</option>
+                    <option value="id1173219">AL</option>
+                    <option value="id3483222">AR</option>
+                    <option value="id4293221">AZ</option>
+                    <option value="id5003223">CA</option>
+                    <option value="id923224">CO</option>
+                    <option value="id123225">CT</option>
+                    <option value="id3163226">DE</option>
+                    <option value="id5963227">FL</option>
+                    <option value="id8123228">GA</option>
+                    <option value="id923229">HI</option>
+                    <option value="id7563230">ID</option>
+                    <option value="id8273231">IL</option>
+                    <option value="id5483232">IN</option>
+                    <option value="id4763233">IA</option>
+                    <option value="id2683234">KS</option>
+                    <option value="id8763235">KY</option>
+                    <option value="id9643236">LA</option>
+                    <option value="id3803237">ME</option>
+                    <option value="id2763238">MD</option>
+                    <option value="id3333239">MA</option>
+                    <option value="id2203240">MI</option>
+                    <option value="id2043241">MN</option>
+                    <option value="id1483242">MS</option>
+                    <option value="id1723243">MO</option>
+                    <option value="id5643245">MT</option>
+                    <option value="id6923246">NE</option>
+                    <option value="id283247">NV</option>
+                    <option value="id6843248">NH</option>
+                    <option value="id2523249">NJ</option>
+                    <option value="id3163250">NM\</option>
+                    <option value="id3723251">NY</option>
+                    <option value="id3883252">NC</option>
+                    <option value="id7403253">ND</option>
+                    <option value="id6683254">OH</option>
+                    <option value="id123255">OK</option>
+                    <option value="id9803256">OR</option>
+                    <option value="id6523257">PA</option>
+                    <option value="id7323258">RI</option>
+                    <option value="id433259">SC</option>
+                    <option value="id1403260">SD</option>
+                    <option value="id9723261">TN</option>
+                    <option value="id1003262">TX</option>
+                    <option value="id203263">UT</option>
+                    <option value="id4523265">VA</option>
+                    <option value="id5493266">WA</option>
+                    <option value="id8923264">VT</option>
+                    <option value="id6193267">WV</option>
+                    <option value="id1553268">WI</option>
+                    <option value="id4693269">WY</option>
+                </select>
+            </div>
+            <div class="form">
+                <label class="required"> @Model.DateLabel  </label>
+                <input type="date" id="date">
+            </div>
+            <div class="form">
+                <label class="required">@Model.FormsTypeLabel </label>
+            </div>
+            <select class="value">
+                <option value="id7323258">HPLP</option>
+
+                <option value="id4515534">MSHP</option>
+            </select>
+        </div>
+        <div class="Load">
+            <p>@Model.LoadFormButtonText</p>
+        </div>
+    </div>
+}
