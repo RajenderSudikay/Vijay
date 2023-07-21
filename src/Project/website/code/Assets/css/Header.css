@@ -1,37 +1,48 @@
-﻿#navbar {
+﻿
+body {
+    font-family: 'Nunito Sans' !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+#navbar {
     background-color: #002f6b;
     color: white;
     height: 40px;
     display: flex;
     align-items: center;
+    font-family: 'Nunito Sans' !important;
 }
 
-a {    
+a {
     text-decoration: none;
     font-weight: 400 !important;
     font-size: 15px !important;
+    font-family: 'Nunito Sans' !important;
 }
 
 #form {
     margin-right: 400px;
     font-size: 18px;
     padding-left: 50px;
-
+    font-family: 'Nunito Sans' !important;
 }
 
 .header-label {
     font-size: 20px !important;
     margin-left: 5% !important;
     color: white !important;
+    font-family: 'Nunito Sans' !important;
 }
 
 .header-builder {
     font-weight: 400 !important;
     margin-left: 34% !important;
     color: white !important;
+    font-family: 'Nunito Sans' !important;
 }
 .header-history {
     font-weight: 400 !important;
     margin-left: 60px !important;
     color: white !important;
+    font-family: 'Nunito Sans' !important;
 }
