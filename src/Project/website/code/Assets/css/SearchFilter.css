@@ -1,0 +1,19 @@
+﻿.search-filter label {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.search {
+    margin-left: 25px !important;
+    margin-top: 15px;
+    font-family: 'Nunito Sans' !important;
+}
+
+.material-icons {
+    font-size: 15px;
+    color: rgb(0, 47, 107);
+}
+.clear-filter {
+   background-color: rgb(201, 220, 230); 
+   color: rgb(66, 123, 143); 
+   width: 120px;
+   }

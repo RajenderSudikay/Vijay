@@ -275,6 +275,7 @@
   <ItemGroup>
     <Content Include="Views\ManualForms\LoadForm.cshtml" />
     <Content Include="Views\Head\HeadScripts.cshtml" />
+    <Content Include="Views\ManualForms\SearchFilter.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Views\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -285,8 +286,10 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\ManualFormsController.cs" />
+    <Compile Include="Controllers\SearchFilterController.cs" />
+    <Compile Include="Controllers\LoadFormController.cs" />
     <Compile Include="Models\LoadForm.cs" />
+    <Compile Include="Models\SearchFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Templates.cs" />
   </ItemGroup>

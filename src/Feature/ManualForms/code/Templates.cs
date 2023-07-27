@@ -23,5 +23,20 @@ namespace MedProSC.Feature.ManualForms
 
             }
         }
+        public struct SearchFormTemplate
+        {
+            public static readonly ID TemplateID = new ID("{EFDCEC51-1A09-4AB1-884D-940CF93014D7}");
+
+            public struct Fields
+            {
+                public static readonly ID SearchForms = new ID("{40E44688-7825-440C-B481-F7E65BF620B1}");
+                public static readonly ID ClicktoaddForm = new ID("{C6A970F8-F447-46FD-AE5C-29840B6ACECC}");
+                public static readonly ID SearchbyForm = new ID("{C277E3FD-DA04-4959-825F-98B2CD79BFCA}");
+                public static readonly ID SearchbyName = new ID("{6D47A52F-33E5-4800-A578-D5FD8F014829}");
+                public static readonly ID CoverageType = new ID("{2F90642A-B638-4B9F-B388-156561C9B592}");
+                public static readonly ID ClearFilterButton = new ID("{493FC9D4-8302-4129-8D7E-E4524CF01CFA}");
+
+            }
+        }
     }
 }
