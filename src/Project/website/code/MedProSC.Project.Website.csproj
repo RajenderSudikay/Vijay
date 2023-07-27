@@ -276,7 +276,7 @@
     <Content Include="Assets\css\Header.css" />
     <Content Include="Assets\css\LoadForm.css" />
     <Content Include="Assets\css\NunitoSans.css" />
-    <Content Include="Assets\css\style.css" />
+    <Content Include="Assets\css\SearchFilter.css" />
     <Content Include="Views\Shared\Header.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Views\Web.Debug.config">
