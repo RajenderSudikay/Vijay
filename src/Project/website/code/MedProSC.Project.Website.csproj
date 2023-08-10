@@ -273,10 +273,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\buildertable.css" />
     <Content Include="Assets\css\Header.css" />
     <Content Include="Assets\css\LoadForm.css" />
+    <Content Include="Assets\css\mybundle.css" />
     <Content Include="Assets\css\NunitoSans.css" />
     <Content Include="Assets\css\SearchFilter.css" />
+    <Content Include="Assets\scripts\buildertable.js" />
     <Content Include="Views\Shared\Header.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Views\Web.Debug.config">

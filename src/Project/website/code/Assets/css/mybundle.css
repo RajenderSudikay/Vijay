@@ -1,0 +1,77 @@
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-size: 10px;
+    display: inline-flex;
+    margin-left: 23%;
+    font-weight: 700 !important;
+}
+
+.uploadcenter {
+    height: 72px;
+    background-color: white;
+    border: dotted;
+    text-align: center;
+    margin-left: 24%;
+    width: 50%;
+}
+.mybundle {
+    height: 615px;
+    background-color: rgb(232, 244, 250);
+    margin-top: 30px;
+    margin-bottom: 3%;
+    margin-left: 12%;
+    width: 77%;
+    font-family: "Nunito Sans";
+}
+    .mybundle p {
+        color: rgb(0, 47, 107);
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+.bundle-table {
+    margin-left: 70px;
+    background-color: white;
+    width: 820px;
+    
+}
+.bundlehead {
+    background-color: rgb(0, 47, 107);
+    color: white;
+    font-size: 12px;
+}
+    .bundlehead th{
+        text-align:center;
+    }
+    .bundlebody {
+        background-color: white;
+        width: 300px;
+        height: 242px;
+    }
+.create {
+    margin-left: 428px;
+    margin-top: 30px;
+}
+.below-table {
+    margin-bottom: 3%;
+    font-size: 12px;
+}
+.upload-icon {
+    margin-top: 2%;
+    font-size: 20px;
+    -webkit-text-stroke: 2px;
+    color: rgb(0, 178, 245);
+    
+}
+.create-button {
+    background-color: rgb(0, 178, 245);
+    border: none;
+    opacity: 0.5;
+    width: 14%;
+    font-size: 12px;
+    margin-right: 25%;
+}

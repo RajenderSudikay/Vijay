@@ -276,6 +276,8 @@
     <Content Include="Views\ManualForms\LoadForm.cshtml" />
     <Content Include="Views\Head\HeadScripts.cshtml" />
     <Content Include="Views\ManualForms\SearchFilter.cshtml" />
+    <Content Include="Views\ManualForms\BuilderTable.cshtml" />
+    <Content Include="Views\ManualForms\MyBundle.cshtml" />
     <None Include="Views\Web.config" />
     <None Include="Views\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -286,8 +288,12 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\MyBundleController.cs" />
+    <Compile Include="Controllers\BuilderTableController.cs" />
     <Compile Include="Controllers\SearchFilterController.cs" />
     <Compile Include="Controllers\LoadFormController.cs" />
+    <Compile Include="Models\MyBundle.cs" />
+    <Compile Include="Models\BuilderTable.cs" />
     <Compile Include="Models\LoadForm.cs" />
     <Compile Include="Models\SearchFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

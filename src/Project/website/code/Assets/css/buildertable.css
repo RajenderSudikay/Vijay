@@ -1,0 +1,88 @@
+
+#loadtable {
+    margin-left: 2%;
+    width: 95%;  
+}
+
+    #loadtable th {
+        /*  padding: 8px;*/
+        text-align: center;
+        height: 10% !important;
+        font-weight: bold;
+    }
+
+    #loadtable tr:nth-child(even) {
+        background-color: rgb(232, 244, 250);
+    }
+
+    #loadtable tbody {
+        height: 300px;
+    }
+
+    #loadtable thead  {
+        background-color: #002f6b !important;
+        height: 34px !important;
+        border: 1px !important;
+    }
+
+        #loadtable thead tr {
+            font-family: Nunito Sans;
+            font-size: 13px;
+            color: #ffffff;
+        }
+
+    #loadtable tfoot {
+        background-color: #002f6b;
+        border: none;
+    }
+
+ #loadtable tfoot tr {
+            font-family: Nunito Sans;
+            font-size: 10px;
+            color: #ffffff;
+            align-items: end;
+ }
+
+
+
+
+.builder-table-head tr, th {
+    border: 1px solid grey !important;
+}
+
+.form-tablebody tr, td {
+    border-left: 1px solid grey !important;
+    border-right: 1px solid grey !important;
+}
+.goto-first-last {
+    font-size: large; 
+    margin-left: 1%;
+   
+}
+.left-right {
+    font-size: initial;
+    margin-left: 2%;
+}
+.currentpage {
+     width: 40px; 
+     height: 18px;
+     border-radius: 6px !important; 
+     border: none;
+}
+.pagenum-display {
+    margin-left: 25px;
+    font-size: 13px; 
+}
+.result-count {
+   color:black;
+   height: 18px; 
+   width: 45px !important;
+}
+.reslt-page {
+    text-align: right;
+    border: none !important;
+}
+.footer-icons {
+    text-align: left !important;
+    border: none !important;
+}

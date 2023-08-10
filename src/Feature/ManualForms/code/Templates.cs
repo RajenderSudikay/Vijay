@@ -38,5 +38,42 @@ namespace MedProSC.Feature.ManualForms
 
             }
         }
+        public struct BuildTableTemplate
+        {
+            public static readonly ID TemplateID = new ID("{AAB24A43-F77E-4FA2-8156-747A8A8AC206}");
+
+            public struct Fields
+            {
+                public static readonly ID FormNumber = new ID("{073F88EB-C821-4F22-B74A-65E3BE9AE332}");
+                public static readonly ID FormName = new ID("{E31AEE71-A1E7-4D33-B2FC-655D74E74FA4}");
+                public static readonly ID Occurences = new ID("{FD60EBA6-F188-4BC9-8D98-069C606169EB}");
+                public static readonly ID ClaimsMade = new ID("{1B34AB7C-CD18-4A95-907A-56E21E897936}");
+                public static readonly ID EffectiveDate = new ID("{844B5B40-EFE7-4269-BEE6-718635AA6079}");
+                public static readonly ID ExpirationDate = new ID("{5DC8112A-F8AB-4529-ADBE-346D6F47C5D8}");
+
+            }
+        }
+        public struct MyBundleTemplate
+        {
+            public static readonly ID TemplateID = new ID("{2DF7734A-A4EE-47A9-ACC0-346457A7ACB1}");
+
+            public struct Fields
+            {
+                public static readonly ID MyBundleTitle = new ID("{1F889DE2-DB08-4611-9E5A-D5965EC495C7}");
+                public static readonly ID FormNumber = new ID("{823E342B-3E20-46FF-8F9E-7921D53B2930}");
+                public static readonly ID FormName = new ID("{1DB7A97E-491C-4082-9702-69BD067CBDA9}");
+                public static readonly ID PolocyNumber = new ID("{0B81790B-FA07-49E8-84B2-3A8C63F13D2D}");
+                public static readonly ID TransactionType = new ID("{1448EED6-FDC2-43FF-9BBE-7966F40C830E}");
+                public static readonly ID CreateBundle = new ID("{2AC60602-1AEC-4FEE-8986-A6F1DA24CB6F}");
+                public static readonly ID Description = new ID("{39D3F758-49DB-483A-AC25-F8A39AA4D46F}");
+                public static readonly ID FirstNamedInsured = new ID("{29D0B6AB-0832-42EF-BC9A-2A23931C3910}");
+
+            }
+        }
+
+
     }
+
+
+
 }
