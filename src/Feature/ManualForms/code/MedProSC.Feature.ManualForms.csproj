@@ -286,6 +286,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.config" />
+    <Content Include="manualforms.module.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\MyBundleController.cs" />

@@ -279,6 +279,7 @@
     <Content Include="Assets\css\mybundle.css" />
     <Content Include="Assets\css\NunitoSans.css" />
     <Content Include="Assets\css\SearchFilter.css" />
+    <Content Include="Assets\scripts\header.js" />
     <Content Include="Assets\scripts\buildertable.js" />
     <Content Include="Views\Shared\Header.cshtml" />
     <None Include="Views\Web.config" />

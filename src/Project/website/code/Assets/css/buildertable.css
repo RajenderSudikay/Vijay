@@ -1,7 +1,9 @@
 
 #loadtable {
     margin-left: 2%;
-    width: 95%;  
+    width: 95%;
+    font-size: 10px;
+    font-weight: bolder;
 }
 
     #loadtable th {
@@ -77,6 +79,7 @@
    color:black;
    height: 18px; 
    width: 45px !important;
+   border-radius: 4px !important;
 }
 .reslt-page {
     text-align: right;
@@ -85,4 +88,9 @@
 .footer-icons {
     text-align: left !important;
     border: none !important;
+}
+
+.action {
+    color: rgb(0, 47, 107);
+    font-size: 16px;
 }

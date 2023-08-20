@@ -23,6 +23,7 @@ sc-internal
 tools/*
 !tools/packages.config
 /Azure PaaS/tools
+/src/Feature/ManualForms/code/bin/
 /src/Foundation/DependencyInjection/code/*.user
 /Output
 /Nuget/NugetPackages
@@ -40,3 +41,10 @@ _ReSharper.*
 */bin/*
 */obj/*
 */packages/*
+
+*.config
+*.sitecore
+*.vs
+
+
+

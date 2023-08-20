@@ -15,23 +15,24 @@
                 <th style="width: 40px !important"> </th>
             </tr>
         </thead>
-            <tbody class="form-tablebody">
-            </tbody>
+        <tbody class="form-tablebody">
+        </tbody>
         <tfoot>
             <tr>
                 <th colspan="2" class="footer-icons">
                     <i class="bi bi-skip-start-fill goto-first-last"></i>
                     <i class="bi bi-caret-left-fill left-right"></i>
-                    <span class="pagenum-display">Page&nbsp;</span> <input class="currentpage" type="text"/> <span style="font-size: 13px;">&nbsp;of&nbsp; 3&nbsp; </span>
+                    @Html.Raw(Model.ShowPageNumber)
                     <i class="bi bi-caret-right-fill left-right"></i>
                     <i class="bi bi-skip-end-fill goto-first-last"></i>
                 </th>
                 <th colspan="4" class="reslt-page" style="text-align: right !important">
-                    <span style="font-size: 13px">Results per Page</span>&nbsp;&nbsp;
+                    <span style="font-size: 13px">@Model.ResultsPerPage</span>&nbsp;&nbsp;
                     <select name="" id="results" class="result-count">
-                        <option value="10">25</option>
-                        <option value="10">50</option>
-                        <option value="10">100</option>
+                        @foreach (var page in Model.PageNumbers)
+                        {
+                            <option value="@page.Name">@page.Name</option>
+                        }                      
                     </select>
                 </th>
                 <th style="border: none !important"></th>

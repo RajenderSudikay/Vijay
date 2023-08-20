@@ -50,6 +50,9 @@ namespace MedProSC.Feature.ManualForms
                 public static readonly ID ClaimsMade = new ID("{1B34AB7C-CD18-4A95-907A-56E21E897936}");
                 public static readonly ID EffectiveDate = new ID("{844B5B40-EFE7-4269-BEE6-718635AA6079}");
                 public static readonly ID ExpirationDate = new ID("{5DC8112A-F8AB-4529-ADBE-346D6F47C5D8}");
+                public static readonly ID ResultsPerPage = new ID("{810F559B-B04C-42CC-B2A8-7BEFE6CF78BD}");
+                public static readonly ID PageNumers = new ID("{105CE772-4421-4B22-9A53-6FCD6503B44E}");
+                public static readonly ID ShowPageNumber = new ID("{87505491-4B25-4759-AE70-B1DCCAE606D5}");
 
             }
         }

@@ -1,0 +1,11 @@
+{
+  "namespace": "MedProSC.Project.Website",
+  "items": {
+    "includes": [
+      {
+        "name": "Feature-templates",
+        "path": "/sitecore/templates/Feature/MedPro/Manual Form"
+      }
+    ]
+  }
+}

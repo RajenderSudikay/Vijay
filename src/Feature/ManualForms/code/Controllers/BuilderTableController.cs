@@ -30,7 +30,11 @@ namespace MedProSC.Feature.ManualForms.Controllers
                     builderTableModel.ClaimsMade = builderTableDataSoureItem.Fields[BuildTableTemplate.Fields.ClaimsMade].Value;
                     builderTableModel.EffectiveDate = builderTableDataSoureItem.Fields[BuildTableTemplate.Fields.EffectiveDate].Value;
                     builderTableModel.ExpirationDate = builderTableDataSoureItem.Fields[BuildTableTemplate.Fields.ExpirationDate].Value;
+                    builderTableModel.ResultsPerPage = builderTableDataSoureItem.Fields[BuildTableTemplate.Fields.ResultsPerPage].Value;
+                    builderTableModel.ShowPageNumber = builderTableDataSoureItem.Fields[BuildTableTemplate.Fields.ShowPageNumber].Value;
 
+                    Sitecore.Data.Fields.MultilistField multiselectField = builderTableDataSoureItem.Fields[BuildTableTemplate.Fields.PageNumers];
+                    builderTableModel.PageNumbers = multiselectField.GetItems();
 
                 }
             }
