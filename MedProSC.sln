@@ -35,8 +35,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlinePayment", "OnlinePaym
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedProsSC.Feature.OnlinePayment", "src\Feature\OnlinePayment\code\MedProsSC.Feature.OnlinePayment.csproj", "{5370167E-2794-44C8-A21D-E7832806E566}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serialization", "src\Feature\ManualForms\serialization\serialization.csproj", "{CB36AE1A-2A80-4ED7-8AF8-216BF1E66DE0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,10 +57,6 @@ Global
 		{5370167E-2794-44C8-A21D-E7832806E566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5370167E-2794-44C8-A21D-E7832806E566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5370167E-2794-44C8-A21D-E7832806E566}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB36AE1A-2A80-4ED7-8AF8-216BF1E66DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB36AE1A-2A80-4ED7-8AF8-216BF1E66DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB36AE1A-2A80-4ED7-8AF8-216BF1E66DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB36AE1A-2A80-4ED7-8AF8-216BF1E66DE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,7 +70,6 @@ Global
 		{55FC7921-40E4-4C75-9557-6BB5203C28B9} = {DCCD795D-2279-400C-8A66-8E6723A5C5C9}
 		{0C9A8AEE-915D-4F9F-929A-AC84407BFB97} = {EDA2FBE2-513F-487E-8150-4CE502BCFC30}
 		{5370167E-2794-44C8-A21D-E7832806E566} = {0C9A8AEE-915D-4F9F-929A-AC84407BFB97}
-		{CB36AE1A-2A80-4ED7-8AF8-216BF1E66DE0} = {DCCD795D-2279-400C-8A66-8E6723A5C5C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
