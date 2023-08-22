@@ -44,7 +44,6 @@ _ReSharper.*
 
 *.config
 *.sitecore
-*.vs
+*/.vs/*/*/.suo
 
-
-
+*.suo
