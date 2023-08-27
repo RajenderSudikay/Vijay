@@ -39,11 +39,10 @@
     .fileuploadbundleIcon{
         font-size: xx-large;
     }
-    .mybundle {
-        /* height: 660px;*/
+    .mybundle {    
         background-color: rgb(232, 244, 250);
         margin-top: 30px;
-        /* margin-bottom: 3%;*/
+        margin-bottom: 3%;
         margin-left: 12%;
         width: 77%;
         font-family: "Nunito Sans";
