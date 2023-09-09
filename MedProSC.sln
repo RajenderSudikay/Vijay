@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33027.164
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{B57FD1D3-5D31-4838-9AD9-2C352325274B}"
 EndProject
@@ -34,8 +34,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedProsSC.Feature.OnlinePay
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{46AD8305-BF67-45F5-9AD8-26F280D42B6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foundation.Security", "foundation\security\code\Foundation.Security.csproj", "{D13AEB55-1DB5-4605-B7DB-B8B7F0A338DA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,10 +56,6 @@ Global
 		{5370167E-2794-44C8-A21D-E7832806E566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5370167E-2794-44C8-A21D-E7832806E566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5370167E-2794-44C8-A21D-E7832806E566}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D13AEB55-1DB5-4605-B7DB-B8B7F0A338DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D13AEB55-1DB5-4605-B7DB-B8B7F0A338DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D13AEB55-1DB5-4605-B7DB-B8B7F0A338DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D13AEB55-1DB5-4605-B7DB-B8B7F0A338DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,10 +70,9 @@ Global
 		{0C9A8AEE-915D-4F9F-929A-AC84407BFB97} = {EDA2FBE2-513F-487E-8150-4CE502BCFC30}
 		{5370167E-2794-44C8-A21D-E7832806E566} = {0C9A8AEE-915D-4F9F-929A-AC84407BFB97}
 		{46AD8305-BF67-45F5-9AD8-26F280D42B6B} = {B57FD1D3-5D31-4838-9AD9-2C352325274B}
-		{D13AEB55-1DB5-4605-B7DB-B8B7F0A338DA} = {46AD8305-BF67-45F5-9AD8-26F280D42B6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {5FD92185-6CAB-43F2-9FC1-04703B8D0E8C}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal
