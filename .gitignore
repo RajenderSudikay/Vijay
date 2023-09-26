@@ -42,7 +42,6 @@ _ReSharper.*
 */obj/*
 */packages/*
 
-*.config
 *.sitecore
 */.vs/*/*/.suo
 

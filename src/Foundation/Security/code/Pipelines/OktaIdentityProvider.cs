@@ -52,7 +52,7 @@ namespace MedProSC.Foundation.Security.Pipelines
                 ClientSecret = ClientSecret,
                 Authority = Authority,
                 RedirectUri = OAuthRedirectUri,
-                ResponseType = OpenIdConnectResponseType.CodeToken,
+                ResponseType = OpenIdConnectResponseType.CodeIdToken,
                 Scope = OpenIdScope,
                 AuthenticationType = IdentityProvider.Name,
                 TokenValidationParameters = new TokenValidationParameters
@@ -71,7 +71,7 @@ namespace MedProSC.Foundation.Security.Pipelines
                             notification.HandleResponse();
 
                             // This exception should no longer be valid if we use inject KentorOwinCookieSaver middleware before OpenIdConnectAuthentication. However, we keep this code to safeguard against future.
-                            if (notification.Exception.Message.Contains(OktaDefaults.RequireNonceDeaultValue))
+                            if (notification.Exception.Message.Contains("IDX21323"))
                             {
                                 notification.HandleResponse();
                                 /* This line of code is the key to solve error 
@@ -114,7 +114,6 @@ namespace MedProSC.Foundation.Security.Pipelines
             notification.AuthenticationTicket.Identity.ApplyClaimsTransformations(new TransformationContext(this.FederatedAuthenticationConfiguration, IdentityProvider));
             return Task.CompletedTask;
         }
-
 
     }
 }
