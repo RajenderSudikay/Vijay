@@ -57,7 +57,9 @@ namespace MedProSC.Foundation.Security.Pipelines
                 AuthenticationType = IdentityProvider.Name,
                 TokenValidationParameters = new TokenValidationParameters
                 {
-                    NameClaimType = OktaDefaults.ClaimType
+                    ValidateIssuer = true,
+                    ValidIssuer = Authority,
+                    NameClaimType = "email"
                 },
 
                 Notifications = new OpenIdConnectAuthenticationNotifications
