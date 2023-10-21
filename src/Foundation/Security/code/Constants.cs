@@ -10,7 +10,7 @@
             public static readonly string AccessDeniedRelativePath = "/access-denied";
             public static readonly string ClaimType = "name";
             public static readonly string RequireNonceDeaultValue = "IDX21323";
+            public const string Database = "web";            
         }
-
     }
 }

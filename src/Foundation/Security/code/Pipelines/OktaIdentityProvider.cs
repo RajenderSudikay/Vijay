@@ -1,4 +1,5 @@
-﻿using IdentityModel.Client;
+﻿using MedProSC.Foundation.Security.Helpers;
+using MedProSC.Foundation.Security.Services;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Owin.Infrastructure;
@@ -11,14 +12,11 @@ using Sitecore.Owin.Authentication.Configuration;
 using Sitecore.Owin.Authentication.Extensions;
 using Sitecore.Owin.Authentication.Pipelines.IdentityProviders;
 using Sitecore.Owin.Authentication.Services;
-using Sitecore.Pipelines;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace MedProSC.Foundation.Security.Pipelines
 {
     using static MedProSC.Foundation.Security.Constants;
-    using static MedProSC.Foundation.Security.Constants.OktaDefaults;
 
     public class OktaIdentityProvider : IdentityProvidersProcessor
     {
@@ -27,7 +25,6 @@ namespace MedProSC.Foundation.Security.Pipelines
         // OAuth provider setting
         public string ClientId { get; set; }
         public string ClientSecret { get; set; }
-
         public string Authority { get; set; }
         public string OAuthRedirectUri { get; set; }
 
@@ -35,16 +32,25 @@ namespace MedProSC.Foundation.Security.Pipelines
         private readonly string idToken = OktaDefaults.IdToken;
         private readonly string accessDeniedRelativePath = OktaDefaults.AccessDeniedRelativePath;
 
+        private readonly IOktaSettingService _oktaSettingService;
+
         protected IdentityProvider IdentityProvider { get; set; }
 
-        public OktaIdentityProvider(FederatedAuthenticationConfiguration federatedAuthenticationConfiguration, ICookieManager cookieManager, BaseSettings settings)
+        public OktaIdentityProvider(FederatedAuthenticationConfiguration federatedAuthenticationConfiguration, ICookieManager cookieManager, BaseSettings settings, IOktaSettingService oktaSettingService)
             : base(federatedAuthenticationConfiguration, cookieManager, settings)
-        { }
+        {
+            _oktaSettingService = oktaSettingService;
+        }
 
         protected override void ProcessCore(IdentityProvidersArgs args)
         {
             Assert.ArgumentNotNull(args, "args");
             IdentityProvider = this.GetIdentityProvider();
+
+            var oktaSettingsModel = OktaHelpers.GetOktaSettingsModel();
+
+            if (oktaSettingsModel == null)
+                return;
 
             var options = new OpenIdConnectAuthenticationOptions
             {
