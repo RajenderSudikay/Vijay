@@ -314,6 +314,10 @@
   <ItemGroup>
     <Content Include="App_Config\Include\Foundation\MedProSC.Foundation.Security.config" />
     <Content Include="App_Config\Include\zzz.MedPro.Okta\MedProSC.Okta.Security.config" />
+    <Content Include="App_Config\Include\zzz.MedPro.Okta\zzzMedProSC.Okta.DEV.Security.config" />
+    <Content Include="App_Config\Include\zzz.MedPro.Okta\zzzMedProSC.Okta.QA.Security.config" />
+    <Content Include="App_Config\Include\zzz.MedPro.Okta\zzzMedProSC.Okta.UAT.Security.config" />
+    <Content Include="App_Config\Include\zzz.MedPro.Okta\zzzMedProSC.Okta.PROD.Security.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
