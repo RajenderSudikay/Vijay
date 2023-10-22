@@ -26,8 +26,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManualForms", "ManualForms", "{DCCD795D-2279-400C-8A66-8E6723A5C5C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedProSC.Feature.ManualForms", "src\Feature\ManualForms\code\MedProSC.Feature.ManualForms.csproj", "{55FC7921-40E4-4C75-9557-6BB5203C28B9}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnlinePayment", "OnlinePayment", "{0C9A8AEE-915D-4F9F-929A-AC84407BFB97}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedProsSC.Feature.OnlinePayment", "src\Feature\OnlinePayment\code\MedProsSC.Feature.OnlinePayment.csproj", "{5370167E-2794-44C8-A21D-E7832806E566}"
@@ -50,10 +48,6 @@ Global
 		{1D478963-3BA6-4BE7-8C92-8E6E1E79453C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D478963-3BA6-4BE7-8C92-8E6E1E79453C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D478963-3BA6-4BE7-8C92-8E6E1E79453C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55FC7921-40E4-4C75-9557-6BB5203C28B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55FC7921-40E4-4C75-9557-6BB5203C28B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55FC7921-40E4-4C75-9557-6BB5203C28B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55FC7921-40E4-4C75-9557-6BB5203C28B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5370167E-2794-44C8-A21D-E7832806E566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5370167E-2794-44C8-A21D-E7832806E566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5370167E-2794-44C8-A21D-E7832806E566}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -72,14 +66,13 @@ Global
 		{A9157F8E-30E7-4B1B-AD7D-366D3CDF2869} = {B23BDED4-422F-4CE7-814A-1867EF4CB47B}
 		{1D478963-3BA6-4BE7-8C92-8E6E1E79453C} = {3BEA3820-78B2-43F6-9714-2F6A53CB7C5E}
 		{DCCD795D-2279-400C-8A66-8E6723A5C5C9} = {EDA2FBE2-513F-487E-8150-4CE502BCFC30}
-		{55FC7921-40E4-4C75-9557-6BB5203C28B9} = {DCCD795D-2279-400C-8A66-8E6723A5C5C9}
 		{0C9A8AEE-915D-4F9F-929A-AC84407BFB97} = {EDA2FBE2-513F-487E-8150-4CE502BCFC30}
 		{5370167E-2794-44C8-A21D-E7832806E566} = {0C9A8AEE-915D-4F9F-929A-AC84407BFB97}
 		{46AD8305-BF67-45F5-9AD8-26F280D42B6B} = {B57FD1D3-5D31-4838-9AD9-2C352325274B}
 		{9D1E5558-FC94-4592-A95B-39D3099F2458} = {46AD8305-BF67-45F5-9AD8-26F280D42B6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5FD92185-6CAB-43F2-9FC1-04703B8D0E8C}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {5FD92185-6CAB-43F2-9FC1-04703B8D0E8C}
 	EndGlobalSection
 EndGlobal
