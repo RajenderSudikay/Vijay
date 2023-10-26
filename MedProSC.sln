@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedProSC.Foundation.Sitecor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedProSC.Project.Website", "src\Project\website\code\MedProSC.Project.Website.csproj", "{8A5E1275-F07F-4E89-91AE-0567804D297B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedProSC.Foundation.Security", "src\Foundation\Security\code\MedProSC.Foundation.Security.csproj", "{AB9A199E-AC72-47A3-B840-7BE188FDE354}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{8A5E1275-F07F-4E89-91AE-0567804D297B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A5E1275-F07F-4E89-91AE-0567804D297B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A5E1275-F07F-4E89-91AE-0567804D297B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB9A199E-AC72-47A3-B840-7BE188FDE354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9A199E-AC72-47A3-B840-7BE188FDE354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9A199E-AC72-47A3-B840-7BE188FDE354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9A199E-AC72-47A3-B840-7BE188FDE354}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{1EBCA78D-62FC-4CEA-B200-8DDEB9C4A671} = {0C9A8AEE-915D-4F9F-929A-AC84407BFB97}
 		{9D42079E-5A17-4D19-A094-54E24997EFF4} = {3BEA3820-78B2-43F6-9714-2F6A53CB7C5E}
 		{8A5E1275-F07F-4E89-91AE-0567804D297B} = {B23BDED4-422F-4CE7-814A-1867EF4CB47B}
+		{AB9A199E-AC72-47A3-B840-7BE188FDE354} = {46AD8305-BF67-45F5-9AD8-26F280D42B6B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5FD92185-6CAB-43F2-9FC1-04703B8D0E8C}

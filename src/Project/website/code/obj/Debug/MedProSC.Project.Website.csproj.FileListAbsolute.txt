@@ -1,6 +1,3 @@
-C:\vijay\medpro\src\Project\website\code\bin\code.dll.config
-C:\vijay\medpro\src\Project\website\code\bin\code.dll
-C:\vijay\medpro\src\Project\website\code\bin\code.pdb
 C:\vijay\medpro\src\Project\website\code\bin\roslyn\csc.exe
 C:\vijay\medpro\src\Project\website\code\bin\roslyn\csc.exe.config
 C:\vijay\medpro\src\Project\website\code\bin\roslyn\csc.rsp
@@ -75,8 +72,6 @@ C:\vijay\medpro\src\Project\website\code\bin\Microsoft.CodeDom.Providers.DotNetC
 C:\vijay\medpro\src\Project\website\code\obj\Debug\MedProSC.Project.Website.csproj.AssemblyReference.cache
 C:\vijay\medpro\src\Project\website\code\obj\Debug\MedProSC.Project.Website.csproj.CoreCompileInputs.cache
 C:\vijay\medpro\src\Project\website\code\obj\Debug\MedProSC.Project.Website.csproj.CopyComplete
-C:\vijay\medpro\src\Project\website\code\obj\Debug\code.dll
-C:\vijay\medpro\src\Project\website\code\obj\Debug\code.pdb
 C:\vijay\medpro\src\Project\website\code\bin\protobuf-net.dll
 C:\vijay\medpro\src\Project\website\code\bin\Sitecore.Data.ResourceItems.Abstractions.dll
 C:\vijay\medpro\src\Project\website\code\bin\Sitecore.Data.ResourceItems.ProtobufNet.dll
@@ -107,3 +102,8 @@ C:\vijay\medpro\src\Project\website\code\bin\Sitecore.Kernel.Portable.xml
 C:\vijay\medpro\src\Project\website\code\bin\Sitecore.Logging.xml
 C:\vijay\medpro\src\Project\website\code\bin\Sitecore.Logging.Client.xml
 C:\vijay\medpro\src\Project\website\code\bin\Sitecore.Web.xml
+C:\vijay\medpro\src\Project\website\code\bin\MedProSC.Project.Website.dll.config
+C:\vijay\medpro\src\Project\website\code\bin\MedProSC.Project.Website.dll
+C:\vijay\medpro\src\Project\website\code\bin\MedProSC.Project.Website.pdb
+C:\vijay\medpro\src\Project\website\code\obj\Debug\MedProSC.Project.Website.dll
+C:\vijay\medpro\src\Project\website\code\obj\Debug\MedProSC.Project.Website.pdb
