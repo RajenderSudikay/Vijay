@@ -52,8 +52,6 @@ C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\roslyn\VBCSCompiler.ex
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\roslyn\VBCSCompiler.exe.config
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Antlr3.Runtime.dll
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Microsoft.Web.Infrastructure.dll
-C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Newtonsoft.Json.dll
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\protobuf-net.dll
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Sitecore.Data.ResourceItems.Abstractions.dll
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Sitecore.Data.ResourceItems.ProtobufNet.dll
@@ -73,8 +71,6 @@ C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Security.Crypto
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Security.Permissions.dll
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Security.Principal.Windows.dll
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.Helpers.dll
-C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.Mvc.dll
-C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.Optimization.dll
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.Razor.dll
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.WebPages.Deployment.dll
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.WebPages.dll
@@ -93,13 +89,10 @@ C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Sitecore.Logging.xml
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Sitecore.Logging.Client.xml
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Sitecore.Web.xml
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.Helpers.xml
-C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.Mvc.xml
-C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.Optimization.xml
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.Razor.xml
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.WebPages.xml
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.WebPages.Deployment.xml
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\System.Web.WebPages.Razor.xml
-C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Newtonsoft.Json.xml
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Antlr3.Runtime.pdb
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\vijay\medpro\src\Foundation\SitecoreExtension\code\obj\Debug\MedProSC.Foundation.SitecoreExtension.csproj.AssemblyReference.cache
