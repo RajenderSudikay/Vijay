@@ -1,0 +1,62 @@
+﻿---
+ID: "2f4fed0e-9c1e-49d4-8ea6-166858ed43d9"
+Parent: "ce4235f7-ca68-4f2a-95e6-a2087b625af8"
+Template: "2df7734a-a4ee-47a9-acc0-346457a7acb1"
+Path: /sitecore/content/MedPro/ManualForms/Data/Manual Forms/MyBundle
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/document_down.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0b81790b-fa07-49e8-84b2-3a8c63f13d2d"
+      Hint: PolocyNumber
+      Value: Policy Number
+    - ID: "1448eed6-fdc2-43ff-9bbe-7966f40c830e"
+      Hint: TransactionType
+      Value: Transaction Type
+    - ID: "1db7a97e-491c-4082-9702-69bd067cbda9"
+      Hint: FormName
+      Value: Form Name
+    - ID: "1f889de2-db08-4611-9e5a-d5965ec495c7"
+      Hint: MyBundleTitle
+      Value: My Bundle
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230808T073623Z
+    - ID: "29d0b6ab-0832-42ef-bc9a-2a23931c3910"
+      Hint: FirstNamedInsured
+      Value: First Named Insured
+    - ID: "2ac60602-1aec-4fee-8986-a6f1da24cb6f"
+      Hint: CreateBundle
+      Value: Create Bundle
+    - ID: "39d3f758-49db-483a-ac25-f8a39aa4d46f"
+      Hint: Description
+      Value: Description
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "823e342b-3e20-46ff-8f9e-7921d53b2930"
+      Hint: FormNumber
+      Value: Form Number
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "551dc3d9-1ac1-4877-9dd3-9f4f28493ccf"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230827T094012Z

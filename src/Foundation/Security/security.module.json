@@ -1,0 +1,13 @@
+{
+  "namespace": "MedProSC.Foundation.Security",
+  "items": {
+    "includes": [
+      {     
+        "name": "OKTA Templates",
+        "path": "/sitecore/templates/Foundation/MedPro",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      }
+    ]
+  }
+}

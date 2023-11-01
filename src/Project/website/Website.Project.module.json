@@ -1,0 +1,15 @@
+{
+  "namespace": "MedProSC.Project.Website",
+  "items": {
+    "includes": [
+     
+      {
+        "name": "Project Templates",
+        "path": "/sitecore/templates/Project/MedPro",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+
+      }
+    ]
+  }
+}

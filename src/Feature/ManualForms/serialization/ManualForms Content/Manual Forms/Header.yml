@@ -1,0 +1,47 @@
+﻿---
+ID: "5e737ae6-5a4e-489f-a589-f39fe07b6741"
+Parent: "ce4235f7-ca68-4f2a-95e6-a2087b625af8"
+Template: "56716662-0509-45aa-91a4-c1352aba90b8"
+Path: /sitecore/content/MedPro/ManualForms/Data/Manual Forms/Header
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: People/32x32/dude2.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "108cddab-5261-42ba-a76a-6e9a20e40143"
+      Hint: HeaderTitle
+      Value: Manual Forms Portal
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230718T044011Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e423f85f-b481-478e-8733-a95c3caf7fab"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230810T175524Z
+    - ID: "e4289044-fb46-4472-877b-6e001e579b17"
+      Hint: FormBuilderTitle
+      Value: Form Builder
+    - ID: "f7f28687-c70c-41b5-9aa5-81b9edfbb856"
+      Hint: BundleHistoryTitle
+      Value: Bundle History

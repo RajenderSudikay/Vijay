@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MedProsSC.Feature.OnlinePayment")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Medpro Group")]
 [assembly: AssemblyProduct("MedProsSC.Feature.OnlinePayment")]
-[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyCopyright("Copyright © Medpro Group 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8de1214b-0515-4cac-85c6-4238e6a4301a")]
+[assembly: Guid("26b6a796-0881-4a8c-b633-5a471fc70076")]
 
 // Version information for an assembly consists of the following four values:
 //

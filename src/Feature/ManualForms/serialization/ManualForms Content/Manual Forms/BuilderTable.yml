@@ -1,0 +1,71 @@
+﻿---
+ID: "605c0ff3-754a-4a39-bfa4-926d77a4784f"
+Parent: "ce4235f7-ca68-4f2a-95e6-a2087b625af8"
+Template: "aab24a43-f77e-4fa2-8156-747a8a8ac206"
+Path: /sitecore/content/MedPro/ManualForms/Data/Manual Forms/BuilderTable
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/document_out.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "073f88eb-c821-4f22-b74a-65e3be9ae332"
+      Hint: FormNumber
+      Value: Form Number
+    - ID: "105ce772-4421-4b22-9a53-6fcd6503b44e"
+      Hint: PageNumers
+      Value: |
+        {1D9D1AD9-AC13-41E7-9206-8083F0EB825C}
+        {A7E7B2F2-DEC6-4C8A-B57D-080370D4359A}
+        {0526AFE4-55A9-438D-8572-70377139CE1D}
+        {E7A4D022-3C9A-4037-B6E4-220B2BADD03B}
+        {0EA34693-1EF7-4515-9BC4-B8F15567F1C3}
+    - ID: "1b34ab7c-cd18-4a95-907a-56e21e897936"
+      Hint: ClaimsMade
+      Value: Claims  Made
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230727T115512Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dc8112a-f8ab-4529-adbe-346d6f47c5d8"
+      Hint: ExpirationDate
+      Value: Expiration  Date
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "810f559b-b04c-42cc-b2a8-7befe6cf78bd"
+      Hint: ResultsPerPage
+      Value: Results per Page
+    - ID: "844b5b40-efe7-4269-bee6-718635aa6079"
+      Hint: EffectiveDate
+      Value: Effective  Date
+    - ID: "87505491-4b25-4759-ae70-b1dccae606d5"
+      Hint: ShowPageNumber
+      Value: |
+        <span class="pagenum-display">Page&nbsp;</span> <input class="currentpage" type="text" /> <span style="font-size: 13px;">&nbsp;of&nbsp; <span class="TotalPageNo">3</span>&nbsp; </span>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2e1ef12b-e322-4e13-bfee-080f11447090"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230814T163429Z
+    - ID: "e31aee71-a1e7-4d33-b2fc-655d74e74fa4"
+      Hint: FormName
+      Value: Form Name
+    - ID: "fd60eba6-f188-4bc9-8d98-069c606169eb"
+      Hint: Occurences
+      Value: Occurrence

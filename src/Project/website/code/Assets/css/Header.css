@@ -1,9 +1,9 @@
-﻿
-body {
+﻿body {
     font-family: 'Nunito Sans' !important;
     font-size: 13px !important;
     font-weight: 600 !important;
 }
+
 #navbar {
     background-color: #002f6b;
     color: white;
@@ -40,12 +40,14 @@ a {
     color: white !important;
     font-family: 'Nunito Sans' !important;
 }
+
 .header-history {
     font-weight: 400 !important;
     margin-left: 60px !important;
     color: white !important;
     font-family: 'Nunito Sans' !important;
 }
+
 #navbar a.active {
     border-bottom: 3px solid silver;
 }

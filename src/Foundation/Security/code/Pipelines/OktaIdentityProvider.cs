@@ -54,10 +54,10 @@ namespace MedProSC.Foundation.Security.Pipelines
 
             var options = new OpenIdConnectAuthenticationOptions
             {
-                ClientId = ClientId,
-                ClientSecret = ClientSecret,
-                Authority = Authority,
-                RedirectUri = OAuthRedirectUri,
+                ClientId = oktaSettingsModel.ClientId,
+                ClientSecret = oktaSettingsModel.ClientSecret,
+                Authority = oktaSettingsModel.Authority,
+                RedirectUri = oktaSettingsModel.RedirectUri,
                 ResponseType = OpenIdConnectResponseType.CodeIdToken,
                 Scope = OpenIdScope,
                 AuthenticationType = IdentityProvider.Name,

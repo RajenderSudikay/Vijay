@@ -56,6 +56,7 @@ namespace MedProSC.Feature.ManualForms
 
             }
         }
+
         public struct MyBundleTemplate
         {
             public static readonly ID TemplateID = new ID("{2DF7734A-A4EE-47A9-ACC0-346457A7ACB1}");
@@ -73,10 +74,5 @@ namespace MedProSC.Feature.ManualForms
 
             }
         }
-
-
     }
-
-
-
 }

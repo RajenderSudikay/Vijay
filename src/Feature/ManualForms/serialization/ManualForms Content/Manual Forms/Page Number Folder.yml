@@ -1,0 +1,27 @@
+﻿---
+ID: "a0eb2dbb-d4b0-4ec0-9905-28a44fb29013"
+Parent: "ce4235f7-ca68-4f2a-95e6-a2087b625af8"
+Template: "d5857511-d7bd-44f5-9417-ec5d70fe6115"
+Path: /sitecore/content/MedPro/ManualForms/Data/Manual Forms/Page Number Folder
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230810T171822Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d31f5c12-b400-42ba-a486-abd10338d515"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230811T064602Z

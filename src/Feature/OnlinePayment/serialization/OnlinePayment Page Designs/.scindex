@@ -1,0 +1,28 @@
+﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
+---
+File: |
+  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Page Designs\Page Designs.yml
+ID: "6322c948-5b3a-4dbc-88ba-bcd5a0f1feb9"
+Parent: "c3ad646e-0d89-439b-9985-ae6c182588b2"
+Template: "12c3bf76-63d4-4697-909c-41e7a70cb92a"
+Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Page Designs
+Signature: bDmivNE59TdzLOgP8dFMpqtsTsY9xXZy9JH91mILA8M=
+Modified: 638325483304694682
+---
+File: |
+  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Page Designs\Page Designs\Default.yml
+ID: "139e570d-8ab2-4974-a673-b0c164f0ccd9"
+Parent: "6322c948-5b3a-4dbc-88ba-bcd5a0f1feb9"
+Template: "d0b52849-e5d4-4670-a025-500742732fd2"
+Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Page Designs/Default
+Signature: RxP6aOC5AqiUK6I+vUnzGfOKXB38sX2zmTiQLWw0jJU=
+Modified: 638325483304694682
+---
+File: |
+  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Page Designs\Page Designs\Home.yml
+ID: "6cca9c8d-dc1e-4961-a835-4d7bb0816d92"
+Parent: "6322c948-5b3a-4dbc-88ba-bcd5a0f1feb9"
+Template: "d0b52849-e5d4-4670-a025-500742732fd2"
+Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Page Designs/Home
+Signature: GDt6NrEFdZxPqYnQBD6oFEvZIr/ME/Asaf+LNiDoK48=
+Modified: 638325483304694682

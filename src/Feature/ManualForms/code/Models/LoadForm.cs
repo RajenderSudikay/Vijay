@@ -14,6 +14,5 @@ namespace MedProSC.Feature.ManualForms.Models
         public string DateLabel { get; set; }
         public string FormsTypeLabel { get; set; }
         public string LoadFormButtonText { get; set; }
-
     }
 }

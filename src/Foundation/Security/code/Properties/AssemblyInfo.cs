@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MedProSC.Foundation.Security")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Medpro Group")]
 [assembly: AssemblyProduct("MedProSC.Foundation.Security")]
-[assembly: AssemblyCopyright("Copyright ©  2023")]
+[assembly: AssemblyCopyright("Copyright © Medpro Group 2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8c74ce3f-22e5-4958-bf34-8afa0f83816e")]
+[assembly: Guid("6068e003-1062-4449-87c5-aff71c77e193")]
 
 // Version information for an assembly consists of the following four values:
 //

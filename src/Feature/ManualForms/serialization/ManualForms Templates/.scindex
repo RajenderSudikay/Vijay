@@ -1,0 +1,505 @@
+﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro.yml
+ID: "43d5c2d2-986f-4f26-b99e-10d9294491d5"
+Parent: "8f343079-3cc5-4ef7-bc27-32addb46f45e"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Feature/MedPro
+Signature: HmSl9owrvmUu58dMDxbWbmb0CLiGpRh0SZK2EB6PIa0=
+Modified: 638284909593809498
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Header.yml
+ID: "864595bc-c845-4a61-9b27-cbf08e4959e8"
+Parent: "43d5c2d2-986f-4f26-b99e-10d9294491d5"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Feature/MedPro/Header
+Signature: 5dMztuQ4jPfIlo1VzX2aGjeQYB+tB/cn4h1GF+7Ft88=
+Modified: 638284909593829431
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form.yml
+ID: "ae7fe75a-5e86-46f9-9815-bd27e0cb659c"
+Parent: "43d5c2d2-986f-4f26-b99e-10d9294491d5"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Feature/MedPro/Manual Form
+Signature: 5kg/oU+5Jl68i5xHrhkT//n6Xma7kEDu4uXzqtid2Ok=
+Modified: 638284909593839423
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Header\Header.yml
+ID: "56716662-0509-45aa-91a4-c1352aba90b8"
+Parent: "864595bc-c845-4a61-9b27-cbf08e4959e8"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/MedPro/Header/Header
+Signature: +UNt9J6EmIFYMAPA+8YPAEViSG+CTRCDL+RZniwm2HQ=
+Modified: 638284909593859484
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table.yml
+ID: "aab24a43-f77e-4fa2-8156-747a8a8ac206"
+Parent: "ae7fe75a-5e86-46f9-9815-bd27e0cb659c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table
+Signature: Y0da8gEv7LZEy5UTGFZ5j6feMD4tXdcbdkK9GAFWoL0=
+Modified: 638284909593869425
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Load Form.yml
+ID: "8d1d68db-85e5-497e-93ba-74ecb94f5555"
+Parent: "ae7fe75a-5e86-46f9-9815-bd27e0cb659c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Load Form
+Signature: tkNWuQEeBvNmcAz386j8vUTmOom1h8OY+NY68h8UjRE=
+Modified: 638284909593889485
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\ManualFormsFolder.yml
+ID: "85bdfea5-8e65-43d6-9772-7f4e937670df"
+Parent: "ae7fe75a-5e86-46f9-9815-bd27e0cb659c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/ManualFormsFolder
+Signature: n0XH8xfG/l5xekypvjM33dXhvakhtiiUaEwGEkGCfKc=
+Modified: 638284909593899484
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle.yml
+ID: "2df7734a-a4ee-47a9-acc0-346457a7acb1"
+Parent: "ae7fe75a-5e86-46f9-9815-bd27e0cb659c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle
+Signature: Lqh1mMmiqPr/Enin2WI/TH7HDGjTVX11dWKm+S1G9rA=
+Modified: 638284909593909651
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\PageNumber.yml
+ID: "2836e7d4-3dc4-4934-9972-273314f397da"
+Parent: "ae7fe75a-5e86-46f9-9815-bd27e0cb659c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/PageNumber
+Signature: qOZDHMfLLOi+fdUJFQ9w0cOI4FphP2PlbKKHtqs6CDY=
+Modified: 638284909593919518
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\PageNumberFolder.yml
+ID: "d5857511-d7bd-44f5-9417-ec5d70fe6115"
+Parent: "ae7fe75a-5e86-46f9-9815-bd27e0cb659c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/PageNumberFolder
+Signature: pYSacFm2l/tYz5dlyMRIapWirExrS/VuqJhpdyXEFgk=
+Modified: 638284909593939478
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Search Filter.yml
+ID: "efdcec51-1a09-4ab1-884d-940cf93014d7"
+Parent: "ae7fe75a-5e86-46f9-9815-bd27e0cb659c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Search Filter
+Signature: QDwQZNJWaBqxb6RFRdd627gPpm50Dpa2BboUSOe4iFI=
+Modified: 638284909593949547
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Header\Header\Details.yml
+ID: "66a3a29d-a1ab-414f-86c4-883b6fee89f2"
+Parent: "56716662-0509-45aa-91a4-c1352aba90b8"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/MedPro/Header/Header/Details
+Signature: 68XIUYHUYADeR+pGGq8poCa505cBbNN+/p06qTY/nec=
+Modified: 638284909593959544
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details.yml
+ID: "661d1912-36af-4c44-ad40-6bc19b564152"
+Parent: "aab24a43-f77e-4fa2-8156-747a8a8ac206"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details
+Signature: n2cDclK5gaRhB/R1im9vr3JIgIOSZvw/xGqBd4KrFog=
+Modified: 638284909593979551
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\__Standard Values.yml
+ID: "60ca153a-0226-4ce7-aeff-2bd98d138521"
+Parent: "aab24a43-f77e-4fa2-8156-747a8a8ac206"
+Template: "aab24a43-f77e-4fa2-8156-747a8a8ac206"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/__Standard Values
+Signature: mYnkB6rLe4IhPTzctnKKckgb3L2gsaSb97NAGlxZjbQ=
+Modified: 638284909594429552
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Load Form\Details.yml
+ID: "48a61f0a-a659-4457-bea6-203ab03011b4"
+Parent: "8d1d68db-85e5-497e-93ba-74ecb94f5555"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Load Form/Details
+Signature: prJdKQdSRsBNE1EoDELVfMc4fbadXEYU8mD2Gpfb88w=
+Modified: 638284909593989542
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Load Form\__Standard Values.yml
+ID: "782531e6-ab91-4426-b500-77c374bb1f52"
+Parent: "8d1d68db-85e5-497e-93ba-74ecb94f5555"
+Template: "8d1d68db-85e5-497e-93ba-74ecb94f5555"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Load Form/__Standard Values
+Signature: +tyv9yUkNQxHJlMM7ux2Sw7zBSxtTa+yjTmVBmu0m04=
+Modified: 638284909594439548
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\ManualFormsFolder\__Standard Values.yml
+ID: "0fad5436-93dc-48f4-8d4e-92a4bf31234a"
+Parent: "85bdfea5-8e65-43d6-9772-7f4e937670df"
+Template: "85bdfea5-8e65-43d6-9772-7f4e937670df"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/ManualFormsFolder/__Standard Values
+Signature: UoBcBNNVlmg7WB2YCtRFA8zIIEFzsaDoy0ERjfladDc=
+Modified: 638284909594459533
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\My Bundle Details.yml
+ID: "eabf6a6c-47a5-4c19-8304-4c097f7dd81c"
+Parent: "2df7734a-a4ee-47a9-acc0-346457a7acb1"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/My Bundle Details
+Signature: MixOKjmiyrG7IIS95O2HxfGgkX/tTxujbQV53uHrqY0=
+Modified: 638284909593999487
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\__Standard Values.yml
+ID: "a88473c6-72a3-4252-bd2c-03ac1a5a69d1"
+Parent: "2df7734a-a4ee-47a9-acc0-346457a7acb1"
+Template: "2df7734a-a4ee-47a9-acc0-346457a7acb1"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/__Standard Values
+Signature: seLRatjkNrv1W0w3PippHmFTnXYZCDOeNqsUgKU0Hak=
+Modified: 638284909594469811
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\PageNumber\__Standard Values.yml
+ID: "1baf6e56-087e-4187-9990-c86578417628"
+Parent: "2836e7d4-3dc4-4934-9972-273314f397da"
+Template: "2836e7d4-3dc4-4934-9972-273314f397da"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/PageNumber/__Standard Values
+Signature: FpHTBweDUHsZomKUyhfVjQnxQ7ogukUgZ/gTfY8gMNs=
+Modified: 638284909594479546
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\PageNumberFolder\__Standard Values.yml
+ID: "e871b8b9-99c3-4b54-8f0f-54dc8adcfe91"
+Parent: "d5857511-d7bd-44f5-9417-ec5d70fe6115"
+Template: "d5857511-d7bd-44f5-9417-ec5d70fe6115"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/PageNumberFolder/__Standard Values
+Signature: lq6ubmYHcU1MrTZoEWhMyfQv3y+XM60FP9S3maZMW+M=
+Modified: 638284909594499549
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Search Filter\SearchDetails.yml
+ID: "deadcd73-fd4b-4c28-9da8-6b51beceed91"
+Parent: "efdcec51-1a09-4ab1-884d-940cf93014d7"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Search Filter/SearchDetails
+Signature: aLWAzeL8irZDFEGYekmRh7dVR8ZYFRBVWdo77d2T8F8=
+Modified: 638284909594019733
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Search Filter\__Standard Values.yml
+ID: "ca4131bd-1f34-41eb-80e6-8d656f8291a5"
+Parent: "efdcec51-1a09-4ab1-884d-940cf93014d7"
+Template: "efdcec51-1a09-4ab1-884d-940cf93014d7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Search Filter/__Standard Values
+Signature: pRPUwFTvfbfa2lHJ9hKnpBD5Si7FTMULzPyc8AhX5hI=
+Modified: 638284909594509546
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Header\Header\Details\BundleHistoryTitle.yml
+ID: "f7f28687-c70c-41b5-9aa5-81b9edfbb856"
+Parent: "66a3a29d-a1ab-414f-86c4-883b6fee89f2"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Header/Header/Details/BundleHistoryTitle
+Signature: kM7ds8ilZAkKSqG5pJHHdAUjMwmzL7YkXL+OArFnWlo=
+Modified: 638284909594059676
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Header\Header\Details\FormBuilderTitle.yml
+ID: "e4289044-fb46-4472-877b-6e001e579b17"
+Parent: "66a3a29d-a1ab-414f-86c4-883b6fee89f2"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Header/Header/Details/FormBuilderTitle
+Signature: R70vFmrbKT+032qrCET8dA8nYp2gK3MRal9JejywyZ4=
+Modified: 638284909594039524
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Header\Header\Details\HeaderTitle.yml
+ID: "108cddab-5261-42ba-a76a-6e9a20e40143"
+Parent: "66a3a29d-a1ab-414f-86c4-883b6fee89f2"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Header/Header/Details/HeaderTitle
+Signature: 9oTBtgUdSgrNc5vVgiMynU3zgE+P1NkQ8hDUwc9J78s=
+Modified: 638284909594029639
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\Action.yml
+ID: "6067cc83-3171-4570-aa9a-99c315526587"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/Action
+Signature: VtkVY2+ymiHMUMOil9oSawsD8NPWTrSG09F99Rbuzbs=
+Modified: 638284909594139770
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\ClaimsMade.yml
+ID: "1b34ab7c-cd18-4a95-907a-56e21e897936"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/ClaimsMade
+Signature: ELpRHl/MmypD3OsM7bKNo0SOeEYyrNA7fbuVYKpVZlM=
+Modified: 638284909594109777
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\EffectiveDate.yml
+ID: "844b5b40-efe7-4269-bee6-718635aa6079"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/EffectiveDate
+Signature: +Nthdunbg0N0jUwIG63kFLOdm/Euqq4OZCqJtKpv5Oc=
+Modified: 638284909594119751
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\ExpirationDate.yml
+ID: "5dc8112a-f8ab-4529-adbe-346d6f47c5d8"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/ExpirationDate
+Signature: H3/1TEetYPLmV3C+ml5R0o1uuklVeUunZ/bPFzgF1uU=
+Modified: 638284909594129753
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\FormName.yml
+ID: "e31aee71-a1e7-4d33-b2fc-655d74e74fa4"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/FormName
+Signature: EUsrcKQq3L2fyxWmYoKr+CX0vDj6i2898Kf021XU8bE=
+Modified: 638284909594080397
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\FormNumber.yml
+ID: "073f88eb-c821-4f22-b74a-65e3be9ae332"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/FormNumber
+Signature: LP3AeZHeeM+d4L18W7OVHU8s2SoD+4sxjk5x29oR0ro=
+Modified: 638284909594069612
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\Occurences.yml
+ID: "fd60eba6-f188-4bc9-8d98-069c606169eb"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/Occurences
+Signature: wi8iZkQeTy8wBYj54Q2Wg1Pew8qqVqlSgPTuS64RYj4=
+Modified: 638284909594089607
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\PageNumers.yml
+ID: "105ce772-4421-4b22-9a53-6fcd6503b44e"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/PageNumers
+Signature: l25bHTlvlSZ5DBYPDzBvzvoyvjrAg4pzRQMY0QuWXpY=
+Modified: 638284909594149627
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\ResultsPerPage.yml
+ID: "810f559b-b04c-42cc-b2a8-7befe6cf78bd"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/ResultsPerPage
+Signature: LdgE/f2LvWJWq/a9ecPzKdDycXZ6w3YcK+YEfICYkI4=
+Modified: 638284909594159537
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Builder Table\Table Details\ShowPageNumber.yml
+ID: "87505491-4b25-4759-ae70-b1dccae606d5"
+Parent: "661d1912-36af-4c44-ad40-6bc19b564152"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Builder Table/Table Details/ShowPageNumber
+Signature: +gjq/iNEVZk/0YX+57vBdPdGLfUqnL+1X2dclA71mg4=
+Modified: 638284909594180106
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Load Form\Details\DateLabel.yml
+ID: "d012cc77-7129-4d5d-add3-f2fe5a2b0a00"
+Parent: "48a61f0a-a659-4457-bea6-203ab03011b4"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Load Form/Details/DateLabel
+Signature: NGNCobtf1j0E+bfLga7fjl/zKRl/rnLBAsRl0za6hA4=
+Modified: 638284909594229702
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Load Form\Details\FormsTypeLabel.yml
+ID: "a32d9926-96c7-40ee-ba42-b5d5ba7da7fe"
+Parent: "48a61f0a-a659-4457-bea6-203ab03011b4"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Load Form/Details/FormsTypeLabel
+Signature: q+xKwvGFWoWPCzaL8PUVF02HKER2cUyOBGD9boAAbgQ=
+Modified: 638284909594239689
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Load Form\Details\IssueLabel.yml
+ID: "0abda229-b173-4d73-8efd-4b6a3b3aa951"
+Parent: "48a61f0a-a659-4457-bea6-203ab03011b4"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Load Form/Details/IssueLabel
+Signature: vF1QtXpXh2YMWq89bEByWc9HLL8oQXEpO3S4qxGBsr8=
+Modified: 638284909594199676
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Load Form\Details\LoadFormButtonText.yml
+ID: "dddca1c0-a81e-47ca-8881-86e9b8708903"
+Parent: "48a61f0a-a659-4457-bea6-203ab03011b4"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Load Form/Details/LoadFormButtonText
+Signature: O06YRE5idpA8aNdrFp5Mw1UcilD/mLK4S4O4vxxLDYM=
+Modified: 638284909594249541
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Load Form\Details\LoadFormTitle.yml
+ID: "bb7d9816-f8be-4534-ab5d-4560be78e222"
+Parent: "48a61f0a-a659-4457-bea6-203ab03011b4"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Load Form/Details/LoadFormTitle
+Signature: 4Hv9IZlkTu99+wsKAks5nS1AiSOW6cS7fx3hi9O+RxY=
+Modified: 638284909594190347
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Load Form\Details\StateLabel.yml
+ID: "91060d05-f448-49fd-bf41-827465f5b758"
+Parent: "48a61f0a-a659-4457-bea6-203ab03011b4"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Load Form/Details/StateLabel
+Signature: dRJSc4vhdSrA13c3+M7o01FnOXBFXDDW7zMJYnPIsgI=
+Modified: 638284909594209595
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\My Bundle Details\CreateBundle.yml
+ID: "2ac60602-1aec-4fee-8986-a6f1da24cb6f"
+Parent: "eabf6a6c-47a5-4c19-8304-4c097f7dd81c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/My Bundle Details/CreateBundle
+Signature: V0abPqYyvT1DM0d4qof7ssHlV9iC5UMZvR8NvxsO/2A=
+Modified: 638284909594319475
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\My Bundle Details\Description.yml
+ID: "39d3f758-49db-483a-ac25-f8a39aa4d46f"
+Parent: "eabf6a6c-47a5-4c19-8304-4c097f7dd81c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/My Bundle Details/Description
+Signature: xkpY2OaY7fTq5J104eQLbn8PgHvn9p6wsZZ/8zUCgLI=
+Modified: 638284909594329448
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\My Bundle Details\FirstNamedInsured.yml
+ID: "29d0b6ab-0832-42ef-bc9a-2a23931c3910"
+Parent: "eabf6a6c-47a5-4c19-8304-4c097f7dd81c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/My Bundle Details/FirstNamedInsured
+Signature: O0Kttmj+nB3NUvg0tsOhgWAXSI8VASAZNx36Nlia+Q0=
+Modified: 638284909594349568
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\My Bundle Details\FormName.yml
+ID: "1db7a97e-491c-4082-9702-69bd067cbda9"
+Parent: "eabf6a6c-47a5-4c19-8304-4c097f7dd81c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/My Bundle Details/FormName
+Signature: JIHktfyNN10ynlLZK2IAiXn2Puft0GkAYsYvxoq64Vk=
+Modified: 638284909594289557
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\My Bundle Details\FormNumber.yml
+ID: "823e342b-3e20-46ff-8f9e-7921d53b2930"
+Parent: "eabf6a6c-47a5-4c19-8304-4c097f7dd81c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/My Bundle Details/FormNumber
+Signature: vdoT8qzfYW4AP93ta+7mRQMeYF9sOkY9p8LFvY697qI=
+Modified: 638284909594279553
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\My Bundle Details\MyBundleTitle.yml
+ID: "1f889de2-db08-4611-9e5a-d5965ec495c7"
+Parent: "eabf6a6c-47a5-4c19-8304-4c097f7dd81c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/My Bundle Details/MyBundleTitle
+Signature: j3XPmIxggYOuC+MBd/ypmcocFLvOlOO3jHdslLZL7QE=
+Modified: 638284909594259460
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\My Bundle Details\PolocyNumber.yml
+ID: "0b81790b-fa07-49e8-84b2-3a8c63f13d2d"
+Parent: "eabf6a6c-47a5-4c19-8304-4c097f7dd81c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/My Bundle Details/PolocyNumber
+Signature: pUa72QBH02zWuq9TLz6WskVP9ThZ9vSdzcu3bDNckYo=
+Modified: 638284909594299548
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\My Bundle\My Bundle Details\TransactionType.yml
+ID: "1448eed6-fdc2-43ff-9bbe-7966f40c830e"
+Parent: "eabf6a6c-47a5-4c19-8304-4c097f7dd81c"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/My Bundle/My Bundle Details/TransactionType
+Signature: BY69iC9zq+1OQk/4tZPU9eHtm3uLSgbmVEwwu1kP0vg=
+Modified: 638284909594309552
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Search Filter\SearchDetails\ClearFilterButton.yml
+ID: "493fc9d4-8302-4129-8d7e-e4524cf01cfa"
+Parent: "deadcd73-fd4b-4c28-9da8-6b51beceed91"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Search Filter/SearchDetails/ClearFilterButton
+Signature: wAzYWGvrW42GBi/gyyCmhBZoc8JCHBSvEuWomVWTM6Y=
+Modified: 638284909594419579
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Search Filter\SearchDetails\ClicktoaddForm.yml
+ID: "c6a970f8-f447-46fd-ae5c-29840b6acecc"
+Parent: "deadcd73-fd4b-4c28-9da8-6b51beceed91"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Search Filter/SearchDetails/ClicktoaddForm
+Signature: DFj2nDgf+NGuUPFiwBE4CGIXq45xYBrnLC1wTJzRq8k=
+Modified: 638284909594369558
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Search Filter\SearchDetails\CoverageType.yml
+ID: "2f90642a-b638-4b9f-b388-156561c9b592"
+Parent: "deadcd73-fd4b-4c28-9da8-6b51beceed91"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Search Filter/SearchDetails/CoverageType
+Signature: CK5XJaKBa/NFGN++AT0FnWKEGhTYcwBaBnrCyjnISEo=
+Modified: 638284909594409549
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Search Filter\SearchDetails\SearchbyForm.yml
+ID: "c277e3fd-da04-4959-825f-98b2cd79bfca"
+Parent: "deadcd73-fd4b-4c28-9da8-6b51beceed91"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Search Filter/SearchDetails/SearchbyForm
+Signature: MsjXPq0FEoqlhRP4wQX1eG9GMeE4Rr9u7y42by+dRVA=
+Modified: 638284909594379541
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Search Filter\SearchDetails\SearchbyName.yml
+ID: "6d47a52f-33e5-4800-a578-d5fd8f014829"
+Parent: "deadcd73-fd4b-4c28-9da8-6b51beceed91"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Search Filter/SearchDetails/SearchbyName
+Signature: IBwO6GO/+67aLn9PRczctPW192yfCFSmNXm7BZWase8=
+Modified: 638284909594399551
+---
+File: |
+  E:\medprositecore\src\Feature\ManualForms\serialization\ManualForms Templates\MedPro\Manual Form\Search Filter\SearchDetails\SearchForms.yml
+ID: "40e44688-7825-440c-b481-f7e65bf620b1"
+Parent: "deadcd73-fd4b-4c28-9da8-6b51beceed91"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/MedPro/Manual Form/Search Filter/SearchDetails/SearchForms
+Signature: pH+qpw39mAT0vaEiJxwhVR6hQ8AdIcQ5ShfEBmI4FdA=
+Modified: 638284909594359539

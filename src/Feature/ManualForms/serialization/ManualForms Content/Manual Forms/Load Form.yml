@@ -1,0 +1,59 @@
+﻿---
+ID: "6056d9ec-6f02-4a42-a43f-2f6c327a7ca4"
+Parent: "ce4235f7-ca68-4f2a-95e6-a2087b625af8"
+Template: "8d1d68db-85e5-497e-93ba-74ecb94f5555"
+Path: /sitecore/content/MedPro/ManualForms/Data/Manual Forms/Load Form
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/document_edit.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "0abda229-b173-4d73-8efd-4b6a3b3aa951"
+      Hint: IssueLabel
+      Value: Issue Company
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230719T132028Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "577b295b-c492-415f-af45-c0fcbf196751"
+    - ID: "91060d05-f448-49fd-bf41-827465f5b758"
+      Hint: StateLabel
+      Value: State
+    - ID: "a32d9926-96c7-40ee-ba42-b5d5ba7da7fe"
+      Hint: FormsTypeLabel
+      Value: Forms Type
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "bb7d9816-f8be-4534-ab5d-4560be78e222"
+      Hint: LoadFormTitle
+      Value: Please fill out the following information
+    - ID: "d012cc77-7129-4d5d-add3-f2fe5a2b0a00"
+      Hint: DateLabel
+      Value: Effective Date
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230810T175521Z
+    - ID: "dddca1c0-a81e-47ca-8881-86e9b8708903"
+      Hint: LoadFormButtonText
+      Value: Load Forms

@@ -13,11 +13,11 @@
     margin-left: 15px !important;
 }
 
-  .row-loadform-fields label {
+    .row-loadform-fields label {
         font-weight: 700;
         margin-bottom: 5px;
         font-family: 'Nunito Sans' !important;
-  }
+    }
 
     .row-loadform-fields select {
         font-family: 'Nunito Sans' !important;
@@ -33,4 +33,3 @@
 .justify-content-center {
     margin-left: -250px;
 }
-

@@ -1,0 +1,55 @@
+{
+  "namespace": "MedProSC.Feature.ManualForms",
+  "items": {
+    "includes": [
+      {
+        "name": "ManualForms Renderings",
+        "path": "/sitecore/layout/Renderings/Feature/MedPro/ManualForms",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+	  {
+        "name": "ManualForms Templates",
+        "path": "/sitecore/templates/Feature/MedPro",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+
+      },
+      {
+        "name": "ManualForms Content",
+        "path": "/sitecore/content/MedPro/ManualForms/Data/Manual Forms",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+
+      },
+      {
+        "name": "Loadform Editframe",
+        "path": "/sitecore/content/Applications/WebEdit/Custom Experience Buttons/Load Form",
+        "scope": "SingleItem",
+        "allowedPushOperations": "createUpdateAndDelete",
+		"database": "core"
+      },
+	  {
+        "name": "Builder Table Editframe",
+        "path": "/sitecore/content/Applications/WebEdit/Custom Experience Buttons/Builder Table",
+        "scope": "SingleItem",
+        "allowedPushOperations": "createUpdateAndDelete",
+		"database": "core"
+	  },
+	  {
+		"name": "My Bundle Editframe",
+        "path": "/sitecore/content/Applications/WebEdit/Custom Experience Buttons/My Bundle",
+        "scope": "SingleItem",
+        "allowedPushOperations": "createUpdateAndDelete",
+		"database": "core"
+	  },
+	  {
+		"name": "Search Filter Editframe",
+        "path": "/sitecore/content/Applications/WebEdit/Custom Experience Buttons/Search Filter",
+        "scope": "SingleItem",
+        "allowedPushOperations": "createUpdateAndDelete",
+		"database": "core"
+	  }
+    ]
+  }
+}

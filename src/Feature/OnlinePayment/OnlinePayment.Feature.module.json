@@ -1,0 +1,41 @@
+{
+  "namespace": "MedProSC.Feature.OnlinePayment",
+  "items": {
+    "includes": [
+      {
+        "name": "OnlinePayment Renderings",
+        "path": "/sitecore/layout/Renderings/Feature/MedPro/OnlinePayment",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      //{
+      //  "name": "OnlinePayment Templates",
+      //  "path": "/sitecore/templates/Feature/MedPro/OnlinePayment",
+      //  "scope": "ItemAndDescendants",
+      //  "allowedPushOperations": "CreateUpdateAndDelete"
+
+      //},
+      {
+        "name": "OnlinePayment Content",
+        "path": "/sitecore/content/MedPro/OnlinePayment/Data/OnlinePayment",
+        "scope": "SingleItem",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+
+      },
+      {
+        "name": "OnlinePayment Page Designs",
+        "path": "/sitecore/content/MedPro/OnlinePayment/Presentation/Page Designs",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+
+      },
+      {
+        "name": "OnlinePayment Partial Designs",
+        "path": "/sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs",
+        "scope": "ItemAndDescendants",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+
+      }
+    ]
+  }
+}

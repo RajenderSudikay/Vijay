@@ -1,0 +1,23 @@
+﻿---
+ID: "63ca130e-335f-41fe-a94f-99a5b055f971"
+Parent: "702472e7-77ec-4249-88b4-a9482a8ead40"
+Template: "9ac8cf68-53ee-400b-bb37-790c68cbbfbf"
+Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs/Common
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230928T051122Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "37ae9e83-5b02-40f1-a459-edb4a8630032"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230928T051122Z

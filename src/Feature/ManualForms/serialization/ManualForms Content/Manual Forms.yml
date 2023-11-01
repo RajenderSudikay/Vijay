@@ -1,0 +1,27 @@
+﻿---
+ID: "ce4235f7-ca68-4f2a-95e6-a2087b625af8"
+Parent: "62444f55-9f20-4728-a05c-74ffa08ce12c"
+Template: "85bdfea5-8e65-43d6-9772-7f4e937670df"
+Path: /sitecore/content/MedPro/ManualForms/Data/Manual Forms
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230810T175444Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0c3041ca-c7b9-4d28-b77b-2f8e7cae51a8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230816T163324Z

@@ -8,7 +8,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8A5E1275-F07F-4E89-91AE-0567804D297B}</ProjectGuid>
+    <ProjectGuid>{2ECE135D-297C-447D-B1E0-7526CCA867F7}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -155,7 +155,6 @@
     </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\..\..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -198,6 +197,28 @@
     <Compile Include="Templates.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-utilities.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap.rtl.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Assets\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\bootstrap\js\bootstrap.esm.js.map" />
+    <Content Include="Assets\bootstrap\js\bootstrap.esm.min.js.map" />
+    <Content Include="Assets\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Assets\bootstrap\js\bootstrap.min.js.map" />
     <Content Include="Views\Shared\Header.cshtml" />
     <None Include="Views\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -206,14 +227,34 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.config" />
-    <Content Include="Assets\css\buildertable.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-grid.rtl.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-utilities.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-utilities.min.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap.rtl.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap.rtl.min.css" />
+    <Content Include="Assets\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Assets\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\bootstrap\js\bootstrap.esm.js" />
+    <Content Include="Assets\bootstrap\js\bootstrap.esm.min.js" />
+    <Content Include="Assets\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Assets\css\BuilderTable.css" />
     <Content Include="Assets\css\Header.css" />
     <Content Include="Assets\css\LoadForm.css" />
     <Content Include="Assets\css\mybundle.css" />
     <Content Include="Assets\css\NunitoSans.css" />
     <Content Include="Assets\css\SearchFilter.css" />
-    <Content Include="Assets\scripts\buildertable.js" />
-    <Content Include="Assets\scripts\header.js" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -222,11 +263,7 @@
     </Content>
     <None Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="App_Start\" />
-    <Folder Include="Scripts\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
@@ -246,7 +283,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>54815</DevelopmentServerPort>
+          <DevelopmentServerPort>53176</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>https://localhost:44315/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

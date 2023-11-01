@@ -1,0 +1,9 @@
+﻿---
+ID: "18b8e612-98c7-4b5d-8cbe-c4e9770d4167"
+Parent: "418e1f0d-aece-4110-b46c-3d72fa8770c9"
+Template: "80edcd45-d182-4477-b0a7-d070f787941f"
+Path: /sitecore/content/MedPro/OnlinePayment/Data/OnlinePayment
+Languages:
+- Language: en
+  Versions:
+  - Version: 1

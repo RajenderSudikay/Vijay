@@ -1,0 +1,57 @@
+﻿---
+ID: "5d201bff-e77b-4cb5-943b-37416961cb6e"
+Parent: "ce4235f7-ca68-4f2a-95e6-a2087b625af8"
+Template: "efdcec51-1a09-4ab1-884d-940cf93014d7"
+Path: /sitecore/content/MedPro/ManualForms/Data/Manual Forms/Search Filter
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/document_view.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230726T140137Z
+    - ID: "2f90642a-b638-4b9f-b388-156561c9b592"
+      Hint: CoverageType
+      Value: Coverage Type
+    - ID: "40e44688-7825-440c-b481-f7e65bf620b1"
+      Hint: SearchForms
+      Value: Search Forms
+    - ID: "493fc9d4-8302-4129-8d7e-e4524cf01cfa"
+      Hint: ClearFilterButton
+      Value: Clear Filters
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "6d47a52f-33e5-4800-a578-d5fd8f014829"
+      Hint: SearchbyName
+      Value: Search by Form Name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9780f8ed-74b2-472c-bee3-1fa668af373c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c277e3fd-da04-4959-825f-98b2cd79bfca"
+      Hint: SearchbyForm
+      Value: Search by Form #
+    - ID: "c6a970f8-f447-46fd-ae5c-29840b6acecc"
+      Hint: ClicktoaddForm
+      Value: |
+        <p style="color: rgb(0, 0, 0);">Click&nbsp &nbsp <i class="material-icons">&#xe147;</i>  &nbsp to add a form to your bundle below</p>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230810T175516Z
