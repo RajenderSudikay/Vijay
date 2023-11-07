@@ -1,82 +1,82 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs.yml
 ID: "702472e7-77ec-4249-88b4-a9482a8ead40"
 Parent: "c3ad646e-0d89-439b-9985-ae6c182588b2"
 Template: "26fbcbf7-5675-4086-a18d-2e7fb0bc5297"
 Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs
 Signature: PKvYYHrMoelFDXEncDsVT81Rk4uQmY9/7drzKh3mthE=
-Modified: 638325483304694682
+Modified: 638344087636380428
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common.yml
 ID: "63ca130e-335f-41fe-a94f-99a5b055f971"
 Parent: "702472e7-77ec-4249-88b4-a9482a8ead40"
 Template: "9ac8cf68-53ee-400b-bb37-790c68cbbfbf"
 Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs/Common
 Signature: z3wu97+iCAFAywayB+YseXF43G7zr8lRZ7ai++uTzpA=
-Modified: 638325483304851370
+Modified: 638344087636761140
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Empty.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Empty.yml
 ID: "151a4aa6-01e8-4df1-bf18-a84c061a4b2a"
 Parent: "702472e7-77ec-4249-88b4-a9482a8ead40"
 Template: "75e88adf-8ef3-4ac4-b960-74269d291653"
 Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs/Empty
 Signature: nTx39kVnN8ntLb+jCZE42FpvYTzvHHoATI9p4307eoE=
-Modified: 638325483304851370
+Modified: 638344087637022761
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Metadata.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Metadata.yml
 ID: "4f410ec4-75df-4f8b-b683-544f3eea8c08"
 Parent: "702472e7-77ec-4249-88b4-a9482a8ead40"
 Template: "c2a8e276-1757-4957-9dd5-8669b79fd80d"
 Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs/Metadata
 Signature: fM6ioF5OvVH8MZtEZ8YOk2fGwcIW+oBUKapdRT9mEWc=
-Modified: 638325483304976870
+Modified: 638344087637173962
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Footer.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Footer.yml
 ID: "e93dc87a-b95f-4a4d-ba71-9881dabb4ef4"
 Parent: "63ca130e-335f-41fe-a94f-99a5b055f971"
 Template: "75e88adf-8ef3-4ac4-b960-74269d291653"
 Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs/Common/Footer
 Signature: kd9ojkkVDkBScA5Ao2QvoDwQh8Zp0RCVgKYZHdlLuK8=
-Modified: 638325483304851370
+Modified: 638344087637486948
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Header.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Header.yml
 ID: "ccef8cca-1d45-482a-b608-e18ae5f87304"
 Parent: "63ca130e-335f-41fe-a94f-99a5b055f971"
 Template: "75e88adf-8ef3-4ac4-b960-74269d291653"
 Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs/Common/Header
 Signature: ipgbyGlDz8O7LDZGdzjb+mE13PPfOIeqTal45Kjx2JA=
-Modified: 638325483304851370
+Modified: 638344087637643363
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Footer\Data.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Footer\Data.yml
 ID: "1bb1334d-cb83-4a07-acab-465a0259d2dc"
 Parent: "e93dc87a-b95f-4a4d-ba71-9881dabb4ef4"
 Template: "1c82e550-ebcd-4e5d-8abd-d50d0809541e"
 Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs/Common/Footer/Data
 Signature: Mol1TYOMTwYfxAiuzovBKPJ3m5dmFI1F1FycVF5Gvc8=
-Modified: 638325483304851370
+Modified: 638344087637955867
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Footer\Data\Text 1.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Footer\Data\Text 1.yml
 ID: "fe5ab4b1-504e-44c8-8f8a-066b9524bbb7"
 Parent: "1bb1334d-cb83-4a07-acab-465a0259d2dc"
 Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
 Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs/Common/Footer/Data/Text 1
 Signature: tDXAzSuby9lb+Xxm5VDmULxYMYFLhz9kf9XZJW8kHcY=
-Modified: 638325483304851370
+Modified: 638344087638268348
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Footer\Data\Text 2.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Partial Designs\Partial Designs\Common\Footer\Data\Text 2.yml
 ID: "81762f35-7a0e-4c7b-81b7-5094e85a1c0d"
 Parent: "1bb1334d-cb83-4a07-acab-465a0259d2dc"
 Template: "b8f5894c-b493-4016-bf78-4090b0a2fd16"
 Path: /sitecore/content/MedPro/OnlinePayment/Presentation/Partial Designs/Common/Footer/Data/Text 2
 Signature: grNbE08hDyDxATDihnlHNPFLQx5LiU8fnKgIRVcayRM=
-Modified: 638325483304851370
+Modified: 638344087638424641

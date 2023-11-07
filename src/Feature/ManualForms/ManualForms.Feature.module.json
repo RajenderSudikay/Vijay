@@ -49,6 +49,24 @@
         "scope": "SingleItem",
         "allowedPushOperations": "createUpdateAndDelete",
 		"database": "core"
+	  },
+	  {
+		"name": "Manual Forms Page Design",
+        "path": "/sitecore/content/MedPro/ManualForms/Presentation/Page Designs/Manual Forms Default Page Design",
+        "scope": "SingleItem",
+        "allowedPushOperations": "createUpdateAndDelete",		
+	  },
+	  {
+		"name": "Manual Forms Head Data",
+        "path": "/sitecore/content/MedPro/ManualForms/Presentation/Partial Designs/HeadData",
+        "scope": "SingleItem",
+        "allowedPushOperations": "createUpdateAndDelete",		
+	  },
+	  {
+		"name": "Manual Forms Head Partial design",
+        "path": "/sitecore/content/MedPro/ManualForms/Presentation/Partial Designs/Header",
+        "scope": "SingleItem",
+        "allowedPushOperations": "createUpdateAndDelete",		
 	  }
     ]
   }

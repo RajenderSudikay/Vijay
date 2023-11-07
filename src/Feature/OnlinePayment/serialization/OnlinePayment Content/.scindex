@@ -1,10 +1,10 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  E:\medprositecore\src\Feature\OnlinePayment\serialization\OnlinePayment Content\OnlinePayment.yml
+  C:\vijay\medpro\src\Feature\OnlinePayment\serialization\OnlinePayment Content\OnlinePayment.yml
 ID: "18b8e612-98c7-4b5d-8cbe-c4e9770d4167"
 Parent: "418e1f0d-aece-4110-b46c-3d72fa8770c9"
 Template: "80edcd45-d182-4477-b0a7-d070f787941f"
 Path: /sitecore/content/MedPro/OnlinePayment/Data/OnlinePayment
 Signature: cKE8EIgz1SagRoXf5LMwd868bm2q1zxmg3a6jCgW728=
-Modified: 638325483304694682
+Modified: 638344087634818680

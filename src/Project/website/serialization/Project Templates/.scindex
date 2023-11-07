@@ -1,235 +1,235 @@
 ﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
 ---
 File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro.yml
-ID: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Parent: "825b30b4-b40b-422e-9920-23a1b6bda89c"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: /sitecore/templates/Project/MedPro
-Signature: Y8j5zKcQcvr49rGVr8w4cgooqySkqBnxGa/BbOZvB3M=
-Modified: 638284909594669432
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page\Content\Content.yml
-ID: "59204922-09ce-4b06-acbb-4e08efd38b05"
-Parent: "d344fd49-a054-485e-b28d-3c83ea0413f8"
-Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Project/MedPro/Page/Content/Content
-Signature: m6yCIzBJWbiU4nb8xAVN/lwl7rnudi5XUIfUkTNUbFE=
-Modified: 638284909594839420
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Home.yml
-ID: "9284e506-9a14-406b-b64a-df70ec4ee951"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Home
-Signature: B9/4J4ZRQViB1s34gPCmgmV4iMUxNhU9ogKDLcLh5k8=
-Modified: 638284909594689419
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page Design Folder.yml
-ID: "863879c9-0126-4f65-b93f-980041b6cc90"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Page Design Folder
-Signature: 4QbLCraGQKsUGvkRHmO2eG8jkLXg+gVORUZl154F1wM=
-Modified: 638284909594719412
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page Design.yml
-ID: "d0b52849-e5d4-4670-a025-500742732fd2"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Page Design
-Signature: 4BObbtZNg8k+NKAlevo3h3yIKxs26tF6VDc4FiBMo3I=
-Modified: 638284909594709417
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page Designs.yml
-ID: "12c3bf76-63d4-4697-909c-41e7a70cb92a"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Page Designs
-Signature: sUo9IAsMVmaXcpwT1bC9YJnXtIB8WVKpzmK02VdQvJ4=
-Modified: 638284909594729412
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page.yml
-ID: "c4c2ed3f-86d2-4b96-83bc-98cd5bacc45f"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Page
-Signature: idc4N4/zKAVk/ciBhEb66HIOwPDxrouo9RroXgXjLEE=
-Modified: 638284909594699418
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Partial Design Folder.yml
-ID: "9ac8cf68-53ee-400b-bb37-790c68cbbfbf"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Partial Design Folder
-Signature: iiKJigNXDcQJOrnNAQSxvF26VoS/Bqi7b6Qwj4Hhx2k=
-Modified: 638284909594749408
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Partial Design.yml
-ID: "75e88adf-8ef3-4ac4-b960-74269d291653"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Partial Design
-Signature: 83h5LeHp7nCuEePu4E9OungTJ8XNH3e2FYfRxLtYTB0=
-Modified: 638284909594739410
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Partial Designs.yml
-ID: "26fbcbf7-5675-4086-a18d-2e7fb0bc5297"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Partial Designs
-Signature: nI4zlwJGYIk8D+IzxABsdBnDgIrDcUnH+61+wfMpFf8=
-Modified: 638284909594769418
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Settings.yml
-ID: "97e42a2f-9f2f-42dc-adae-e98b002b1cd0"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Settings
-Signature: pOgOfn47uV805wOc3rjukHvjO634bPuosjrhP6hEeHY=
-Modified: 638284909594779444
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Site.yml
-ID: "40ef00e3-85df-4fc4-bccd-dc97e58f7c56"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Site
-Signature: WPPKLQiocyy02IUM/7CGDJ9bXbxptg4cALxw2FTKskA=
-Modified: 638284909594789420
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Tenant.yml
-ID: "b03b3e4f-3828-476d-a3d0-54dc99edaf54"
-Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Project/MedPro/Tenant
-Signature: iwy0w8WwNauH+nuffFNTXQMvVFrOOevDWWpWyW+qucM=
-Modified: 638284909594799419
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Home\__Standard Values.yml
-ID: "b22e21ba-9582-4aa4-b5b8-321f2d10ee55"
-Parent: "9284e506-9a14-406b-b64a-df70ec4ee951"
-Template: "9284e506-9a14-406b-b64a-df70ec4ee951"
-Path: /sitecore/templates/Project/MedPro/Home/__Standard Values
-Signature: b/uymeUEXjryn3sBkigIrTDOdSUCbhbQKvvJhDDLeXw=
-Modified: 638284909594849420
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page\Content.yml
-ID: "d344fd49-a054-485e-b28d-3c83ea0413f8"
-Parent: "c4c2ed3f-86d2-4b96-83bc-98cd5bacc45f"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Project/MedPro/Page/Content
-Signature: 14FOqKdO+kFv2TsoQViaYl0D94uGA7qg9snD4E7ZyjA=
-Modified: 638284909594809413
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page\__Standard Values.yml
-ID: "5695ffac-6d48-40bd-b00d-d958cab27646"
-Parent: "c4c2ed3f-86d2-4b96-83bc-98cd5bacc45f"
-Template: "c4c2ed3f-86d2-4b96-83bc-98cd5bacc45f"
-Path: /sitecore/templates/Project/MedPro/Page/__Standard Values
-Signature: D3j3RpQH0qRu5kqu+JnjaxLx4VV/WCrT3EgxsBVbvOs=
-Modified: 638284909594859419
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page Design\__Standard Values.yml
-ID: "d706ea5d-4649-4e78-afe8-1fea5731be84"
-Parent: "d0b52849-e5d4-4670-a025-500742732fd2"
-Template: "d0b52849-e5d4-4670-a025-500742732fd2"
-Path: /sitecore/templates/Project/MedPro/Page Design/__Standard Values
-Signature: atkI5tulCV40vAM8qx16SLEQ7+zwJZYeU7zV92sntMM=
-Modified: 638284909594879419
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page Design Folder\__Standard Values.yml
-ID: "b63b4e82-3eb5-47d3-9a96-454c0573e2c2"
-Parent: "863879c9-0126-4f65-b93f-980041b6cc90"
-Template: "863879c9-0126-4f65-b93f-980041b6cc90"
-Path: /sitecore/templates/Project/MedPro/Page Design Folder/__Standard Values
-Signature: gQ1RBuT4RXJionVPmuee5tVQ3qyjjBua12V/Nsvuuhk=
-Modified: 638284909594889433
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page Designs\__Standard Values.yml
-ID: "15932948-9b48-48a5-9da7-4bb836c194bb"
-Parent: "12c3bf76-63d4-4697-909c-41e7a70cb92a"
-Template: "12c3bf76-63d4-4697-909c-41e7a70cb92a"
-Path: /sitecore/templates/Project/MedPro/Page Designs/__Standard Values
-Signature: dTIoL93FcCElbZUOUxMdgaVTDTHbJ8YHFme8xrQVJYg=
-Modified: 638284909594909420
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Partial Design\__Standard Values.yml
-ID: "f80a1b43-b191-428b-b958-c8075b7ba109"
-Parent: "75e88adf-8ef3-4ac4-b960-74269d291653"
-Template: "75e88adf-8ef3-4ac4-b960-74269d291653"
-Path: /sitecore/templates/Project/MedPro/Partial Design/__Standard Values
-Signature: SS5qDAiep5TOiuwrxPTOoCcQBL/6etuvIghDCSBX3ag=
-Modified: 638284909594919422
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Partial Design Folder\__Standard Values.yml
-ID: "ab625d23-8a8b-49d9-b38e-d0e0ca7434b4"
-Parent: "9ac8cf68-53ee-400b-bb37-790c68cbbfbf"
-Template: "9ac8cf68-53ee-400b-bb37-790c68cbbfbf"
-Path: /sitecore/templates/Project/MedPro/Partial Design Folder/__Standard Values
-Signature: bY9kgIqlL0rK/F0spjwCbV8K7tE2OCI96ZyBnjadOPU=
-Modified: 638284909594929421
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Partial Designs\__Standard Values.yml
-ID: "440b0b19-19b5-4737-903b-612c2588fc5b"
-Parent: "26fbcbf7-5675-4086-a18d-2e7fb0bc5297"
-Template: "26fbcbf7-5675-4086-a18d-2e7fb0bc5297"
-Path: /sitecore/templates/Project/MedPro/Partial Designs/__Standard Values
-Signature: Fe9pY9n8dmZ0r+k0f9qFREKAAJDBK0mfZPvfLVKKMEI=
-Modified: 638284909594949443
----
-File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Settings\__Standard Values.yml
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Settings\__Standard Values.yml
 ID: "fb7dee77-11be-4b9d-99c3-d60451340f83"
 Parent: "97e42a2f-9f2f-42dc-adae-e98b002b1cd0"
 Template: "97e42a2f-9f2f-42dc-adae-e98b002b1cd0"
 Path: /sitecore/templates/Project/MedPro/Settings/__Standard Values
 Signature: Adi4ho0pIaYN5NNOIDLSTWPFFyomTk6CsVT6EAb2pOg=
-Modified: 638284909594959435
+Modified: 638344088064141157
 ---
 File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Site\__Standard Values.yml
-ID: "af7fc0fd-5f7c-4879-9db7-c96f2ed229d0"
-Parent: "40ef00e3-85df-4fc4-bccd-dc97e58f7c56"
-Template: "40ef00e3-85df-4fc4-bccd-dc97e58f7c56"
-Path: /sitecore/templates/Project/MedPro/Site/__Standard Values
-Signature: 12uhabVh0Is6jRUx6SIjwnIUDyJXY8/u1Xjgsk3F9Is=
-Modified: 638284909594979418
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page Design Folder\__Standard Values.yml
+ID: "b63b4e82-3eb5-47d3-9a96-454c0573e2c2"
+Parent: "863879c9-0126-4f65-b93f-980041b6cc90"
+Template: "863879c9-0126-4f65-b93f-980041b6cc90"
+Path: /sitecore/templates/Project/MedPro/Page Design Folder/__Standard Values
+Signature: gQ1RBuT4RXJionVPmuee5tVQ3qyjjBua12V/Nsvuuhk=
+Modified: 638344088061328180
 ---
 File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Tenant\__Standard Values.yml
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Home.yml
+ID: "9284e506-9a14-406b-b64a-df70ec4ee951"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Home
+Signature: B9/4J4ZRQViB1s34gPCmgmV4iMUxNhU9ogKDLcLh5k8=
+Modified: 638344088058203290
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page Designs\__Standard Values.yml
+ID: "15932948-9b48-48a5-9da7-4bb836c194bb"
+Parent: "12c3bf76-63d4-4697-909c-41e7a70cb92a"
+Template: "12c3bf76-63d4-4697-909c-41e7a70cb92a"
+Path: /sitecore/templates/Project/MedPro/Page Designs/__Standard Values
+Signature: dTIoL93FcCElbZUOUxMdgaVTDTHbJ8YHFme8xrQVJYg=
+Modified: 638344088061953127
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page Design\__Standard Values.yml
+ID: "d706ea5d-4649-4e78-afe8-1fea5731be84"
+Parent: "d0b52849-e5d4-4670-a025-500742732fd2"
+Template: "d0b52849-e5d4-4670-a025-500742732fd2"
+Path: /sitecore/templates/Project/MedPro/Page Design/__Standard Values
+Signature: atkI5tulCV40vAM8qx16SLEQ7+zwJZYeU7zV92sntMM=
+Modified: 638344088061640784
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Tenant\__Standard Values.yml
 ID: "d9f975a5-5da1-4e22-a88f-f4a576b9df06"
 Parent: "b03b3e4f-3828-476d-a3d0-54dc99edaf54"
 Template: "b03b3e4f-3828-476d-a3d0-54dc99edaf54"
 Path: /sitecore/templates/Project/MedPro/Tenant/__Standard Values
 Signature: YWVwwy8fV5aqWF9AOeySm68zOJo65OlgWOqP4LvfNMA=
-Modified: 638284909594989423
+Modified: 638344088064765868
 ---
 File: |
-  E:\medprositecore\src\Project\website\serialization\Project Templates\MedPro\Page\Content\Title.yml
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Partial Design\__Standard Values.yml
+ID: "f80a1b43-b191-428b-b958-c8075b7ba109"
+Parent: "75e88adf-8ef3-4ac4-b960-74269d291653"
+Template: "75e88adf-8ef3-4ac4-b960-74269d291653"
+Path: /sitecore/templates/Project/MedPro/Partial Design/__Standard Values
+Signature: SS5qDAiep5TOiuwrxPTOoCcQBL/6etuvIghDCSBX3ag=
+Modified: 638344088063672807
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro.yml
+ID: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Parent: "825b30b4-b40b-422e-9920-23a1b6bda89c"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Project/MedPro
+Signature: Y8j5zKcQcvr49rGVr8w4cgooqySkqBnxGa/BbOZvB3M=
+Modified: 638344088057890805
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page Design Folder.yml
+ID: "863879c9-0126-4f65-b93f-980041b6cc90"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Page Design Folder
+Signature: 4QbLCraGQKsUGvkRHmO2eG8jkLXg+gVORUZl154F1wM=
+Modified: 638344088058359535
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page\Content\Title.yml
 ID: "e0636404-b078-4994-a483-9291ee9b2f44"
 Parent: "d344fd49-a054-485e-b28d-3c83ea0413f8"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: /sitecore/templates/Project/MedPro/Page/Content/Title
 Signature: AkOt7nGr9B0McP0r6k6SbQAGo87FK1tY44eLekD5plg=
-Modified: 638284909594829420
+Modified: 638344088063046871
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Site\__Standard Values.yml
+ID: "af7fc0fd-5f7c-4879-9db7-c96f2ed229d0"
+Parent: "40ef00e3-85df-4fc4-bccd-dc97e58f7c56"
+Template: "40ef00e3-85df-4fc4-bccd-dc97e58f7c56"
+Path: /sitecore/templates/Project/MedPro/Site/__Standard Values
+Signature: 12uhabVh0Is6jRUx6SIjwnIUDyJXY8/u1Xjgsk3F9Is=
+Modified: 638344088064453969
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page Design.yml
+ID: "d0b52849-e5d4-4670-a025-500742732fd2"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Page Design
+Signature: 4BObbtZNg8k+NKAlevo3h3yIKxs26tF6VDc4FiBMo3I=
+Modified: 638344088058672055
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page\Content\Content.yml
+ID: "59204922-09ce-4b06-acbb-4e08efd38b05"
+Parent: "d344fd49-a054-485e-b28d-3c83ea0413f8"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Project/MedPro/Page/Content/Content
+Signature: m6yCIzBJWbiU4nb8xAVN/lwl7rnudi5XUIfUkTNUbFE=
+Modified: 638344088062890947
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page Designs.yml
+ID: "12c3bf76-63d4-4697-909c-41e7a70cb92a"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Page Designs
+Signature: sUo9IAsMVmaXcpwT1bC9YJnXtIB8WVKpzmK02VdQvJ4=
+Modified: 638344088058984518
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page.yml
+ID: "c4c2ed3f-86d2-4b96-83bc-98cd5bacc45f"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Page
+Signature: idc4N4/zKAVk/ciBhEb66HIOwPDxrouo9RroXgXjLEE=
+Modified: 638344088059140688
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Partial Design Folder.yml
+ID: "9ac8cf68-53ee-400b-bb37-790c68cbbfbf"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Partial Design Folder
+Signature: iiKJigNXDcQJOrnNAQSxvF26VoS/Bqi7b6Qwj4Hhx2k=
+Modified: 638344088059453169
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Partial Design.yml
+ID: "75e88adf-8ef3-4ac4-b960-74269d291653"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Partial Design
+Signature: 83h5LeHp7nCuEePu4E9OungTJ8XNH3e2FYfRxLtYTB0=
+Modified: 638344088059609549
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Partial Designs.yml
+ID: "26fbcbf7-5675-4086-a18d-2e7fb0bc5297"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Partial Designs
+Signature: nI4zlwJGYIk8D+IzxABsdBnDgIrDcUnH+61+wfMpFf8=
+Modified: 638344088059922011
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Settings.yml
+ID: "97e42a2f-9f2f-42dc-adae-e98b002b1cd0"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Settings
+Signature: pOgOfn47uV805wOc3rjukHvjO634bPuosjrhP6hEeHY=
+Modified: 638344088060234423
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Site.yml
+ID: "40ef00e3-85df-4fc4-bccd-dc97e58f7c56"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Site
+Signature: WPPKLQiocyy02IUM/7CGDJ9bXbxptg4cALxw2FTKskA=
+Modified: 638344088060547001
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Tenant.yml
+ID: "b03b3e4f-3828-476d-a3d0-54dc99edaf54"
+Parent: "9bb48752-fdca-446f-85d5-cbd17aefd824"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/MedPro/Tenant
+Signature: iwy0w8WwNauH+nuffFNTXQMvVFrOOevDWWpWyW+qucM=
+Modified: 638344088060703269
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Home\__Standard Values.yml
+ID: "b22e21ba-9582-4aa4-b5b8-321f2d10ee55"
+Parent: "9284e506-9a14-406b-b64a-df70ec4ee951"
+Template: "9284e506-9a14-406b-b64a-df70ec4ee951"
+Path: /sitecore/templates/Project/MedPro/Home/__Standard Values
+Signature: b/uymeUEXjryn3sBkigIrTDOdSUCbhbQKvvJhDDLeXw=
+Modified: 638344088061015761
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page\Content.yml
+ID: "d344fd49-a054-485e-b28d-3c83ea0413f8"
+Parent: "c4c2ed3f-86d2-4b96-83bc-98cd5bacc45f"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/MedPro/Page/Content
+Signature: 14FOqKdO+kFv2TsoQViaYl0D94uGA7qg9snD4E7ZyjA=
+Modified: 638344088062578676
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Page\__Standard Values.yml
+ID: "5695ffac-6d48-40bd-b00d-d958cab27646"
+Parent: "c4c2ed3f-86d2-4b96-83bc-98cd5bacc45f"
+Template: "c4c2ed3f-86d2-4b96-83bc-98cd5bacc45f"
+Path: /sitecore/templates/Project/MedPro/Page/__Standard Values
+Signature: D3j3RpQH0qRu5kqu+JnjaxLx4VV/WCrT3EgxsBVbvOs=
+Modified: 638344088062265821
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Partial Design Folder\__Standard Values.yml
+ID: "ab625d23-8a8b-49d9-b38e-d0e0ca7434b4"
+Parent: "9ac8cf68-53ee-400b-bb37-790c68cbbfbf"
+Template: "9ac8cf68-53ee-400b-bb37-790c68cbbfbf"
+Path: /sitecore/templates/Project/MedPro/Partial Design Folder/__Standard Values
+Signature: bY9kgIqlL0rK/F0spjwCbV8K7tE2OCI96ZyBnjadOPU=
+Modified: 638344088063359945
+---
+File: |
+  C:\vijay\medpro\src\Project\website\serialization\Project Templates\MedPro\Partial Designs\__Standard Values.yml
+ID: "440b0b19-19b5-4737-903b-612c2588fc5b"
+Parent: "26fbcbf7-5675-4086-a18d-2e7fb0bc5297"
+Template: "26fbcbf7-5675-4086-a18d-2e7fb0bc5297"
+Path: /sitecore/templates/Project/MedPro/Partial Designs/__Standard Values
+Signature: Fe9pY9n8dmZ0r+k0f9qFREKAAJDBK0mfZPvfLVKKMEI=
+Modified: 638344088063985286

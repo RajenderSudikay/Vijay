@@ -1,8 +1,4 @@
 ﻿using Sitecore.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace MedProSC.Feature.ManualForms
 {
@@ -74,5 +70,27 @@ namespace MedProSC.Feature.ManualForms
 
             }
         }
+        public struct ManualFormsAPISetting
+        {
+            public static readonly ID SettingItemTemplateID = new ID("{BCC1285B-B46A-4B34-9259-12A890813184}");
+            public static readonly ID SettingFolderTemplateID = new ID("{3691FE9B-C4A2-4C2D-B257-55A4BBCDAB7B}");
+            public static readonly ID SettingItemFolderID = new ID("{AF67E1F6-60F1-4237-B754-A64B40FD0FBC}");
+
+            public struct Fields
+            {
+                public static readonly ID Environment = new ID("{9ACADDAE-F155-495D-86CE-E4D92EA6BBB0}");
+                public static readonly ID Client_id = new ID("{C155F601-BC48-49BE-B7BB-9AD7135CBBDF}");
+                public static readonly ID Base_URL = new ID("{81D7B2F3-071C-4D25-845C-B86CEAECB050}");
+                public static readonly ID Client_secret = new ID("{695B2165-83E9-471D-998B-53AEBBC425A5}");
+                public static readonly ID Timeout = new ID("{B3830D53-0E0A-49B1-98C2-CCC22102BF78}");
+                public static readonly ID CacheDuration = new ID("{82DC5A3F-0B06-4EBC-8D6D-2FA062B38847}");
+
+                public static readonly ID StateAPI_URL = new ID("{EE3DC3C0-58F1-46B4-9BBE-DCDEE340E7BC}");
+                public static readonly ID IssueCompanyAPI_URL = new ID("{EE3DC3C0-58F1-46B4-9BBE-DCDEE340E7BC}");
+                public static readonly ID FormsTypeAPI_URL = new ID("{82560CE2-D0E3-402C-86C5-535873DC363C}");
+                public static readonly ID LoadFormsAPI_URL = new ID("{05588155-D45B-45A4-8656-1E1956D75A50}");
+
+            }
+        }       
     }
 }

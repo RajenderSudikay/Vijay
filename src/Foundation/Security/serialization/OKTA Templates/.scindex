@@ -1,0 +1,172 @@
+﻿# Do not commit this file to source control or modify it. It is safe to delete; it will recreate itself.
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro.yml
+ID: "8268d9d2-e384-4bc1-b2d2-f6d6b7b695f2"
+Parent: "b26bd035-8d0a-4df3-8f67-2de3c7fdd74a"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Foundation/MedPro
+Signature: c02e4egGM1DrOVcAbEwOER/6xLF8yerTUUHUfySCiiw=
+Modified: 638344087786988005
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta.yml
+ID: "11ae1f22-9f07-4c18-b1b0-047cee2d4abf"
+Parent: "8268d9d2-e384-4bc1-b2d2-f6d6b7b695f2"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Foundation/MedPro/Okta
+Signature: ZmoYgaeEm8sVY9M5D+ihdRmXCQlHNZAdn2vm0PDxDWE=
+Modified: 638344087787144388
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item.yml
+ID: "1a60d509-0354-4d6a-98e7-41bcea32b530"
+Parent: "11ae1f22-9f07-4c18-b1b0-047cee2d4abf"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item
+Signature: xVIdFteLw37S5Lv5DZcaWDZlcB9nx97f7BJ5WlEwwZ4=
+Modified: 638344087787457188
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Settings Folder.yml
+ID: "4b092383-c6ce-4c64-a6c5-9f69780a577a"
+Parent: "11ae1f22-9f07-4c18-b1b0-047cee2d4abf"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Settings Folder
+Signature: aS2TveoXO7RSMlWrHiSmmB21Eq0hCTUorZTuU1jE3mU=
+Modified: 638344087787770045
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings.yml
+ID: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Parent: "1a60d509-0354-4d6a-98e7-41bcea32b530"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings
+Signature: ySfv3cn7sIKIv/n39fZ0531YPrdw+MIcUspLlmI2fTI=
+Modified: 638344087788238959
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\__Standard Values.yml
+ID: "570529ae-45f9-4c16-8abe-c1c8e8811636"
+Parent: "1a60d509-0354-4d6a-98e7-41bcea32b530"
+Template: "1a60d509-0354-4d6a-98e7-41bcea32b530"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/__Standard Values
+Signature: U1SJB9D9lf84CaX/8mGE4q+60ViRBgm15msJHDptGss=
+Modified: 638344087787926051
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Settings Folder\__Standard Values.yml
+ID: "d86d821e-ba4d-46f9-9d84-5d9f813ffe70"
+Parent: "4b092383-c6ce-4c64-a6c5-9f69780a577a"
+Template: "4b092383-c6ce-4c64-a6c5-9f69780a577a"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Settings Folder/__Standard Values
+Signature: 4L0t6Eyjad3rMCjVWnx60geyEf1mrMf7vU2Pm8XS5cg=
+Modified: 638344087791675604
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\Authority.yml
+ID: "92293c99-4f8c-4c34-87d2-00d442e8be79"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/Authority
+Signature: wah3NDao4qwBakMhRcvFv9LIp96tSDStyjtLvZl0heI=
+Modified: 638344087788707535
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\ClientId.yml
+ID: "ae16209c-4af8-45c4-8b20-bb5c79766cf9"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/ClientId
+Signature: OkPnMh7oYXDvxzHB2UyrgfpeHAawXWCYTjab2hW5j4o=
+Modified: 638344087788864127
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\ClientSecret.yml
+ID: "4a42a257-1855-412e-b65a-bdb19ac9baa3"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/ClientSecret
+Signature: qVgD8gQfkip+ZfrQaSIn/UcP6B/2vS0QfVKmi9zp1TM=
+Modified: 638344087789176590
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\Environment.yml
+ID: "a91f510b-935e-4300-a643-e30c24114e94"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/Environment
+Signature: R4z2vrnHMx5BGTvSGHxBLv4nKZAqh9VDdNs2QszEF4c=
+Modified: 638344087789332566
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\LoginLinkText.yml
+ID: "90a931fe-fb47-4107-946f-f632dbeb1ff5"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/LoginLinkText
+Signature: iQVu8KA3jmeGLrUoadHaHLzPNomhSTUFrqGMZRC281A=
+Modified: 638344087789644316
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\LogoutLinkText.yml
+ID: "1fdafc5e-0243-44c1-97a4-bbdaa1af243d"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/LogoutLinkText
+Signature: 0JmWrVwRwnBdcAL08nQ+tTW0dYUXzVuWykGeNPQXrYw=
+Modified: 638344087789957518
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\OAuthLogoutEndpoint.yml
+ID: "74e293ba-3c7d-415e-8409-b0fa020ba175"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/OAuthLogoutEndpoint
+Signature: xw5f6uEXtyUrU3OFyUdojU+5wtxP5sqFjs8wS7rt31s=
+Modified: 638344087790113844
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\OAuthTokenEndpoint.yml
+ID: "e1f680ad-e365-4b6a-a7e4-213b37e2ac87"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/OAuthTokenEndpoint
+Signature: DRaFldvHGqp3BZgwSNqbnDjhq5hKRN8RX9N/yCgj5fQ=
+Modified: 638344087790426374
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\OAuthUserInfoEndpoint.yml
+ID: "f2cfcc8d-3fd1-4181-a6e9-39089a034ecd"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/OAuthUserInfoEndpoint
+Signature: hfhPt+/nbLvM4P236fMHvDFbKN3+54kBnPYpeoehi20=
+Modified: 638344087790581839
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\OktaSitecoreRoles.yml
+ID: "e504b6b1-61c5-4755-a509-bfc4daf2242e"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/OktaSitecoreRoles
+Signature: bwYbVI7I7tjFR1LwY/VOFJC77fWtHa/GWdX1o0zzQ0s=
+Modified: 638344087790894306
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\PostLogoutRedirectURI.yml
+ID: "9239aa61-1a78-46a6-aba1-1391072c9e02"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/PostLogoutRedirectURI
+Signature: sDNMapn4WK7dit4zwsVYwyh5EgJX5hwHWoxvDKWcxfo=
+Modified: 638344087791050419
+---
+File: |
+  C:\vijay\medpro\src\Foundation\Security\serialization\OKTA Templates\MedPro\Okta\Okta Setting Item\OKTA Settings\RedirectURI.yml
+ID: "e046fa74-2591-4c13-a9c8-0bf5663c5e0e"
+Parent: "c2571fb9-6b70-4f1c-8fb9-e82662e96b28"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/MedPro/Okta/Okta Setting Item/OKTA Settings/RedirectURI
+Signature: TyAZxJBdXEHN5fn0sleyLzU4q8AwLV17ACTRN42zi6M=
+Modified: 638344087791363568
