@@ -1,10 +1,10 @@
-﻿using MedProSC.Feature.ManualForms.Repositories;
+﻿using MedProSC.Feature.ManualForms.Controllers;
+using MedProSC.Feature.ManualForms.Repositories;
 using MedProSC.Feature.ManualForms.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Sitecore.DependencyInjection;
-
-
+using System.Web.Mvc;
 
 namespace MedProSC.Feature.ManualForms
 {
@@ -14,6 +14,7 @@ namespace MedProSC.Feature.ManualForms
         {
             serviceCollection.Replace(ServiceDescriptor.Transient<IStateService, StateService>());
             serviceCollection.Replace(ServiceDescriptor.Transient<IStateRepository, StateRepository>());
+            serviceCollection.AddTransient<ManualFormsController>();
         }
     }
 }

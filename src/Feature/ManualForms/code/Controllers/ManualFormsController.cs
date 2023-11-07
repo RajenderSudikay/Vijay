@@ -1,5 +1,7 @@
 ﻿using MedProSC.Feature.ManualForms.Models;
+using MedProSC.Feature.ManualForms.Services;
 using Sitecore.IO;
+using Sitecore.Mvc.Controllers;
 using Sitecore.Mvc.Presentation;
 using System;
 using System.Collections.Generic;
@@ -13,6 +15,13 @@ namespace MedProSC.Feature.ManualForms.Controllers
 {
     public class ManualFormsController : Controller
     {
+        private readonly IStateService _stateService;
+
+        public ManualFormsController(IStateService stateService)
+        {
+            _stateService = stateService;
+        }
+
         // GET: ManualForms
         public ActionResult LoadForm()
         {
@@ -21,6 +30,7 @@ namespace MedProSC.Feature.ManualForms.Controllers
             if (!string.IsNullOrWhiteSpace(manualformDataSource))
             {
                 var loadformDataSoureItem = Sitecore.Context.Database.GetItem(manualformDataSource, Sitecore.Context.Language);
+                var apiSettingItem = _stateService.GetApiSettings();
 
                 if (loadformDataSoureItem != null)
                 {
@@ -31,8 +41,8 @@ namespace MedProSC.Feature.ManualForms.Controllers
                     loadFormModel.FormsTypeLabel = loadformDataSoureItem.Fields[LoadFormTemplate.Fields.FormsTypeLabel].Value;
                     loadFormModel.LoadFormButtonText = loadformDataSoureItem.Fields[LoadFormTemplate.Fields.LoadFormButtonText].Value;
 
-
                 }
+               
             }
 
             return View("~/Views/ManualForms/LoadForm.cshtml", loadFormModel);
