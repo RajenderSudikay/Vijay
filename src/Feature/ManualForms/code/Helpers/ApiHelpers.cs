@@ -1,6 +1,8 @@
 ﻿using MedProSC.Feature.ManualForms.Models;
 using MedProSC.Feature.ManualForms.Repositories;
 using MedProSC.Feature.ManualForms.Services;
+using RestSharp;
+using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using static MedProSC.Feature.ManualForms.Templates;
 
@@ -9,17 +11,17 @@ namespace MedProSC.Feature.ManualForms.Helpers
     public class ApiHelpers
     {
         static IStateRepository StateRepository = new StateRepository();
-        static IStateService StateService = new StateService(StateRepository);
+        static IRestClient restClient= new RestClient();
+        static IStateService StateService = new StateService(StateRepository, restClient);
 
         public static string GetEnvironment()
         {
             return System.Configuration.ConfigurationManager.AppSettings["env:define"];
         }
 
-        public static ManualFormsAPISettings GetOktaSettingsModel()
+        public static ManualFormsAPISettings GetManualFormsSettingModel(Item apiSettingItem)
         {
-            var apiSettingItem = StateService.GetApiSettings();
-
+          
             if (apiSettingItem == null)
             {
                 Log.Warn("Api Setting Item missing. Please configure setting", "Api Heper Error");

@@ -3,6 +3,7 @@ using MedProSC.Feature.ManualForms.Services;
 using Sitecore.IO;
 using Sitecore.Mvc.Controllers;
 using Sitecore.Mvc.Presentation;
+using Sitecore.Web.UI.WebControls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,14 @@ using System.Web;
 using System.Web.Mvc;
 using static MedProSC.Feature.ManualForms.Templates;
 using static Sitecore.Shell.UserOptions.HtmlEditor;
+using Sitecore.Data.Items;
+using Sitecore.Diagnostics;
+using System.Collections.Specialized;
+using System.Net.Http;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using RestSharp;
 
 namespace MedProSC.Feature.ManualForms.Controllers
 {
@@ -30,7 +39,10 @@ namespace MedProSC.Feature.ManualForms.Controllers
             if (!string.IsNullOrWhiteSpace(manualformDataSource))
             {
                 var loadformDataSoureItem = Sitecore.Context.Database.GetItem(manualformDataSource, Sitecore.Context.Language);
-                var apiSettingItem = _stateService.GetApiSettings();
+
+
+                var apiSettingModel = _stateService.GetManualFormsApiSettings();
+                var stateAPIRespobse = _stateService.GetStateDetailsfromAPI();
 
                 if (loadformDataSoureItem != null)
                 {

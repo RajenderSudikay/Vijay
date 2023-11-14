@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Sitecore.DependencyInjection;
 using System.Web.Mvc;
+using RestSharp;
 
 namespace MedProSC.Feature.ManualForms
 {
@@ -15,6 +16,7 @@ namespace MedProSC.Feature.ManualForms
             serviceCollection.Replace(ServiceDescriptor.Transient<IStateService, StateService>());
             serviceCollection.Replace(ServiceDescriptor.Transient<IStateRepository, StateRepository>());
             serviceCollection.AddTransient<ManualFormsController>();
+            serviceCollection.Replace(ServiceDescriptor.Transient<IRestClient, RestClient>());
         }
     }
 }
