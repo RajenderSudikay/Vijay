@@ -6,7 +6,7 @@ using static MedProSC.Feature.ManualForms.Templates;
 namespace MedProSC.Feature.ManualForms.Repositories
 {
     using static Templates;
-    public class StateRepository : IStateRepository
+    public class ManualFormsRepository : IManualFormsRepository
     {
         public Item GetApiSettingItemBasedOnEnvironment()
         {

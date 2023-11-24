@@ -1,34 +1,18 @@
 ﻿using MedProSC.Feature.ManualForms.Models;
 using MedProSC.Feature.ManualForms.Services;
-using Sitecore.IO;
-using Sitecore.Mvc.Controllers;
 using Sitecore.Mvc.Presentation;
-using Sitecore.Web.UI.WebControls;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using static MedProSC.Feature.ManualForms.Templates;
-using static Sitecore.Shell.UserOptions.HtmlEditor;
-using Sitecore.Data.Items;
-using Sitecore.Diagnostics;
-using System.Collections.Specialized;
-using System.Net.Http;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using RestSharp;
 
 namespace MedProSC.Feature.ManualForms.Controllers
 {
     public class ManualFormsController : Controller
     {
-        private readonly IStateService _stateService;
+        private readonly IManualFormsService _manualFormsService;
 
-        public ManualFormsController(IStateService stateService)
+        public ManualFormsController(IManualFormsService manualFormService)
         {
-            _stateService = stateService;
+            _manualFormsService = manualFormService;
         }
 
         // GET: ManualForms
@@ -40,9 +24,8 @@ namespace MedProSC.Feature.ManualForms.Controllers
             {
                 var loadformDataSoureItem = Sitecore.Context.Database.GetItem(manualformDataSource, Sitecore.Context.Language);
 
-
-                var apiSettingModel = _stateService.GetManualFormsApiSettings();
-                var stateAPIRespobse = _stateService.GetStateDetailsfromAPI();
+                var apiSettingModel = _manualFormsService.GetManualFormsApiSettings();
+                //var stateAPIRespobse = _stateService.GetStateDetailsfromAPI(apiSettingModel);
 
                 if (loadformDataSoureItem != null)
                 {
@@ -53,8 +36,34 @@ namespace MedProSC.Feature.ManualForms.Controllers
                     loadFormModel.FormsTypeLabel = loadformDataSoureItem.Fields[LoadFormTemplate.Fields.FormsTypeLabel].Value;
                     loadFormModel.LoadFormButtonText = loadformDataSoureItem.Fields[LoadFormTemplate.Fields.LoadFormButtonText].Value;
 
+                    loadFormModel.StateList = _manualFormsService.GetListItemFromAPI(new APIModel()
+                    {
+                        URL = !string.IsNullOrWhiteSpace(apiSettingModel.StateBaseAPI_URL) ?
+                        apiSettingModel.StateBaseAPI_URL + apiSettingModel.StateAPI_URL: apiSettingModel.Base_URL + apiSettingModel.StateAPI_URL,
+                        Client_id = !string.IsNullOrWhiteSpace(apiSettingModel.StateClient_id) ? apiSettingModel.StateClient_id : apiSettingModel.BaseClient_id,
+                        Client_secret = !string.IsNullOrWhiteSpace(apiSettingModel.StateClient_secret) ? apiSettingModel.StateClient_secret : apiSettingModel.BaseClient_secret,
+                        Type = "States"
+                    });
+
+                    loadFormModel.IssueCompanyList = _manualFormsService.GetListItemFromAPI(new APIModel()
+                    {
+                        URL = !string.IsNullOrWhiteSpace(apiSettingModel.ICBaseAPI_URL) ?
+                         apiSettingModel.ICBaseAPI_URL + apiSettingModel.ICAPI_URL : apiSettingModel.Base_URL + apiSettingModel.ICAPI_URL,
+                        Client_id = !string.IsNullOrWhiteSpace(apiSettingModel.ICClient_id) ? apiSettingModel.ICClient_id : apiSettingModel.BaseClient_id,
+                        Client_secret = !string.IsNullOrWhiteSpace(apiSettingModel.ICClient_secret) ? apiSettingModel.ICClient_secret : apiSettingModel.BaseClient_secret,
+                        Type = "IC"
+                    });
+
+                    loadFormModel.FormsTypeList = _manualFormsService.GetListItemFromAPI(new APIModel()
+                    {
+                        URL = !string.IsNullOrWhiteSpace(apiSettingModel.FTBaseAPI_URL) ?
+                        apiSettingModel.FTBaseAPI_URL + apiSettingModel.FTAPI_URL : apiSettingModel.Base_URL + apiSettingModel.FTAPI_URL,
+                        Client_id = !string.IsNullOrWhiteSpace(apiSettingModel.FTClient_id) ? apiSettingModel.FTClient_id : apiSettingModel.BaseClient_id,
+                        Client_secret = !string.IsNullOrWhiteSpace(apiSettingModel.FTClient_secret) ? apiSettingModel.FTClient_secret : apiSettingModel.BaseClient_secret,
+                        Type = "FT"
+                    });
                 }
-               
+
             }
 
             return View("~/Views/ManualForms/LoadForm.cshtml", loadFormModel);

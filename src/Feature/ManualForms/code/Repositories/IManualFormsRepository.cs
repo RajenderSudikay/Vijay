@@ -3,7 +3,7 @@ using Sitecore.Data.Items;
 
 namespace MedProSC.Feature.ManualForms.Repositories
 {
-    public interface IStateRepository
+    public interface IManualFormsRepository
     {
         Item GetApiSettingItemBasedOnEnvironment();
 
