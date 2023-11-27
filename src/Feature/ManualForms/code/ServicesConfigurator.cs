@@ -16,6 +16,7 @@ namespace MedProSC.Feature.ManualForms
             serviceCollection.Replace(ServiceDescriptor.Transient<IManualFormsService, ManualFormsService>());
             serviceCollection.Replace(ServiceDescriptor.Transient<IManualFormsRepository, ManualFormsRepository>());          
             serviceCollection.Replace(ServiceDescriptor.Transient<IRestClient, RestClient>());
+            serviceCollection.AddTransient<ManualFormsController>();
         }
     }
 }

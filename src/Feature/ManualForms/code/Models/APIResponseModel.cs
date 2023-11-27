@@ -5,7 +5,6 @@ namespace MedProSC.Feature.ManualForms.Models
 {
     public class APIResponseModel
     {
-
         public class StateRoot
         {
             public List<StateInfo> states { get; set; }
@@ -16,6 +15,11 @@ namespace MedProSC.Feature.ManualForms.Models
             public List<CodeDescription> issueCompanies { get; set; }
         }
 
+        public class LoadFormsRoot
+        {
+            public List<Form> forms { get; set; }
+            public ResponseCode responseCode { get; set; }
+        }
 
         public class CodeDescription
         {
@@ -32,6 +36,25 @@ namespace MedProSC.Feature.ManualForms.Models
 
             [JsonProperty("state")]
             public string state { get; set; }
+        }
+   
+        public class Form
+        {
+            public string coverageTrigger { get; set; }
+            public string effectiveDate { get; set; }
+            public string expirationDate { get; set; }
+            public string formName { get; set; }
+            public string formNumber { get; set; }
+            public string formType { get; set; }
+            public string issueCompany { get; set; }
+            public string state { get; set; }
+        }
+
+        public class ResponseCode
+        {
+            public int messageCode { get; set; }
+            public string message { get; set; }
+            public string status { get; set; }
         }
     }
 }

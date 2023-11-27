@@ -1,25 +1,19 @@
-﻿using Sitecore.Data.Items;
+﻿using MedProSC.Feature.ManualForms.Models;
 using MedProSC.Feature.ManualForms.Repositories;
-using RestSharp;
-using RestSharp.Authenticators;
-using Sitecore.Diagnostics;
-using System;
-using MedProSC.Feature.ManualForms.Models;
-using Sitecore.Pipelines.RenderItemTile;
-using Sitecore.Web.UI.WebControls;
-using System.Collections.Generic;
-using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
-using System.Web.UI.WebControls;
-using System.Web.Mvc;
+using RestSharp;
+using Sitecore.Data.Items;
+using System.Collections.Generic;
+using System.Data;
 using System.IO;
-using Microsoft.Ajax.Utilities;
 using System.Linq;
-using System.Web.Helpers;
+using System.Web.Mvc;
 
 namespace MedProSC.Feature.ManualForms.Services
 {
+    using static Constants.APIHeaders;
     using static Helpers.ApiHelpers;
+    using static MedProSC.Feature.ManualForms.Models.APIResponseModel;
 
     public class ManualFormsService : IManualFormsService
     {
@@ -42,20 +36,7 @@ namespace MedProSC.Feature.ManualForms.Services
             var apiSettingItem = GetApiSettings();
             return GetManualFormsSettingModel(apiSettingItem);
 
-        }
-
-        //public IRestResponse GetStateDetailsfromAPI(ManualFormsAPISettings apiSettingModel)
-        //{
-        //    var request = new RestRequest(apiSettingModel.Base_URL, RestSharp.Method.GET);
-        //    request.AddHeader("client_id", apiSettingModel.Client_id);
-        //    request.AddHeader("client_secret", apiSettingModel.Client_secret);
-        //    request.AddHeader("X-Correlation-Id", "123456789");
-        //    request.AddHeader("Accept", "application/json");
-        //    var response = _restClient.Execute(request);
-
-        //    Console.WriteLine(response.Content);
-        //    return response;
-        //}
+        }     
 
         public IList<SelectListItem> GetListItemFromAPI(APIModel apiModel)
         {
@@ -91,34 +72,14 @@ namespace MedProSC.Feature.ManualForms.Services
                             Value = item.Code
                         }));
                     }
-                }
-
-                if (apiModel.Type == "FT")
-                {
-                    //using (StreamReader r = new StreamReader(@"C:\\vijay\\APIS\\LoadForms_API_JSON.json"))
-                    //{
-                    //    var json = r.ReadToEnd();
-                    //    var apiResponse = JsonConvert.DeserializeObject<APIResponseModel.IssueCompaniesRoot>(json);
-                    //    dropdownListItems.AddRange(apiResponse.issueCompanies.Select(item => new SelectListItem
-                    //    {
-                    //        Text = item.Description,
-                    //        Value = item.Code
-                    //    }));
-
-                    //}
-                }
+                }                
 
             }
             else
             {
-                if( !string.IsNullOrWhiteSpace(apiModel.URL) && !string.IsNullOrWhiteSpace(apiModel.Client_id) && !string.IsNullOrWhiteSpace(apiModel.Client_secret))
+                if (!string.IsNullOrWhiteSpace(apiModel.URL) && !string.IsNullOrWhiteSpace(apiModel.Client_id) && !string.IsNullOrWhiteSpace(apiModel.Client_secret))
                 {
-                    var request = new RestRequest(apiModel.URL, RestSharp.Method.GET);
-                    request.AddHeader("client_id", apiModel.Client_id);
-                    request.AddHeader("client_secret", apiModel.Client_secret);
-                    request.AddHeader("X-Correlation-Id", "123456789");
-                    request.AddHeader("Accept", "application/json");
-                    response = _restClient.Execute(request);
+                    response = GetAPIResponse(apiModel);
                     if (apiModel.Type == "States" && response != null)
                     {
 
@@ -148,9 +109,55 @@ namespace MedProSC.Feature.ManualForms.Services
                     }
                 }
             }
-               
 
             return dropdownListItems;
+        }
+
+        private dynamic GetAPIResponse(APIModel apiModel)
+        {
+            dynamic response;
+            var request = new RestRequest(apiModel.URL, RestSharp.Method.GET);
+            request.AddHeader(Client_id, apiModel.Client_id);
+            request.AddHeader(Client_secret, apiModel.Client_secret);
+            request.AddHeader(XCorrelationId, "123456789");
+            request.AddHeader(Accept, RequestAcceptType);
+            response = _restClient.Execute(request);
+            return response;
+        }
+
+        public LoadFormsRoot GetLoadForms(APIModel apiModel)
+        {
+            dynamic localresponse = null;
+            if (localresponse == null)
+            {
+                if (apiModel.Type == "LF")
+                {
+                    using (StreamReader r = new StreamReader(@"C:\\vijay\\APIS\\LoadForms_API_JSON.json"))
+                    {
+                        var json = r.ReadToEnd();
+                        var apiResponse = JsonConvert.DeserializeObject<APIResponseModel.LoadFormsRoot>(json);
+                       
+                        return apiResponse;
+                    }
+                }
+            }
+
+            else if (!string.IsNullOrWhiteSpace(apiModel.URL) && !string.IsNullOrWhiteSpace(apiModel.Client_id) && !string.IsNullOrWhiteSpace(apiModel.Client_secret))
+            {
+                var response = GetAPIResponse(apiModel);
+
+                if (apiModel.Type == "LF" && response != null)
+                {
+                    APIResponseModel.LoadFormsRoot loadFormsResponse = JsonConvert.DeserializeObject<APIResponseModel.LoadFormsRoot>(response.Content);
+                    if (loadFormsResponse != null && loadFormsResponse.forms != null)
+                    {
+                        return loadFormsResponse;
+                    }
+                }
+            }
+
+            return new LoadFormsRoot();
+
         }
     }
 }

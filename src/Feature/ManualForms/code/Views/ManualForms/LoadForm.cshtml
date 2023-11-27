@@ -13,7 +13,7 @@
                     <select id="formissue" name="formissue" class="form-control form-select form-select-md mb-3 btn-sm" required>
                         @if (Model != null && Model.IssueCompanyList != null)
                         {
-                            @foreach (SelectListItem company in Model.IssueCompanyList)
+                            foreach (SelectListItem company in Model.IssueCompanyList)
                             {
                                 <option value="@company.Value">@company.Text</option>
                             }
@@ -30,7 +30,7 @@
 
                         @if (Model != null && Model.StateList != null)
                         {
-                            @foreach (SelectListItem state in @Model.StateList)
+                            foreach (SelectListItem state in @Model.StateList)
                             {
                                 <option value="@state.Value">@state.Text</option>
                             }
@@ -50,8 +50,8 @@
 
             <div class="col-md-2">
                 <div class="form-group">
-                    <label for="formstype" class="">@Model.FormsTypeLabel<b style="color:red">*</b></label>
-                    <select name="formstype" class="form-control form-select form-select-md mb-3 btn-sm formstype" required>
+                    <label for="filterformstype" class="">@Model.FormsTypeLabel<b style="color:red">*</b></label>
+                    <select name="filterformstype" class="form-control form-select form-select-md mb-3 btn-sm filterformstype" required>
                         <option value="id7323258">HPLP</option>
                         <option value="id4515534">MSHP</option>
                     </select>
