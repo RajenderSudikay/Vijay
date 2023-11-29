@@ -16,9 +16,9 @@
         background-color: rgb(232, 244, 250);
     }
 
-    #loadtable tbody {
+   /* #loadtable tbody {
         height: 300px;
-    }
+    }*/
 
     #loadtable thead {
         background-color: #002f6b !important;
@@ -98,4 +98,79 @@
 .action {
     color: rgb(0, 47, 107);
     font-size: 16px;
+}
+
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+    float: none;
+    text-align: left;
+    width: 50%
+}
+
+.dataTables_length {
+    float: left;
+    text-align: left;
+    color: white;
+}
+
+.dataTables_filter {
+    display: none;
+}
+
+#loadtable_wrapper .bottom {
+    margin-left: 2%;
+    display: block !important;
+    margin-right: -2%;
+    background: #002f6b !important;
+    color: #fff;
+    width: 95%;
+}
+
+#loadtable_paginate {
+    display: inline-block;  
+}
+
+.paginate_input {
+    width: 36px;
+    height: 17px;
+    color: white;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    display: inline-block;
+    background: #fff;
+    color: black;
+}
+
+.dataTables_wrapper .dataTables_length {
+    float: inline-end;
+}
+
+#loadtable {
+    width: 100%;
+    font-family: "Nunito Sans" !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+}
+
+#loadtable_paginate {
+    color: white;
+}
+
+#loadtable_length {
+    color: white;
+    margin-right: 80px;
+}
+
+.paginate_input {
+    color: black;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    display: inline-block;
+    background: #fff;
+    color: black;
+    height: 20px;
+    margin-top: 8px;
+    padding-top: 0px;
 }

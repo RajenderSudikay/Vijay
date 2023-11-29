@@ -1,8 +1,19 @@
 ﻿@model MedProSC.Feature.ManualForms.Models.BuilderTable
 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.0/css/jquery.dataTables.css" />
+<link rel="stylesheet" href="cdn.datatables.net/plug-ins/1.10.15/integration/font-awesome/dataTables.fontAwesome.css" />
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.12/pagination/input.js"></script>
+
+
+
+
 @if (Model != null)
 {
-    <table id="loadtable" class="table table-bordered table-lg mytable" style="width:95%">
+    @*<div class="container mt-4">*@
+    <table id="loadtable" class="table table-bordered table-lg mytable" style="width:100%">
         <thead class="builder-table-head">
             <tr>
                 <th>@Model.FormNumber</th>
@@ -15,11 +26,14 @@
             </tr>
         </thead>
     </table>
+    @*</div>*@
 }
+
 
 <script>
 
     $(document).ready(function () {
+
         $('.btn-load-form').on('click', function () {
             var IssueCompany = $('#formissue :selected').text();
             var State = $('#formstate :selected').text();
@@ -41,13 +55,15 @@
                 data: { SearchModel: loadFormSearchModel },
                 success: OnSuccess,
                 failure: function (response) {
-                    /*  alert(response.d);*/
+                    alert(response.d);
                 },
                 error: function (response) {
-                    /*alert(response.d);*/
+                    alert(response.d);
                 }
             });
         });
+
+
 
         function OnSuccess(json) {
             var data = json.forms.map(data => {
@@ -63,25 +79,33 @@
                 }
             });
 
+
             var table = $('#loadtable').DataTable({
                 data: data,
+                sPaginationType: "input",
                 ordering: false,
                 "sDom": '<"top">rt<"bottom"lp><"clear">',
+                /*dom: '<"top"f>rt<"bottom"lp><"clear">',*/
                 responsive: true,
                 pageLength: 10,
                 lengthMenu: [10, 25, 50, 75, 100],
+                //"language": {
+                //    "search": "Search by Form #",
 
-                pagingType: "input",
+                //},
+
+
+
+                /*pagingtype: "full",*/
                 bFilter: "true",
                 language: {
                     "info": "_START_ of _TOTAL_",
-                    "paginate": {
-                        "first": "<i class='bi bi-skip-start-fill goto-first-last' style='color: white'></i>",
-                        "last": "<i class='bi bi-caret-left-fill left-right' style='color: white'></i>",
-                        "next": "<i class='bi bi-caret-right-fill left-right' style='color: white'></i>",
-                        "previous": "<i class='bi bi-skip-end-fill goto-first-last' style='color: white'></i>"
-                    }
+                    sNext: '<i class="fa fa-forward"></i>',
+                    sPrevious: '<i class="fa fa-backward"></i>',
+                    sFirst: '<i class="fa fa-step-backward"></i>',
+                    sLast: '<i class="fa fa-step-forward"></i>'
                 },
+
                 columnDefs: [
                     { "width": "15%", "targets": 0 },
                     { "width": "45%", "targets": 1 },
@@ -113,51 +137,150 @@
 
                 "success": fnsuccesscallback,
                 "error": fnerrorcallback
+
             });
 
+
+            //$('.search-form').keyup(function () {
+            //    var table = $('#loadtable').DataTable();
+            //    table.search($(this).val()).draw();
+            //});
+
             $('.search-name').on('change', function () {
+
                 table
                     .column(1)
                     .search(this.value)
                     .draw();
+
             });
 
             $('.search-form').on('change', function () {
+
                 table
                     .column(0)
                     .search(this.value)
                     .draw();
-            });
 
+            });
             $('#assetassettype').on('change', function () {
                 var coverageType = $('#assetassettype option:selected').text();
+                //table
+                //    .column(2, 3);
+                //    .search(coverageType)
+                //    .draw();
+
                 table.columns([2, 3]).search(coverageType).draw();
+
             });
+
+
+            //// Add event listener to the table column(s)
+            //$('#loadtable thead th').on('click', function () {
+            //    var columnIndex = $(this).index(); // Index of the clicked column
+            //    var searchValue = $(this).text().trim(); // Clicked column name
+
+            //    // Redraw the DataTable with the new search query
+            //    table.columns().search('').draw(); // Clear previous search
+            //    table.column(columnIndex).search(searchValue).draw(); // Apply new search
+            //});
+
+
+
 
             table.on('draw', function () {
                 tabulate(table.page.info());
             });
 
             function fnsuccesscallback(data) {
-                /* alert(data.d);*/
+                alert(data.d);
             }
             function fnerrorcallback(result) {
-                /*  alert("error");*/
+                alert("error");
             }
-
-            $("#projectKey").change(function () {
-                /*  alert("test");*/
-            });
 
             var tbody = $('#loadtable').find('tbody');
             tbody.addClass("form-tablebody");
         }
     });
 
+
     function tabulate(pageInfo) {
         var curr = pageInfo.page + 1;
         var tot = pageInfo.pages;
-        $('.paginate_of').text(" of " + tot);
-        $('#loadtable_paginate').css("display", "block");
+        $("<span>Page " + curr + " of " + tot + "</span > ").insertAfter("a.paginate_button.previous");
     }
 </script>
+
+
+<style>
+    .dataTables_wrapper .dataTables_info,
+    .dataTables_wrapper .dataTables_paginate {
+        float: none;
+        text-align: left;
+        width: 50%
+    }
+
+    .dataTables_length {
+        float: left;
+        text-align: left;
+        color: white;
+    }
+
+    .dataTables_filter {
+        display: none;
+    }
+
+
+
+    #loadtable_wrapper .bottom {
+        margin-left: 2%;
+        display: block !important;
+        margin-right: -2%;
+        background: #002f6b !important;
+        color: #fff;
+    }
+
+
+
+    /*#loadtable_length {
+        display: inline-block;*/
+    /*   margin-top: 20px;
+        margin-right: 20px;*/
+    /*background-color: #002f6b !important;
+        width: 50% !important;
+        color: white;
+    }
+
+    #loadtable_paginate {
+        display: inline-block;*/
+    /*   margin-top: 20px;
+        margin-right: 20px;*/
+    /*background-color: #002f6b !important;
+        width: 50% !important;
+        height: 29px;
+        color: white;
+    }*/
+    .paginate_input {
+        width: 36px;
+        height: 17px;
+        color: white;
+    }
+
+    div.dataTables_wrapper div.dataTables_length select {
+        display: inline-block;
+        background: #fff;
+        color: black;
+    }
+
+    .dataTables_wrapper .dataTables_length {
+        float: inline-end;
+    }
+
+    #loadtable {
+        width: 100%;
+        font-family: "Nunito Sans" !important;
+        font-size: 13px !important;
+        font-weight: 600 !important;
+    }
+</style>
