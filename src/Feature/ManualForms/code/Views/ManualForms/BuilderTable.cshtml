@@ -12,19 +12,20 @@
                 <th>@Model.EffectiveDate</th>
                 <th>@Model.ExpirationDate</th>
                 <th></th>
+                <th></th>
             </tr>
         </thead>
     </table>
 }
 
-<script>
+@*<script>
 
-    $(document).ready(function () {
+       var table;
         $('.btn-load-form').on('click', function () {
             var IssueCompany = $('#formissue :selected').text();
             var State = $('#formstate :selected').text();
             var formDate = $('.formdate').val();
-            var formType = $('.formstype :selected').text();
+            var formType = $('.filterformstype :selected').text();
             var apiQueryString = "?issueCompany=" + IssueCompany + "&state=" + State + "&effectiveDate=" + formDate + "&formType=" + formType;
 
             var loadFormSearchModel = {
@@ -34,52 +35,58 @@
                 formType: formType,
                 apiQueryString: apiQueryString
             }
+
             $.ajax({
                 type: "POST",
                 url: "/manualformsapi/getloadforms",
                 dataType: "json",
                 data: { SearchModel: loadFormSearchModel },
                 success: OnSuccess,
+
                 failure: function (response) {
-                    /*  alert(response.d);*/
+                    alert(response.d);
                 },
                 error: function (response) {
-                    /*alert(response.d);*/
+                    alert(response.d);
                 }
             });
         });
 
         function OnSuccess(json) {
+
             var data = json.forms.map(data => {
                 console.log(data);
                 if (data.coverageTrigger == 'ALL') {
-                    return [data.formNumber, data.formName, true, true, data.effectiveDate, data.expirationDate];
+                    return [data.formNumber, data.formName, true, true, data.effectiveDate, data.expirationDate, data.coverageTrigger];
                 }
                 if (data.coverageTrigger == 'Occurrence') {
-                    return [data.formNumber, data.formName, true, false, data.effectiveDate, data.expirationDate];
+                    return [data.formNumber, data.formName, true, false, data.effectiveDate, data.expirationDate, data.coverageTrigger];
                 }
                 if (data.coverageTrigger == 'Claims Made') {
-                    return [data.formNumber, data.formName, false, true, data.effectiveDate, data.expirationDate];
+                    return [data.formNumber, data.formName, false, true, data.effectiveDate, data.expirationDate, data.coverageTrigger];
                 }
             });
 
-            var table = $('#loadtable').DataTable({
+
+            $('#loadtable').dataTable().fnDestroy();
+            table = $('#loadtable').DataTable({
                 data: data,
                 ordering: false,
-                "sDom": '<"top">rt<"bottom"lp><"clear">',
+                sDom: '<"top">rt<"bottom"lp><"clear">',
                 responsive: true,
                 pageLength: 10,
                 lengthMenu: [10, 25, 50, 75, 100],
-
                 pagingType: "input",
                 bFilter: "true",
+                bRetrieve: true,
                 language: {
+                    lengthMenu: "Results per Page _MENU_",
                     "info": "_START_ of _TOTAL_",
                     "paginate": {
                         "first": "<i class='bi bi-skip-start-fill goto-first-last' style='color: white'></i>",
-                        "last": "<i class='bi bi-caret-left-fill left-right' style='color: white'></i>",
+                        "last": "<i class='bi bi-skip-end-fill goto-first-last' style='color: white'></i>",
                         "next": "<i class='bi bi-caret-right-fill left-right' style='color: white'></i>",
-                        "previous": "<i class='bi bi-skip-end-fill goto-first-last' style='color: white'></i>"
+                        "previous": "<i class='bi bi-caret-left-fill left-right' style='color: white'></i>"
                     }
                 },
                 columnDefs: [
@@ -101,10 +108,11 @@
                     },
                     { "width": "10%", "targets": 4 },
                     { "width": "10%", "targets": 5 },
+                    { "width": "0%", "targets": 6, "searchable": true, "visible": false },
                     {
                         data: null,
-                        defaultContent: '<i class="bi bi-plus-circle-fill"></i>',
-                        targets: -1
+                        defaultContent: '<i class="bi bi-plus-circle-fill" style="color:#002f6b; font-size:medium;"></i>',
+                        targets: 7
                     }
                 ],
                 initcomplete: function () {
@@ -115,13 +123,6 @@
                 "error": fnerrorcallback
             });
 
-            $('.search-name').on('change', function () {
-                table
-                    .column(1)
-                    .search(this.value)
-                    .draw();
-            });
-
             $('.search-form').on('change', function () {
                 table
                     .column(0)
@@ -129,9 +130,28 @@
                     .draw();
             });
 
+            $('.search-name').on('change', function () {
+                table
+                    .column(1)
+                    .search(this.value)
+                    .draw();
+            });
+
             $('#assetassettype').on('change', function () {
-                var coverageType = $('#assetassettype option:selected').text();
-                table.columns([2, 3]).search(coverageType).draw();
+                var textSelected = $('#assetassettype option:selected').text();
+                if (textSelected != "ALL") {
+                    table.columns([6]).search(textSelected).draw();
+                }
+                else {
+                    table.search('').columns().search('').draw();
+                }
+            });
+
+
+            $('.clear-filter').on('click', function () {
+                $('.search-clear').val('');
+                $('#assetassettype').val('ALL');
+                table.search('').columns().search('').draw();
             });
 
             table.on('draw', function () {
@@ -139,25 +159,36 @@
             });
 
             function fnsuccesscallback(data) {
-                /* alert(data.d);*/
+                alert(data.d);
             }
             function fnerrorcallback(result) {
-                /*  alert("error");*/
+                alert("error");
             }
-
-            $("#projectKey").change(function () {
-                /*  alert("test");*/
-            });
 
             var tbody = $('#loadtable').find('tbody');
             tbody.addClass("form-tablebody");
         }
-    });
 
-    function tabulate(pageInfo) {
-        var curr = pageInfo.page + 1;
-        var tot = pageInfo.pages;
-        $('.paginate_of').text(" of " + tot);
-        $('#loadtable_paginate').css("display", "block");
-    }
-</script>
+        function tabulate(pageInfo) {
+            var curr = pageInfo.page + 1;
+            var tot = pageInfo.pages;
+            $("<span>Page " + curr + " of " + tot + "</span>").insertAfter("a.paginate_button.previous");
+            $('.paginate_of').text(" of " + tot);
+            $('#loadtable_paginate').css("display", "block");
+        }
+
+        $('.mybundle, .search, .mytable').hide();
+
+        $('.btn-load-form').click(function () {
+            $('.mybundle, .search, .mytable').show();
+            $('#' + this.innerHTML).show().siblings().hide();
+        });
+
+        $('.btn-load-form').attr('disabled', 'disabled');
+
+        $('.formdate').change(function () {
+            $('.btn-load-form').removeAttr('disabled');
+        });
+
+
+    </script>*@
