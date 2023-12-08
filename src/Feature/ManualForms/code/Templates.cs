@@ -78,35 +78,19 @@ namespace MedProSC.Feature.ManualForms
 
             public struct Fields
             {
-                public static readonly ID Environment = new ID("{9ACADDAE-F155-495D-86CE-E4D92EA6BBB0}");          
+                public static readonly ID Environment = new ID("{9ACADDAE-F155-495D-86CE-E4D92EA6BBB0}");
                 public static readonly ID Base_URL = new ID("{81D7B2F3-071C-4D25-845C-B86CEAECB050}");
+                public static readonly ID ClientID = new ID("{6DDAED9E-DA13-4520-858E-7B311403F30F}");
+                public static readonly ID ClientSecret = new ID("{951BF3A5-9494-4813-985A-ECBCA8EAC306}");
                 public static readonly ID Timeout = new ID("{B3830D53-0E0A-49B1-98C2-CCC22102BF78}");
                 public static readonly ID CacheDuration = new ID("{82DC5A3F-0B06-4EBC-8D6D-2FA062B38847}");
-                public static readonly ID ClientSecret = new ID("{951BF3A5-9494-4813-985A-ECBCA8EAC306}");
-                public static readonly ID ClientID = new ID("{6DDAED9E-DA13-4520-858E-7B311403F30F}");
 
-                public static readonly ID StateAlternateBaseURL = new ID("{EC523BE1-7B61-43B5-85EB-8BECEA5644D3}");
                 public static readonly ID StateAPI_URL = new ID("{EE3DC3C0-58F1-46B4-9BBE-DCDEE340E7BC}");
-                public static readonly ID StateAlternateClient_id = new ID("{C155F601-BC48-49BE-B7BB-9AD7135CBBDF}");
-                public static readonly ID StateAlternateClient_secret = new ID("{695B2165-83E9-471D-998B-53AEBBC425A5}");
-
-
-                public static readonly ID ICAlternateBaseURL = new ID("{4E90580F-915B-45A3-B31F-81FCA8D6A9EF}");
                 public static readonly ID ICAPI_URL = new ID("{DA31CCD5-38CC-41F0-815E-CB5F4B49E28B}");
-                public static readonly ID ICAlternateClient_id = new ID("{A3572350-5704-458B-82CC-E6A4CAB5DCF2}");
-                public static readonly ID ICAlternateClient_secret = new ID("{A68D6871-93F5-4DA9-AEE1-D8C75A1BAE20}");
-
-                public static readonly ID FTAlternateBaseURL = new ID("{23D84BE6-C722-4735-B3EA-9C5AEC732003}");
                 public static readonly ID FTAPI_URL = new ID("{82560CE2-D0E3-402C-86C5-535873DC363C}");
-                public static readonly ID AlternateFTClient_id = new ID("{931CB068-AC30-4617-BB21-55AB07A12643}");
-                public static readonly ID AlternateFTClient_secret = new ID("{CE5A801A-EE60-4534-951A-C91E76312938}");
-
-                public static readonly ID LFAlternateBaseURL = new ID("{54B3C3A4-253B-4C1E-B04E-7DA1F44AE26B}");
                 public static readonly ID LFAPI_URL = new ID("{05588155-D45B-45A4-8656-1E1956D75A50}");
-                public static readonly ID AlternateLFClient_id = new ID("{A042601F-26DA-42D3-859B-3AF18410F141}");
-                public static readonly ID AlternateLFClient_secret = new ID("{7B21FB7E-9114-461C-9035-B459EFA8E1B4}");
 
             }
-        }       
+        }
     }
 }

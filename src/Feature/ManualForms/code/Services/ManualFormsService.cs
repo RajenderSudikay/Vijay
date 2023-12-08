@@ -36,7 +36,7 @@ namespace MedProSC.Feature.ManualForms.Services
             var apiSettingItem = GetApiSettings();
             return GetManualFormsSettingModel(apiSettingItem);
 
-        }     
+        }
 
         public IList<SelectListItem> GetListItemFromAPI(APIModel apiModel)
         {
@@ -72,7 +72,7 @@ namespace MedProSC.Feature.ManualForms.Services
                             Value = item.Code
                         }));
                     }
-                }                
+                }
 
             }
             else
@@ -113,13 +113,18 @@ namespace MedProSC.Feature.ManualForms.Services
             return dropdownListItems;
         }
 
+        private string GenerateXCorrelationId()
+        {          
+            return System.Guid.NewGuid().ToString().Replace("{", "").Replace("}", "").Replace("-", "");
+        }
+
         private dynamic GetAPIResponse(APIModel apiModel)
         {
             dynamic response;
             var request = new RestRequest(apiModel.URL, RestSharp.Method.GET);
             request.AddHeader(Client_id, apiModel.Client_id);
             request.AddHeader(Client_secret, apiModel.Client_secret);
-            request.AddHeader(XCorrelationId, "123456789");
+            request.AddHeader(XCorrelationId, GenerateXCorrelationId());
             request.AddHeader(Accept, RequestAcceptType);
             response = _restClient.Execute(request);
             return response;
@@ -136,7 +141,7 @@ namespace MedProSC.Feature.ManualForms.Services
                     {
                         var json = r.ReadToEnd();
                         var apiResponse = JsonConvert.DeserializeObject<APIResponseModel.LoadFormsRoot>(json);
-                       
+
                         return apiResponse;
                     }
                 }

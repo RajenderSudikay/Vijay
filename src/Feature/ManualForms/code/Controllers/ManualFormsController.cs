@@ -16,7 +16,7 @@ namespace MedProSC.Feature.ManualForms.Controllers
         {
             _manualFormsService = manualFormService;
             apiSettingModel = _manualFormsService.GetManualFormsApiSettings();
-        } 
+        }
 
         // GET: ManualForms
         public ActionResult LoadForm()
@@ -39,41 +39,36 @@ namespace MedProSC.Feature.ManualForms.Controllers
 
                     loadFormModel.StateList = _manualFormsService.GetListItemFromAPI(new APIModel()
                     {
-                        URL = !string.IsNullOrWhiteSpace(apiSettingModel.StateBaseAPI_URL) ?
-                        apiSettingModel.StateBaseAPI_URL + apiSettingModel.StateAPI_URL : apiSettingModel.Base_URL + apiSettingModel.StateAPI_URL,
-                        Client_id = !string.IsNullOrWhiteSpace(apiSettingModel.StateClient_id) ? apiSettingModel.StateClient_id : apiSettingModel.BaseClient_id,
-                        Client_secret = !string.IsNullOrWhiteSpace(apiSettingModel.StateClient_secret) ? apiSettingModel.StateClient_secret : apiSettingModel.BaseClient_secret,
+                        URL = apiSettingModel.Base_URL + apiSettingModel.StateAPI_URL,
+                        Client_id = apiSettingModel.BaseClient_id,
+                        Client_secret = apiSettingModel.BaseClient_secret,
                         Type = "States"
                     });
 
                     loadFormModel.IssueCompanyList = _manualFormsService.GetListItemFromAPI(new APIModel()
                     {
-                        URL = !string.IsNullOrWhiteSpace(apiSettingModel.ICBaseAPI_URL) ?
-                         apiSettingModel.ICBaseAPI_URL + apiSettingModel.ICAPI_URL : apiSettingModel.Base_URL + apiSettingModel.ICAPI_URL,
-                        Client_id = !string.IsNullOrWhiteSpace(apiSettingModel.ICClient_id) ? apiSettingModel.ICClient_id : apiSettingModel.BaseClient_id,
-                        Client_secret = !string.IsNullOrWhiteSpace(apiSettingModel.ICClient_secret) ? apiSettingModel.ICClient_secret : apiSettingModel.BaseClient_secret,
+                        URL = apiSettingModel.Base_URL + apiSettingModel.ICAPI_URL,
+                        Client_id = apiSettingModel.BaseClient_id,
+                        Client_secret = apiSettingModel.BaseClient_secret,
                         Type = "IC"
                     });
 
                     loadFormModel.FormsTypeList = _manualFormsService.GetListItemFromAPI(new APIModel()
                     {
-                        URL = !string.IsNullOrWhiteSpace(apiSettingModel.FTBaseAPI_URL) ?
-                        apiSettingModel.FTBaseAPI_URL + apiSettingModel.FTAPI_URL : apiSettingModel.Base_URL + apiSettingModel.FTAPI_URL,
-                        Client_id = !string.IsNullOrWhiteSpace(apiSettingModel.FTClient_id) ? apiSettingModel.FTClient_id : apiSettingModel.BaseClient_id,
-                        Client_secret = !string.IsNullOrWhiteSpace(apiSettingModel.FTClient_secret) ? apiSettingModel.FTClient_secret : apiSettingModel.BaseClient_secret,
+                        URL = apiSettingModel.Base_URL + apiSettingModel.FTAPI_URL,
+                        Client_id = apiSettingModel.BaseClient_id,
+                        Client_secret = apiSettingModel.BaseClient_secret,
                         Type = "FT"
                     });
 
                     loadFormModel.LoadForms = _manualFormsService.GetLoadForms(new APIModel()
                     {
-                        URL = !string.IsNullOrWhiteSpace(apiSettingModel.FTBaseAPI_URL) ?
-                       apiSettingModel.FTBaseAPI_URL + apiSettingModel.FTAPI_URL : apiSettingModel.Base_URL + apiSettingModel.FTAPI_URL,
-                        Client_id = !string.IsNullOrWhiteSpace(apiSettingModel.FTClient_id) ? apiSettingModel.FTClient_id : apiSettingModel.BaseClient_id,
-                        Client_secret = !string.IsNullOrWhiteSpace(apiSettingModel.FTClient_secret) ? apiSettingModel.FTClient_secret : apiSettingModel.BaseClient_secret,
+                        URL = apiSettingModel.Base_URL + apiSettingModel.FTAPI_URL,
+                        Client_id = apiSettingModel.BaseClient_id,
+                        Client_secret = apiSettingModel.BaseClient_secret,
                         Type = "LF"
                     });
                 }
-
             }
 
             return View("~/Views/ManualForms/LoadForm.cshtml", loadFormModel);
@@ -84,12 +79,11 @@ namespace MedProSC.Feature.ManualForms.Controllers
         {
             var loadFormsResponse = _manualFormsService.GetLoadForms(new APIModel()
             {
-                URL = !string.IsNullOrWhiteSpace(apiSettingModel.LFBaseAPI_URL) ?
-                      apiSettingModel.LFBaseAPI_URL + apiSettingModel.LFAPI_URL + SearchModel.apiQueryString : apiSettingModel.Base_URL + apiSettingModel.LFAPI_URL + SearchModel.apiQueryString,
-                Client_id = !string.IsNullOrWhiteSpace(apiSettingModel.LFClient_id) ? apiSettingModel.LFClient_id : apiSettingModel.BaseClient_id,
-                Client_secret = !string.IsNullOrWhiteSpace(apiSettingModel.LFClient_secret) ? apiSettingModel.LFClient_secret : apiSettingModel.BaseClient_secret,
+                URL = apiSettingModel.Base_URL + apiSettingModel.LFAPI_URL,
+                Client_id = apiSettingModel.BaseClient_id,
+                Client_secret = apiSettingModel.BaseClient_secret,
                 Type = "LF"
-            });
+            }); ;
 
             return Json(loadFormsResponse, JsonRequestBehavior.AllowGet);
         }

@@ -123,28 +123,46 @@
             "error": fnerrorcallback
         });
 
-        function filterResults() {
+        $('.search-form').on('change', function () {
             var textSelected = $('#assetassettype option:selected').text();
             var searchFormNum = $('.search-form').val();
             var searchName = $('.search-name').val();
+
+            if (textSelected != "ALL") {
+                table.column(0).search(searchFormNum).column(1).search(searchName).columns(6).search('').draw();
+            }
+            else {
+                table.column(0).search(searchFormNum).column(1).search(searchName).columns(6).search('').draw();
+            }
+        });
+
+        $('.search-name').on('change', function () {
+            var textSelected = $('#assetassettype option:selected').text();
+            var searchFormNum = $('.search-form').val();
+            var searchName = $('.search-name').val();
+
+            if (textSelected != "ALL") {
+                table.column(0).search(searchFormNum).column(1).search(searchName).columns(6).search('').draw();
+            }
+            else {
+                table.column(0).search(searchFormNum).column(1).search(searchName).columns(6).search('').draw();
+            }
+        });
+
+        $('#assetassettype').on('change', function () {
+            var textSelected = $('#assetassettype option:selected').text();
+            var searchFormNum = $('.search-form').val();
+            var searchName = $('.search-name').val();
+
+           
+
+
             if (textSelected != "ALL") {
                 table.column(0).search(searchFormNum).column(1).search(searchName).columns(6).search(textSelected).draw();
             }
             else {
                 table.column(0).search(searchFormNum).column(1).search(searchName).columns(6).search('').draw();
             }
-        }
-
-        $('.search-form').on('change', function () {
-            filterResults();
-        });
-
-        $('.search-name').on('change', function () {
-            filterResults();
-        });
-
-        $('#assetassettype').on('change', function () {
-            filterResults();
         });
 
 
