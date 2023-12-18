@@ -89,6 +89,7 @@ namespace MedProSC.Feature.ManualForms
                 public static readonly ID ICAPI_URL = new ID("{DA31CCD5-38CC-41F0-815E-CB5F4B49E28B}");
                 public static readonly ID FTAPI_URL = new ID("{82560CE2-D0E3-402C-86C5-535873DC363C}");
                 public static readonly ID LFAPI_URL = new ID("{05588155-D45B-45A4-8656-1E1956D75A50}");
+                public static readonly ID CBAPI_URL = new ID("{CAACE3B1-621E-4FF4-9BF4-AD47F44EBED6}");
 
             }
         }

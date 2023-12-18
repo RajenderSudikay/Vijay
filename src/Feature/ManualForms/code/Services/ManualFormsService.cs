@@ -1,5 +1,6 @@
 ﻿using MedProSC.Feature.ManualForms.Models;
 using MedProSC.Feature.ManualForms.Repositories;
+using Microsoft.Ajax.Utilities;
 using Newtonsoft.Json;
 using RestSharp;
 using Sitecore.Data.Items;
@@ -14,6 +15,7 @@ namespace MedProSC.Feature.ManualForms.Services
     using static Constants.APIHeaders;
     using static Helpers.ApiHelpers;
     using static MedProSC.Feature.ManualForms.Models.APIResponseModel;
+    using static MedProSC.Feature.ManualForms.Models.CreateBundleModel;
 
     public class ManualFormsService : IManualFormsService
     {
@@ -114,7 +116,7 @@ namespace MedProSC.Feature.ManualForms.Services
         }
 
         private string GenerateXCorrelationId()
-        {          
+        {
             return System.Guid.NewGuid().ToString().Replace("{", "").Replace("}", "").Replace("-", "");
         }
 
@@ -126,6 +128,11 @@ namespace MedProSC.Feature.ManualForms.Services
             request.AddHeader(Client_secret, apiModel.Client_secret);
             request.AddHeader(XCorrelationId, GenerateXCorrelationId());
             request.AddHeader(Accept, RequestAcceptType);
+
+            if (!string.IsNullOrWhiteSpace(apiModel.Body))
+            {
+                request.AddJsonBody(apiModel.Body, RequestAcceptType);
+            }
             response = _restClient.Execute(request);
             return response;
         }
@@ -162,6 +169,38 @@ namespace MedProSC.Feature.ManualForms.Services
             }
 
             return new LoadFormsRoot();
+
+        }
+
+
+        public CreateBundleResponseRoot CreateBundle(APIModel apiModel)
+        {
+            dynamic localresponse = null;
+            if (localresponse == null)
+            {
+
+                using (StreamReader r = new StreamReader(@"C:\\vijay\\APIS\\createbundle.json"))
+                {
+                    var json = r.ReadToEnd();
+                    var apiResponse = JsonConvert.DeserializeObject<CreateBundleResponseRoot>(json);
+                    return apiResponse;
+                }
+
+            }
+
+            else if (!string.IsNullOrWhiteSpace(apiModel.URL) && !string.IsNullOrWhiteSpace(apiModel.Client_id) && !string.IsNullOrWhiteSpace(apiModel.Client_secret))
+            {
+                var response = GetAPIResponse(apiModel);
+
+                CreateBundleResponseRoot createBundleResponse = JsonConvert.DeserializeObject<CreateBundleResponseRoot>(response.Content);
+                if (createBundleResponse != null)
+                {
+                    return createBundleResponse;
+                }
+
+            }
+
+            return new CreateBundleResponseRoot();
 
         }
     }

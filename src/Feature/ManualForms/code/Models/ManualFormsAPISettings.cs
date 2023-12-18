@@ -11,7 +11,8 @@
         public string StateAPI_URL { get; set; }
         public string ICAPI_URL { get; set; }    
         public string FTAPI_URL { get; set; }     
-        public string LFAPI_URL { get; set; }   
+        public string LFAPI_URL { get; set; }
+        public string CBAPI_URL { get; set; }
 
     }
 
@@ -21,5 +22,6 @@
         public string URL { get; set; }
         public string Client_secret { get; set; }
         public string Type { get; set; }
+        public string Body { get; set; }
     }
 }

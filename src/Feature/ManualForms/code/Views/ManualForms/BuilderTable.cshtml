@@ -20,7 +20,17 @@
 
 <script>
 
+    var fileData = new FormData();
     var table;
+
+    function emptyMyBunleRow() {
+        $('.mybundle tbody').empty();
+        var addEmptyRow = '<tr class= "newRow">'
+            + '<td colspan="3" style="text-align: center">No forms added to Bundle</td>'
+            + '</tr>';
+        $('.mybundle tbody').append(addEmptyRow);
+    }
+
     $('.btn-load-form').on('click', function () {
         var IssueCompany = $('#formissue :selected').text();
         var State = $('#formstate :selected').text();
@@ -111,7 +121,7 @@
                 { "width": "0%", "targets": 6, "searchable": true, "visible": false },
                 {
                     data: null,
-                    defaultContent: '<i class="bi bi-plus-circle-fill" style="color:#002f6b; font-size:medium;"></i>',
+                    defaultContent: '<i class="bi bi-plus-circle-fill add-fromto-bundle" style="color:#002f6b; font-size:medium;"></i>',
                     targets: 7
                 }
             ],
@@ -147,7 +157,6 @@
             filterResults();
         });
 
-
         $('.clear-filter').on('click', function () {
             $('.search-clear').val('');
             $('#assetassettype').val('ALL');
@@ -161,12 +170,14 @@
         function fnsuccesscallback(data) {
             alert(data.d);
         }
+
         function fnerrorcallback(result) {
             alert("error");
         }
 
         var tbody = $('#loadtable').find('tbody');
         tbody.addClass("form-tablebody");
+        emptyMyBunleRow();
     }
 
     function tabulate(pageInfo) {
@@ -184,10 +195,55 @@
         $('#' + this.innerHTML).show().siblings().hide();
     });
 
-    $('.btn-load-form').attr('disabled', 'disabled');
-
     $('.formdate').change(function () {
         $('.btn-load-form').removeAttr('disabled');
     });
-</script>
 
+    var selectedForms = [];
+    $(document).on("click", ".add-fromto-bundle", function () {
+        $('.error-message-bundleform').hide();
+        var clickedRow = $(this).closest('tr').find('td');
+        var formnumber = $(clickedRow).eq(0).text();
+        var formname = $(clickedRow).eq(1).text();
+
+        var formModel = {
+            Number: formnumber,
+            Name: formname
+        }
+
+        var foundForm = null;
+        if (selectedForms.length > 0) {
+            foundForm = selectedForms.filter(v => v.Number == formnumber);
+        }
+
+        if (foundForm == null || (foundForm != null && foundForm.length == 0)) {
+            selectedForms.push(formModel);
+            selectedForms.sort(function (a, b) {
+                var a1 = a.Number, b1 = b.Number;
+                if (a1 == b1)
+                    return 0;
+                return a1 > b1 ? 1 : -1;
+            });
+
+            $('.mybundle tbody').empty();
+            $.each(selectedForms, function (i, formRow) {
+                var added_row = '<tr class= "newRow">'
+                    + '<td class="bundle-formnum">' + formRow.Number + '</td>'
+                    + '<td class="bundle-formname">' + formRow.Name + '</td>'
+                    + '<td><i class="bi bi-dash-circle-fill bundle-formremove" data-formnum="' + formRow.Number + '" style="color: rgb(255,0,0);"></i></td>'
+                    + '</tr>';
+                $('.mybundle tbody').append(added_row);
+            });
+
+        }
+        else {
+            alert('already exists in the table');
+        }
+
+    });
+
+    //ON PAGE LOAD
+    $('.btn-load-form').attr('disabled', 'disabled');
+    $('.api-response-message').html("");
+
+</script>

@@ -2,11 +2,20 @@
 using MedProSC.Feature.ManualForms.Services;
 using Sitecore.Diagnostics;
 using Sitecore.Mvc.Presentation;
+using System;
+using System.IO;
+using System.Linq;
 using System.Web.Mvc;
+using static MedProSC.Feature.ManualForms.Models.CreateBundleModel;
 using static MedProSC.Feature.ManualForms.Templates;
+using Newtonsoft.Json;
+using Sitecore.Data;
+using System.Collections.Generic;
+using MedProSC.Feature.ManualForms.Helpers;
 
 namespace MedProSC.Feature.ManualForms.Controllers
 {
+    using static Constants.Common;
     public class ManualFormsController : Controller, IController
     {
         private readonly IManualFormsService _manualFormsService;
@@ -20,7 +29,7 @@ namespace MedProSC.Feature.ManualForms.Controllers
 
         // GET: ManualForms
         public ActionResult LoadForm()
-        {
+        {            
             var loadFormModel = new LoadForm();
             var manualformDataSource = RenderingContext.Current.Rendering.DataSource;
             if (!string.IsNullOrWhiteSpace(manualformDataSource))
@@ -83,9 +92,42 @@ namespace MedProSC.Feature.ManualForms.Controllers
                 Client_id = apiSettingModel.BaseClient_id,
                 Client_secret = apiSettingModel.BaseClient_secret,
                 Type = "LF"
-            }); ;
+            });
 
             return Json(loadFormsResponse, JsonRequestBehavior.AllowGet);
         }
+
+        public JsonResult CreateBundle(CreateBundle BundleModel)
+        {
+            BundleModel.modifiedOnDate = DateTime.Now;
+            byte[] bytes;
+
+            if (BundleModel.xmlFile != null)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    BundleModel.xmlFile.InputStream.CopyTo(memoryStream);
+                    bytes = memoryStream.ToArray();
+                }
+                BundleModel.insuredScheduleData = Convert.ToBase64String(bytes);
+            }
+
+            CreateBundlePostRequest postRequest = ApiHelpers.PostCreateBundleRequest(BundleModel);
+            var createBundleRequest = JsonConvert.SerializeObject(postRequest);
+
+            var createBundleResponse = _manualFormsService.CreateBundle(new APIModel()
+            {
+                URL = apiSettingModel.Base_URL + apiSettingModel.CBAPI_URL,
+                Client_id = apiSettingModel.BaseClient_id,
+                Client_secret = apiSettingModel.BaseClient_secret,
+                Body = createBundleRequest,
+                Type = "CB"
+            });
+
+
+            return Json(createBundleResponse, JsonRequestBehavior.AllowGet);
+        }
+
+        
     }
 }

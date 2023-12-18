@@ -4,6 +4,7 @@ using Sitecore.Data.Items;
 using System.Collections.Generic;
 using System.Web.Mvc;
 using static MedProSC.Feature.ManualForms.Models.APIResponseModel;
+using static MedProSC.Feature.ManualForms.Models.CreateBundleModel;
 
 namespace MedProSC.Feature.ManualForms.Services
 {
@@ -16,6 +17,8 @@ namespace MedProSC.Feature.ManualForms.Services
         IList<SelectListItem> GetListItemFromAPI(APIModel apiModel);
 
         LoadFormsRoot GetLoadForms(APIModel apiModel);
+
+        CreateBundleResponseRoot CreateBundle(APIModel apiModel);
     }
    
 }

@@ -238,8 +238,10 @@
     <Compile Include="Controllers\SearchFilterController.cs" />
     <Compile Include="Controllers\StateInfoController.cs" />
     <Compile Include="Helpers\ApiHelpers.cs" />
+    <Compile Include="Helpers\UserContextHelper.cs" />
     <Compile Include="Models\APIResponseModel.cs" />
     <Compile Include="Models\BuilderTable.cs" />
+    <Compile Include="Models\CreateBundleModel.cs" />
     <Compile Include="Models\LoadForm.cs" />
     <Compile Include="Models\MyBundle.cs" />
     <Compile Include="Models\SearchFilter.cs" />
