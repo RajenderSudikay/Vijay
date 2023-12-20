@@ -1,5 +1,11 @@
 ﻿@model MedProSC.Feature.ManualForms.Models.BuilderTable
 
+<style>
+    .text-center {
+        text-align: center !important;
+    }
+</style>
+
 @if (Model != null)
 {
     <table id="loadtable" class="table table-bordered table-lg mytable" style="width:95%">
@@ -31,13 +37,15 @@
         $('.mybundle tbody').append(addEmptyRow);
     }
 
+    const FROM_PATTERN = 'YYYY-MM-DD HH:mm:ss.SSS';
+    const TO_PATTERN = 'DD/MM/YYYY HH:mm';
+
     $('.btn-load-form').on('click', function () {
         var IssueCompany = $('#formissue :selected').text();
         var State = $('#formstate :selected').text();
         var formDate = $('.formdate').val();
         var formType = $('.filterformstype :selected').text();
         var apiQueryString = "?issueCompany=" + IssueCompany + "&state=" + State + "&effectiveDate=" + formDate + "&formType=" + formType;
-
         var loadFormSearchModel = {
             issueCompany: IssueCompany,
             state: State,
@@ -103,8 +111,9 @@
                 { "width": "15%", "targets": 0 },
                 { "width": "45%", "targets": 1 },
                 {
-                    "width": "10%",
+                    "width": "7%",
                     "targets": 2,
+                    "className": "text-center",
                     "render": function (data, type, full, meta) {
                         return data ? '<input type="checkbox" value=' + data + ' disabled checked/>' : '<input type="checkbox" disabled/>'
                     }
@@ -112,12 +121,27 @@
                 {
                     "width": "10%",
                     "targets": 3,
+                    "className": "text-center",
                     "render": function (data, type, full, meta) {
                         return data ? '<input type="checkbox" value=' + data + ' disabled checked/>' : '<input type="checkbox" disabled/>'
                     }
                 },
-                { "width": "10%", "targets": 4 },
-                { "width": "10%", "targets": 5 },
+                {
+                    "width": "10%",
+                    "targets": 4,
+                    "className": "text-center",
+                    "render": function (data) {
+                        return moment(data).format('MM/DD/YYYY');
+                    }
+                },
+                {
+                    "width": "12%",
+                    "targets": 5,
+                    "className": "text-center",
+                    "render": function (data) {
+                        return moment(data).format('DD/MM/YYYY');
+                    }
+                },
                 { "width": "0%", "targets": 6, "searchable": true, "visible": false },
                 {
                     data: null,
@@ -177,8 +201,10 @@
 
         var tbody = $('#loadtable').find('tbody');
         tbody.addClass("form-tablebody");
-        emptyMyBunleRow();
-
+        if (selectedForms.length == 0) {
+            emptyMyBunleRow();
+        }
+        $('.invalid-data').hide();
     }
 
     function tabulate(pageInfo) {

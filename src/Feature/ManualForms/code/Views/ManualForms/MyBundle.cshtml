@@ -16,13 +16,13 @@
             <tbody class="bundlebody">
             </tbody>
         </table>
-        <div class="error-message-bundleform" style="color: red; display: none; text-align: center">Please select the forms!</div>
+        <div class="error-message-bundleform invalid-data" style="color: red; display: none; text-align: center">Please select the forms!</div>
         <div class="row center">
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="formpolicy" class="below-table">@Model.PolocyNumber<b style="color:red">*</b></label>
                     <input type="text" class="form-control form-control-sm formpolicy" required>
-                    <div class="error-message-formpolicy" style="display: none; color: red; margin-top: 6px; margin-bottom: 10px;">
+                    <div class="error-message-formpolicy invalid-data" style="display: none; color: red; margin-top: 6px; margin-bottom: 10px;">
                         Is required
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                 <div class="form-group">
                     <label for="forminsured" class="below-table">@Model.FirstNamedInsured<b style="color:red">*</b></label>
                     <input type="text" class="form-control form-control-sm forminsured" required>
-                    <div class="error-message-forminsured" style="display: none; color: red; margin-top: 6px; margin-bottom: 10px;">
+                    <div class="error-message-forminsured invalid-data" style="display: none; color: red; margin-top: 6px; margin-bottom: 10px;">
                         Is required
                     </div>
                 </div>
@@ -58,7 +58,7 @@
 
         <div class="row uploadcenter p-3 ">
             <div class="col-md-12">
-                <input type="file" id="file" style="display:none;">
+                <input type="file" id="file" class="manualform-file" style="display:none;">
                 <label for="file" class="fileuploadbundle">
                     <i class="bi bi-arrow-bar-up fileuploadbundleIcon"></i>
                     <br />
@@ -66,7 +66,7 @@
                 </label>
             </div>
         </div>
-        <h4 style="margin-top: 1%; margin-left: 26%;"></h4>
+        <h4 style="margin-top: 1%; margin-left: 26%;" class="invalid-data"></h4>
         <div class="row">
             <div class="create-bundle-button">
                 <div class="d-flex justify-content-center">
@@ -84,20 +84,19 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <script>
 
-    $(document).on("click", ".fileuploadbundleIcon", function () {
-        $('input[type="file"]').change(function (e) {
-            var selectedFile = e.target.files[0].name;
-            regex = new RegExp("(.*?)\.(xml)$");
+    $(document).on("change", ".manualform-file", function () {
+        var selectedFile = e.target.files[0].name;
+        regex = new RegExp("(.*?)\.(xml)$");
 
-            if (!(regex.test(selectedFile))) {
-                $(this).val('');
-                $("h4").text('Please select correct file format');
-            }
-            else {
-                $("h4").html('<i class="bi bi-file-earmark-excel-fill iconremove" style="position: absolute;margin-left: 0px;margin-top: -2px;color: green;"></i >  <span class="file-name" style="color: #00b2f5; margin-left: 18px">' + selectedFile + "</p>");
-            }
-        });
+        if (!(regex.test(selectedFile))) {
+            $(this).val('');
+            $("h4").html('<span style="color: red">Invalid file type. Please select .xml file only!</span>');
+        }
+        else {
+            $("h4").html('<i class="bi bi-file-earmark-excel-fill iconremove" style="position: absolute;margin-left: 0px;margin-top: -2px;color: green;"></i >  <span class="file-name" style="color: #00b2f5; margin-left: 18px">' + selectedFile + "</p>");
+        }
     });
+ 
 
     $(document).on("click", ".bundle-formremove", function () {
         var formTodelet = $(this).attr("data-formnum");
@@ -129,9 +128,7 @@
     $(".forminsured").keypress(function () {
         $('.error-message-forminsured').hide();
     });
-
-    function validateFormPolicy() {
-    }
+   
 
     $(document).on("click", ".create-button", function () {
         var modelValidated = true;
@@ -196,7 +193,6 @@
                 }
             });
         }
-
     });
 
 </script>
